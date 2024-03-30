@@ -13,7 +13,8 @@ valores_tiradas = [0 for _ in range(tiradas)]
 valores_promedio = [0 for _ in range(tiradas)]
 desviaciones_tipicas = [0 for _ in range(tiradas)]
 
-desviacion = lambda xi,u,n : sqrt((xi-u)**2)/n
+varianza = lambda xi,u,n : (xi-u)**2/n
+desviacion = lambda xi,u,n : sqrt(varianza(xi,u,n))
 
 fig, ax = plt.subplots()
 cantidad = 0
