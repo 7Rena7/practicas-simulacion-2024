@@ -1,9 +1,39 @@
 import matplotlib.pyplot as plt
-import random
+from random import randint
 from math import sqrt
+from sys import argv as arguments, exit
+from os import path as filepath
 
-tiradas = 500
-numero_esperado = 36
+# Verificar si se proporciona el número correcto de argumentos en la línea de comandos. Se deben proporcionar seis
+# argumentos: -c <num_tiradas> -n <num_corridas> -e <numero_elegido>. Todos los argumentos deben ser enteros, -c debe
+# estar entre 1 y 1000, -n debe estar entre 1 y 100, y -e debe estar entre 0 y 36
+if len(arguments) != 7 or arguments[1] != "-c" or arguments[3] != "-n" or arguments[5] != "-e":
+    print("La cantidad de argumentos o su orden es incorrecta.\n")
+    print("Uso: python/python3 {} -c <cantidad_de_tiradas>[int 1-1000] -n <cantidad_de_corridas>[int 1-100] -e "
+          "<numero_elegido>[int 0-36]\n".format(filepath.basename(__file__)))
+    print("Ejemplo: python/python3 {} -c 1000 -n 10 -e 8".format(filepath.basename(__file__)))
+    exit(1)
+
+# Obtener el número de tiradas, corridas y el número seleccionado de los argumentos de la línea de comandos
+tiradas = int(arguments[2])
+corridas = int(arguments[4])
+numero_esperado = int(arguments[6])
+
+if not (1 <= tiradas <= 1000):
+    print("El número de tiradas debe estar entre 1 y 1000.")
+    exit(1)
+
+if not (1 <= corridas <= 100):
+    print("El número de corridas debe estar entre 1 y 1000.")
+    exit(1)
+
+if not (0 <= numero_esperado <= 36):
+    print("El número elegido debe estar entre 0 y 36.")
+    exit(1)
+
+print("***** Simulación de una Ruleta con {} tiradas, {} corridas y con número {} *****\n"
+      .format(tiradas, corridas, numero_esperado))
+
 ruleta_cantidad = 36
 # numero = 8
 
@@ -20,7 +50,7 @@ fig, ax = plt.subplots()
 cantidad = 0
 
 for num_tiradas in range(1,tiradas):
-    numero_obtenido = random.randint(1,ruleta_cantidad)
+    numero_obtenido = randint(1,ruleta_cantidad)
     if numero_obtenido == numero_esperado:
         cantidad+=1
 
