@@ -31,7 +31,10 @@ if not (0 <= numero_esperado <= 36):
     print("El número elegido debe estar entre 0 y 36.")
     exit(1)
 
-print("***** Simulación de una Ruleta con {} tiradas, {} corridas y con número {} *****\n"
+print("***** Simulación de una Ruleta ***** \n"
+      "Número de Tiradas: {} \n"
+      "Número de Corridas: {} \n"
+      "Número Elegido: {} \n"
       .format(tiradas, corridas, numero_esperado))
 
 ruleta_cantidad = 36
@@ -46,7 +49,6 @@ desviaciones_tipicas = [0 for _ in range(tiradas)]
 varianza = lambda xi,u,n : (xi-u)**2/n
 desviacion = lambda xi,u,n : sqrt(varianza(xi,u,n))
 
-fig, ax = plt.subplots()
 cantidad = 0
 
 for num_tiradas in range(1,tiradas):
@@ -59,36 +61,34 @@ for num_tiradas in range(1,tiradas):
     desviaciones_tipicas[num_tiradas] = desviacion(numero_obtenido, valores_promedio[num_tiradas], num_tiradas)
     # frecuencias_absolutas[num_tiradas] = cantidad
     frecuencias_relativas[num_tiradas] = cantidad/num_tiradas
-    
 
+# Crear la figura y los subgráficos
+fig, axs = plt.subplots(1, 3, figsize=(18, 6))
 
-# plot
+axs[0].plot([i for i in range(tiradas)], frecuencias_relativas, linewidth=2.0, )
+axs[0].set_title('Frecuencia Relativa vs Numero de Tiradas')
+axs[0].set_ylabel('fr (frecuencia relativa)')
+axs[0].set_xlabel('n (numero tiradas)')
+axs[0].axhline(y=1/36, color='r', linestyle='--', label='Equilibrio')
 
-ax.plot([i for i in range(tiradas)], frecuencias_relativas, linewidth=2.0, )
-ax.set_title('Gráfico 1')
-ax.set_ylabel('fr (frecuencia relativa)')
-ax.set_xlabel('n (numero tiradas)')
-ax.axhline(y=1/36, color='r', linestyle='--', label='Equilibrio')
+axs[1].plot([i for i in range(tiradas)], valores_tiradas, linewidth=2.0, )
+axs[1].set_title('Valor Promedio de Tiradas vs Numero de Tiradas')
+axs[1].set_ylabel('μ (Valor promedio de tiradas)')
+axs[1].set_xlabel('n (numero tiradas)')
+axs[1].axhline(y=sum(valores_tiradas)/tiradas, color='r', linestyle='--', label='Media aritmetica')
+
+axs[2].plot([i for i in range(tiradas)], desviaciones_tipicas, linewidth=2.0, )
+axs[2].set_title('Desviacion Tipica vs Numero de Tiradas')
+axs[2].set_ylabel('σ (Desviacion tipica)')
+axs[2].set_xlabel('n (numero tiradas)')
+axs[2].axhline(y=0, color='r', linestyle='--', label='Media aritmetica')
+
+# Ajustar diseño y mostrar gráficos
+plt.tight_layout()
+
+# Guardar la figura en disco
+plt.savefig('resultados.png')
+
+# Mostrar la figura
 plt.show()
-
-# print(frecuencias_absolutas)
-# print(frecuencias_relativas)
-
-fig, ax2 = plt.subplots()
-ax2.plot([i for i in range(tiradas)], valores_tiradas, linewidth=2.0, )
-ax2.set_title('Gráfico 2')
-ax2.set_ylabel('μ (Valor promedio de tiradas)')
-ax2.set_xlabel('n (numero tiradas)')
-ax2.axhline(y=sum(valores_tiradas)/tiradas, color='r', linestyle='--', label='Media aritmetica')
-plt.show()
-
-
-fig, ax3 = plt.subplots()
-ax3.plot([i for i in range(tiradas)], desviaciones_tipicas, linewidth=2.0, )
-ax3.set_title('Gráfico 3')
-ax3.set_ylabel('σ (Desviacion tipica)')
-ax3.set_xlabel('n (numero tiradas)')
-ax3.axhline(y=0, color='r', linestyle='--', label='Media aritmetica')
-plt.show()
-
 
