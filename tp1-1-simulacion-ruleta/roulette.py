@@ -1,13 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import os
 from sys import argv as arguments, exit
 from os import path as filepath
 
 # Verificar si se proporciona el número correcto de argumentos en la línea de comandos. Se deben proporcionar seis
-# argumentos: -c <num_tiradas> -n <num_corridas> -e <numero_elegido>. Todos los argumentos deben ser enteros, -c debe
-# estar entre 1 y 1000, -n debe estar entre 1 y 100, y -e debe estar entre 0 y 36
+# argumentos: -c <num_tiradas> -n <num_corridas> -e <numero_elegido>. -c y -n deben ser enteros mayores a cero y -e debe estar entre 0 y 36
 if len(arguments) != 7 or arguments[1] != "-c" or arguments[3] != "-n" or arguments[5] != "-e":
     print("La cantidad de argumentos o su orden es incorrecta.\n")
     print("Uso: python/python3 {} -c <cantidad_de_tiradas>[int 1-1000] -n <cantidad_de_corridas>[int 1-100] -e "
@@ -58,10 +56,8 @@ def graficar_frecuencia(frecuencia_relativa_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"FRECUENCIA RELATIVA DEL NUMERO {numero_elegido} PROMEDIO {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/frecuencia-relativa-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"FRECUENCIA RELATIVA DEL NUMERO {numero_elegido} {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/frecuencia-relativa-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -81,10 +77,8 @@ def graficar_varianza(varianza_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"VARIANZA PROMEDIO {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/varianza-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"VARIANZA {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/varianza-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -104,10 +98,8 @@ def graficar_desvio(desviacion_estandar_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"DESVÍO ESTANDAR PROMEDIO {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/desviacion-estandar-esperada-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"DESVÍO ESTANDAR {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/desviacion-estandar-esperada-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -127,10 +119,8 @@ def graficar_esperanza(esperanza_matematica_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"ESPERANZA MATEMATICA PROMEDIO {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/esperanza-matematica-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"ESPERANZA MATEMATICA {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/esperanza-matematica-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -150,10 +140,8 @@ def graficar_histograma(frecuencias_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"HISTOGRAMA PROMEDIO {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/histograma-frecuencia-relativa-promedio{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"HISTOGRAMA {cantidad_corridas} CORRIDAS")
-        #plt.savefig(f"img/histograma-frecuencia-relativa-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -213,7 +201,7 @@ for corrida in range(cantidad_corridas):
     tiradas = np.random.randint(0, 37, size=[cantidad_tiradas])
     df_tiradas = pd.DataFrame(data=tiradas, columns=["valor"])
 
-    df_frecuencias = generar_dataframe_frecuencias(df_tiradas)  # esto es para el histograma
+    df_frecuencias = generar_dataframe_frecuencias(df_tiradas)
 
     frecuencia_relativa, esperanza_matematica, desviacion_estandar, varianza = generar_estadisticas(numero_elegido)
 
