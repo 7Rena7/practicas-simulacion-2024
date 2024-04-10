@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import os
 from sys import argv as arguments, exit
 from os import path as filepath
 
@@ -19,12 +20,12 @@ cantidad_tiradas = int(arguments[2])
 cantidad_corridas = int(arguments[4])
 numero_elegido = int(arguments[6])
 
-if not (1 <= cantidad_tiradas <= 1000):
-    print("El número de tiradas debe estar entre 1 y 1000.")
+if (cantidad_tiradas < 1):
+    print("El número de tiradas debe ser mayor a 0.")
     exit(1)
 
-if not (1 <= cantidad_corridas <= 100):
-    print("El número de corridas debe estar entre 1 y 1000.")
+if (cantidad_corridas < 1):
+    print("El número de corridas debe ser mayor a 0.")
     exit(1)
 
 if not (0 <= numero_elegido <= 36):
@@ -57,10 +58,10 @@ def graficar_frecuencia(frecuencia_relativa_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"FRECUENCIA RELATIVA DEL NUMERO {numero_elegido} PROMEDIO {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/frecuencia-relativa-promedio-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/frecuencia-relativa-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"FRECUENCIA RELATIVA DEL NUMERO {numero_elegido} {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/frecuencia-relativa-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/frecuencia-relativa-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -80,10 +81,10 @@ def graficar_varianza(varianza_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"VARIANZA PROMEDIO {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/varianza-promedio-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/varianza-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"VARIANZA {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/varianza-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/varianza-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -103,10 +104,10 @@ def graficar_desvio(desviacion_estandar_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"DESVÍO ESTANDAR PROMEDIO {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/desviacion-estandar-esperada-promedio-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/desviacion-estandar-esperada-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"DESVÍO ESTANDAR {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/desviacion-estandar-esperada-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/desviacion-estandar-esperada-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -126,10 +127,10 @@ def graficar_esperanza(esperanza_matematica_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"ESPERANZA MATEMATICA PROMEDIO {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/esperanza-matematica-promedio-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/esperanza-matematica-promedio-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"ESPERANZA MATEMATICA {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/esperanza-matematica-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/esperanza-matematica-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
@@ -149,10 +150,10 @@ def graficar_histograma(frecuencias_listado, es_promedio):
 
     if es_promedio:
         ax.set_title(f"HISTOGRAMA PROMEDIO {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/histograma-frecuencia-relativa-promedio{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/histograma-frecuencia-relativa-promedio{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
     else:
         ax.set_title(f"HISTOGRAMA {cantidad_corridas} CORRIDAS")
-        plt.savefig(f"img/histograma-frecuencia-relativa-{cantidad_corridas}-corridas.png")
+        #plt.savefig(f"img/histograma-frecuencia-relativa-{cantidad_corridas}-corridas.png") # lo quito para que no tire error al no tener la carpeta img
 
     plt.show()
 
