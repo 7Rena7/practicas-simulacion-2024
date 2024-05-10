@@ -1,9 +1,8 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 from sys import argv as arguments, exit
 from os import path as filepath
 from martingala import Martingala
+from fibonacci import Fibonacci
+from paroli import Paroli
 
 # Verificar si se proporciona el número correcto de argumentos en la línea de comandos. Se deben proporcionar ocho
 # argumentos: -c <num_tiradas> -n <num_corridas> -e <numero_elegido> -s <estrategia> -a <tipo_capital>.
@@ -65,10 +64,12 @@ if estrategia == 'm':
     martingale = Martingala(
         cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
     martingale.ejecutar_estrategia()
-    pass
 elif estrategia == 'd':
+    # d_alembert = DAlembert(
     pass
 elif estrategia == 'f':
-    pass
+    fibonacci = Fibonacci(cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
+    fibonacci.ejecutar_estrategia()
 else:
-    pass
+    paroli = Paroli(cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
+    paroli.ejecutar_estrategia()

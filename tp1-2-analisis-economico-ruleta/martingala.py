@@ -7,10 +7,6 @@ from estrategia import Estrategia
 class Martingala(Estrategia):
     def __init__(self, cant_tiradas, cant_corridas, numero_elegido, tipo_capital='i' or 'f',):
         super().__init__(cant_tiradas, cant_corridas, numero_elegido, tipo_capital)
-        self.apuesta_inicial = 1
-        self.capital = 100
-        self.rojo = [1, 3, 5, 7, 9, 12, 14, 16,
-                     18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
 
     def ejecutar_estrategia(self):
         print('Ejecutando estrategia de Martingala...')
