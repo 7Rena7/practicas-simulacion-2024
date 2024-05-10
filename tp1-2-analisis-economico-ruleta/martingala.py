@@ -1,12 +1,27 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from estrategia import Estrategia
+
+
+class Martingala(Estrategia):
+    def __init__(self, cant_tiradas, cant_corridas, numero_elegido, tipo_capital='i' or 'f',):
+        super().__init__(cant_tiradas, cant_corridas, numero_elegido, tipo_capital)
+        self.apuesta_inicial = 1
+        self.capital = 100
+        self.rojo = [1, 3, 5, 7, 9, 12, 14, 16,
+                     18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
+
+    def ejecutar_estrategia(self):
+        print('Ejecutando estrategia de Martingala...')
+
 
 cantidad_tiradas = 10000
 apuesta_inicial = 1
 capital = 100
-tipo_capital = 'i'
+tipo_capital = 'f'
 rojo = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
+
 
 def martingala(apuesta_actual, is_win):
     """
@@ -31,6 +46,7 @@ def martingala(apuesta_actual, is_win):
         proxima_apuesta = apuesta_actual * 2
 
     return proxima_apuesta
+
 
 tiradas = np.random.randint(0, 37, size=[cantidad_tiradas])
 listado_apuestas = []
@@ -63,20 +79,26 @@ df = pd.DataFrame({
 })
 
 # Función para graficar el flujo de caja
+
+
 def grafico_flujo_caja(listado_capital):
     global cantidad_tiradas
 
     fig, ax = plt.subplots()
 
-    ax.set_title(f"ESTRATEGIA MARTINGALA - CAPITAL INICIAL: {listado_capital[0]}")
+    ax.set_title(
+        f"ESTRATEGIA MARTINGALA - CAPITAL INICIAL: {listado_capital[0]}")
     ax.set_xlabel('n (Número de tiradas)')
     ax.set_ylabel('cc (Cantidad de capital)')
 
-    ax.plot([i for i in range(1, len(listado_apuestas) + 1)], listado_capital, linewidth=2.0, label='fc (Flujo de caja)')
-    ax.axhline(listado_capital[0], color='r', linestyle='--', label='fci (Flujo de caja inicial)')
+    ax.plot([i for i in range(1, len(listado_apuestas) + 1)],
+            listado_capital, linewidth=2.0, label='fc (Flujo de caja)')
+    ax.axhline(listado_capital[0], color='r',
+               linestyle='--', label='fci (Flujo de caja inicial)')
 
     plt.legend()
     plt.show()
+
 
 # Mostrar gráfico
 grafico_flujo_caja(listado_capital)
