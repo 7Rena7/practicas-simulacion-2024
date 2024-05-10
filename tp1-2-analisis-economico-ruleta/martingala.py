@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 cantidad_tiradas = 10000
 apuesta_inicial = 1
 capital = 100
+tipo_capital = 'i'
 rojo = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
 
 def martingala(apuesta_actual, is_win):
@@ -45,7 +46,7 @@ for tirada in tiradas:
 
     proxima_apuesta = martingala(listado_apuestas[-1], is_win)
 
-    if proxima_apuesta > capital:  # banca rota
+    if proxima_apuesta > capital and tipo_capital == 'f':  # banca rota
         break
 
     if len(listado_apuestas) == cantidad_tiradas:
