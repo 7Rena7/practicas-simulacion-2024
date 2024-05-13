@@ -40,7 +40,6 @@ class Fibonacci(Estrategia):
 
                 proxima_apuesta, capital = self.fibonacci(listado_apuestas, is_win, capital)
                 print(proxima_apuesta)
-                print(f"capital {capital}")
                 
                 if proxima_apuesta > capital and self.tipo_capital == 'f': # banca rota
                     break
