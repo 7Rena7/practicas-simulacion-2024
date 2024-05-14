@@ -3,32 +3,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from estrategia import Estrategia
 
- 
-CAPITAL = 10000
-APUESTA_INICIAL = 100
 
 class Dalambert(Estrategia):
     def __init__(self, cant_tiradas, cant_corridas, numero_elegido, tipo_capital='i' or 'f'):
         super().__init__(cant_tiradas, cant_corridas, numero_elegido, tipo_capital)
 
-        # self.listado_apuestas = []
-        # self.listado_capital = []
-        # self.listado_unidades = []
-        # self.listado_wins = []
         self.es_capital_infinito = True if tipo_capital == 'i' else False
-        self.cantidad_ganadas = 0 
-        
-        self.capital = CAPITAL
-        
-        self.apuesta_inicial = APUESTA_INICIAL
-        self.rojo = [1, 3, 5, 7, 9, 12, 14, 16,
-                     18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
-    
-    def estrategia(self,is_win):
-    # def estrategia(self,listado_apuestas,is_win):
+        self.capital = self.capital_inicial
+
+    def estrategia(self, is_win):
         """
         Implementa un sistema de apuestas basado en la estrategia de D'alambert.
-        
+
         Si la apuesta es ganadora, entonces se dismunye la cantidad apostada en una unidad
         SI la apuesta es perdedora, se aumenta la cantidad apostada en una unidad
 
@@ -40,12 +26,12 @@ class Dalambert(Estrategia):
         int: El monto de la próxima apuesta según la estrategia Fibonacci.
         """
 
-        # global capital, apuesta_inicial
         ultima_apuesta = self.listado_apuestas[-1]
-        unidad = self.apuesta_inicial 
+        unidad = self.apuesta_inicial
         if is_win:
             self.capital += ultima_apuesta
-            proxima_apuesta = max(ultima_apuesta - unidad, unidad)  # Evitar apuestas menores que la unidad inicial
+            # Evitar apuestas menores que la unidad inicial
+            proxima_apuesta = max(ultima_apuesta - unidad, unidad)
         else:
             self.capital -= ultima_apuesta
             proxima_apuesta = ultima_apuesta + unidad
@@ -60,7 +46,7 @@ class Dalambert(Estrategia):
         self.listado_wins = []
         self.listado_frecuencia_relativa = []
         self.listado_apuestas.append(self.apuesta_inicial)
-        self.capital = CAPITAL
+        self.capital = self.capital_inicial
         self.listado_capital.append(self.capital)
         self.listado_unidades.append(1)
  
@@ -91,8 +77,8 @@ class Dalambert(Estrategia):
             max_value = max(listado_capital)
             min_value = min(listado_capital)
 
-            ganancias_maximas.append(((max_value * 100) / CAPITAL) - 100)
-            perdidas_maximas.append(((min_value * 100) / CAPITAL) -100)
+            ganancias_maximas.append(((max_value * 100) / self.capital_inicial) - 100)
+            perdidas_maximas.append(((min_value * 100) / self.capital_inicial) -100)
 
         fig, axs = plt.subplots(2, 1, figsize=(10, 8))
 
@@ -131,7 +117,7 @@ class Dalambert(Estrategia):
             ax1.scatter([0], [max_value])
 
 
-        ax1.axhline(y=CAPITAL, color='r', linestyle='-', label='Capital total')
+        ax1.axhline(y=self.capital_inicial, color='r', linestyle='-', label='Capital total')
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.grid(True)
 
@@ -184,7 +170,7 @@ class Dalambert(Estrategia):
             for i in range(len(listado_frecuencia_relativa)):
                 try:
                     sum_frecuencias_en_tirada_j += listado_frecuencia_relativa[i][j]
-                except IndexError:
+                except:
                     sum_frecuencias_en_tirada_j += 0
             promedio_frecuencias.append(sum_frecuencias_en_tirada_j / self.cant_corridas)
 
@@ -213,25 +199,22 @@ class Dalambert(Estrategia):
         # self.generar_histograma_densidad(data_simulacion)
 
 
-
     def ejecutar_estrategia(self):
         data_simulacion = []
-        for i in range(0,self.cant_corridas):
-            # print("Iteracion",i)
+        for _ in range(0, self.cant_corridas):
             data_simulacion.append(self.simulacion())
 
         self.generar_graficos(data_simulacion)
 
-    
     def simulacion(self):
 
         self.inicializar_valores()
 
         tirada = 0
-        while True:  
+        while True:
             tirada += 1
-            numero_al_girar_ruleta = np.random.randint(0,37)
-            is_win = numero_al_girar_ruleta in self.rojo
+            numero_al_girar_ruleta = np.random.randint(0, 37)
+            is_win = numero_al_girar_ruleta in self.resultados_rojo
 
             if is_win:
                 self.cantidad_ganadas += 1
@@ -274,7 +257,8 @@ if __name__ == "__main__":
     tipo_capital = 'i'  # 'i' para capital infinito, 'f' para capital fijo
 
     # Creamos la instancia
-    estrategia = Dalambert(cant_tiradas, cant_corridas, numero_elegido, tipo_capital)
+    estrategia = Dalambert(cant_tiradas, cant_corridas,
+                           numero_elegido, tipo_capital)
 
     # Ejecutamos la estrategia
     estrategia.ejecutar_estrategia()

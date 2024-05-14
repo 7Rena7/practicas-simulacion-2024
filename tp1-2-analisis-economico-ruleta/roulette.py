@@ -3,6 +3,7 @@ from os import path as filepath
 from martingala import Martingala
 from fibonacci import Fibonacci
 from paroli import Paroli
+from dalambert import Dalambert as DAlembert
 
 # Verificar si se proporciona el número correcto de argumentos en la línea de comandos. Se deben proporcionar ocho
 # argumentos: -c <num_tiradas> -n <num_corridas> -e <numero_elegido> -s <estrategia> -a <tipo_capital>.
@@ -11,8 +12,6 @@ from paroli import Paroli
 #   -e debe estar entre 0 y 36
 #   -s es la estrategia utilizada, puede ser m (Martingale), d (D’Alambert), f (Fibonacci) u p (Paroli)
 #   -a es el tipo de capital, puede ser: f (fijo) o i (infinito)
-print("Cantidad de argumentos: {}".format(len(arguments)))
-print("Argumentos: {}".format(arguments))
 
 if len(arguments) != 11 or arguments[1] != "-c" or arguments[3] != "-n" or arguments[5] != "-e" or arguments[7] != "-s" or arguments[9] != "-a":
     print("La cantidad de argumentos o su orden es incorrecta.\n")
@@ -60,16 +59,19 @@ print("***** Simulación de una Ruleta ***** \n"
       "Tipo de Capital: {} \n"
       .format(cantidad_tiradas, cantidad_corridas, numero_elegido, estrategia, tipo_capital))
 
+instancia_estrategia = None
+
 if estrategia == 'm':
-    martingale = Martingala(
+    instancia_estrategia = Martingala(
         cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
-    martingale.ejecutar_estrategia()
 elif estrategia == 'd':
-    # d_alembert = DAlembert(
-    pass
+    instancia_estrategia = DAlembert(
+        cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
 elif estrategia == 'f':
-    fibonacci = Fibonacci(cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
-    fibonacci.ejecutar_estrategia()
+    instancia_estrategia = Fibonacci(
+        cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
 else:
-    paroli = Paroli(cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
-    paroli.ejecutar_estrategia()
+    instancia_estrategia = Paroli(
+        cantidad_tiradas, cantidad_corridas, numero_elegido, tipo_capital)
+
+instancia_estrategia.ejecutar_estrategia()
