@@ -16,8 +16,9 @@ class Dalambert(Estrategia):
         # self.listado_unidades = []
         # self.listado_wins = []
         self.es_capital_infinito = True if tipo_capital == 'i' else False
+        self.cantidad_ganadas = 0 
         
-        self.capital = 0
+        self.capital = CAPITAL
         
         self.apuesta_inicial = APUESTA_INICIAL
         self.rojo = [1, 3, 5, 7, 9, 12, 14, 16,
@@ -55,11 +56,61 @@ class Dalambert(Estrategia):
         self.listado_apuestas = []
         self.listado_capital = []
         self.listado_unidades = []
+        self.cantidad_ganadas = 0 
         self.listado_wins = []
+        self.listado_frecuencia_relativa = []
         self.listado_apuestas.append(self.apuesta_inicial)
+        self.capital = CAPITAL
         self.listado_capital.append(self.capital)
         self.listado_unidades.append(1)
-        self.capital = CAPITAL
+ 
+
+    def generar_histograma(self,listado_dfs):
+        fig, ax = plt.subplots()
+
+        ax.set_title(f"HISTOGRAMA {self.cant_corridas} CORRIDAS")
+        ax.set_xlabel('n (número de tiradas)')
+        ax.set_ylabel('fr (frecuencia relativa)')
+
+        for df in listado_dfs:
+            ax.bar(df.index, df['fr'], alpha=0.5)
+
+        plt.show()
+
+
+    def generar_histograma_densidad(self, data_simulacion):
+        """
+        La idea es generar un histograma con la densidad de ganancia y pérdida, para intentar sacar su distribución
+        y determinar si existe algún comportamiento sobre donde es conveniente salir del juego, ya sea ganando o perdiendo.
+        """
+        listados_capital = [df['capital'] for df in data_simulacion]
+
+        ganancias_maximas = [] 
+        perdidas_maximas = []
+        for listado_capital in listados_capital:
+            max_value = max(listado_capital)
+            min_value = min(listado_capital)
+
+            ganancias_maximas.append(((max_value * 100) / CAPITAL) - 100)
+            perdidas_maximas.append(((min_value * 100) / CAPITAL) -100)
+
+        fig, axs = plt.subplots(2, 1, figsize=(10, 8))
+
+        axs[0].hist(ganancias_maximas, bins=10, alpha=0.5, color='green')
+        axs[0].set_ylabel('Frecuencia')
+        axs[0].set_xlabel('Proporción (%)')
+        axs[0].set_title('Histograma de la proporción de ganancias máximas')
+
+        axs[1].hist(perdidas_maximas, bins=10, alpha=0.5, color='red')
+        axs[1].set_xlabel('Proporción (%)')
+        axs[1].set_ylabel('Frecuencia')
+        axs[1].set_title('Histograma de la proporción de pérdidas máximas')
+
+        plt.tight_layout()
+        plt.show()
+
+                
+
 
     def grafico_flujo_caja(self,listados_capital):
         fig, ax1 = plt.subplots(figsize=(20, 10))
@@ -71,8 +122,14 @@ class Dalambert(Estrategia):
         ax1.set_ylabel('Capital Total')
 
         for corrida, listado_capital in enumerate(listados_capital):
-            print(corrida,listado_capital)
+            # print(corrida,listado_capital)
             ax1.plot(listado_capital, label=f'Corrida {corrida+1}', alpha=0.5)
+            max_value = max(listado_capital)
+            # max_index = listado_capital.index(max_value)
+            # ax1.scatter([max_index], [max_value], s=100)
+            # ax1.scatter([max_index], [max_value])
+            ax1.scatter([0], [max_value])
+
 
         ax1.axhline(y=CAPITAL, color='r', linestyle='-', label='Capital total')
         ax1.tick_params(axis='y', labelcolor=color)
@@ -87,18 +144,80 @@ class Dalambert(Estrategia):
         ax1.legend()
         plt.show()
 
+    def grafico_flujo_caja_promedio(self, listados_capital):
+        fig, ax = plt.subplots(figsize=(10, 6))
+
+        # Calcular el promedio del capital para cada tirada
+        
+        
+        max_tiradas = max(len(listado) for listado in listados_capital)  # Obtener la longitud máxima de las listas
+        promedio_capital = []
+        # promedio_capital = np.zeros(max_len)
+        for j in range(0,max_tiradas):
+            sum_capital_en_tirada_i = 0    
+            for i in range(0,len(listados_capital)):
+                try:
+                    sum_capital_en_tirada_i+=listados_capital[i][j]
+                except:
+                    sum_capital_en_tirada_i+=0
+            promedio_capital.append(sum_capital_en_tirada_i/self.cant_corridas)
+            
+
+        # Graficar el promedio del capital
+        ax.plot(promedio_capital, label='Promedio del Capital', color='blue')
+        ax.set_title('Flujo de caja promedio a lo largo de las tiradas')
+        ax.set_xlabel('Número de Tiradas')
+        ax.set_ylabel('Capital Promedio')
+        ax.legend()
+        ax.grid(True)
+        plt.show()
+
+
+    def generar_histograma_promedio(self, listado_frecuencia_relativa):
+        fig, ax = plt.subplots(figsize=(10, 6))
+        
+        max_tiradas = max(len(listado) for listado in listado_frecuencia_relativa)  
+        promedio_frecuencias = []
+
+        for j in range(max_tiradas):
+            sum_frecuencias_en_tirada_j = 0    
+            for i in range(len(listado_frecuencia_relativa)):
+                try:
+                    sum_frecuencias_en_tirada_j += listado_frecuencia_relativa[i][j]
+                except IndexError:
+                    sum_frecuencias_en_tirada_j += 0
+            promedio_frecuencias.append(sum_frecuencias_en_tirada_j / self.cant_corridas)
+
+        # Use a proper range for the x values
+        x_values = range(len(promedio_frecuencias))
+        
+        ax.set_title(f"HISTOGRAMA PROMEDIO DE {self.cant_corridas} CORRIDAS")
+        ax.set_xlabel('n (número de tiradas)')
+        ax.set_ylabel('fr (frecuencia relativa)')
+        ax.bar(x_values, promedio_frecuencias, alpha=0.5)
+        plt.show()
+
+
 
 
     def generar_graficos(self, data_simulacion):
         # listados_capital = [df['capital'].tolist() for df in data_simulacion]
         listados_capital = [df['capital'] for df in data_simulacion]
+        listado_frecuencias_relativas = [df["fr"] for df in data_simulacion]
+
         self.grafico_flujo_caja(listados_capital)
+        self.grafico_flujo_caja_promedio(listados_capital)
+        self.generar_histograma(data_simulacion)
+        self.generar_histograma_promedio(listado_frecuencias_relativas)
+        
+        # self.generar_histograma_densidad(data_simulacion)
+
 
 
     def ejecutar_estrategia(self):
         data_simulacion = []
         for i in range(0,self.cant_corridas):
-            print("Iteracion",i)
+            # print("Iteracion",i)
             data_simulacion.append(self.simulacion())
 
         self.generar_graficos(data_simulacion)
@@ -114,14 +233,24 @@ class Dalambert(Estrategia):
             numero_al_girar_ruleta = np.random.randint(0,37)
             is_win = numero_al_girar_ruleta in self.rojo
 
+            if is_win:
+                self.cantidad_ganadas += 1
+            
             self.listado_wins.append(is_win)
             proxima_apuesta = self.estrategia(is_win)
             
+
+            # self.listado_frecuencia_relativa.append(self.listado_wins.count(True)/(tirada+1))
+            fr = self.cantidad_ganadas/(tirada)
+            self.listado_frecuencia_relativa.append(fr)
+
+
             if not self.es_capital_infinito and proxima_apuesta > self.capital: # banca rota
                 break
 
             if self.es_capital_infinito and len(self.listado_apuestas) == self.cant_tiradas:
                 break
+
 
             self.listado_unidades.append(self.listado_unidades[-1] +1 if is_win else self.listado_unidades[-1] -1 )
             # listado_unidades.append( sum(listado_unidades) +1 if is_win else sum(listado_unidades) -1 )
@@ -132,53 +261,20 @@ class Dalambert(Estrategia):
                 'apuesta': self.listado_apuestas,
                 'win': self.listado_wins,
                 'capital': self.listado_capital,
-                'balance': self.listado_unidades
+                'balance': self.listado_unidades,
+                'fr':self.listado_frecuencia_relativa
                         })
 
+ 
 if __name__ == "__main__":
     # Definimos los parámetros
-    cant_tiradas = 1000  # Cantidad máxima de tiradas por corrida
+    cant_tiradas = 100  # Cantidad máxima de tiradas por corrida
     cant_corridas = 5  # Cantidad de corridas a simular
     numero_elegido = 'rojo'  # Podría ser también 'negro'
-    tipo_capital = 'f'  # 'i' para capital infinito, 'f' para capital fijo
+    tipo_capital = 'i'  # 'i' para capital infinito, 'f' para capital fijo
 
     # Creamos la instancia
     estrategia = Dalambert(cant_tiradas, cant_corridas, numero_elegido, tipo_capital)
 
     # Ejecutamos la estrategia
     estrategia.ejecutar_estrategia()
-
-
-
-        # def grafico_flujo_caja(listado_capital):    
-        
-    #     fig, ax1 = plt.subplots(figsize=(20, 10))
-
-    #     # Configuración del primer eje Y para el capital
-    #     color = 'tab:blue'
-    #     ax1.set_xlabel('Número de Tiradas')
-    #     ax1.set_ylabel('Capital Total', color=color)
-    #     ax1.plot(listado_capital, label='Capital Total', color=color)
-    #     ax1.axhline(y=CAPITAL, color='r', linestyle='-', label='Capital total')
-
-    #     # Ganancia maxima
-    #     max_value =max(listado_capital)
-    #     max_index = listado_capital.index(max_value)
-    #     ax1.axvline(x=max_index, color='b', linestyle='--', label='Ganancia máxima')
-    #     ax1.axhline(y=max_value, color='b', linestyle='--')
-    #     ax1.scatter([max_index], [max_value], color='b', s=100)
-    #     ax1.annotate(f'({max_value:.2f}, {max_index})', 
-    #                 (max_index, max_value), 
-    #                 textcoords="offset points", 
-    #                 xytext=(50,10), 
-    #                 color="b",
-    #                 ha='center')
-
-    #     # ax1.ax()
-    #     ax1.tick_params(axis='y', labelcolor=color)
-    #     ax1.grid(True)
-
-    #     # Configuración de ticks del eje X cada 10 tiradas
-    #     ticks = np.arange(0, len(listado_capital),int(len(listado_capital)/10))
-    #     ax1.set_xticks(ticks)
-    #     ax1.set_xticklabels(ticks)
