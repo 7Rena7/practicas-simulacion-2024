@@ -108,24 +108,14 @@ class Dalambert(Estrategia):
         ax1.set_ylabel('Capital Total')
 
         for corrida, listado_capital in enumerate(listados_capital):
-            # print(corrida,listado_capital)
             ax1.plot(listado_capital, label=f'Corrida {corrida+1}', alpha=0.5)
             max_value = max(listado_capital)
-            # max_index = listado_capital.index(max_value)
-            # ax1.scatter([max_index], [max_value], s=100)
-            # ax1.scatter([max_index], [max_value])
             ax1.scatter([0], [max_value])
 
 
         ax1.axhline(y=self.capital_inicial, color='r', linestyle='-', label='Capital total')
         ax1.tick_params(axis='y', labelcolor=color)
         ax1.grid(True)
-
-        # Configuración de ticks del eje X cada 10 tiradas
-        # max_len = max(len(listado) for listado in listados_capital)
-        # ticks = np.arange(0, max_len, int(max_len/10))
-        # ax1.set_xticks(ticks)
-        # ax1.set_xticklabels(ticks)
 
         ax1.legend()
         plt.show()
@@ -135,10 +125,8 @@ class Dalambert(Estrategia):
 
         # Calcular el promedio del capital para cada tirada
         
-        
         max_tiradas = max(len(listado) for listado in listados_capital)  # Obtener la longitud máxima de las listas
         promedio_capital = []
-        # promedio_capital = np.zeros(max_len)
         for j in range(0,max_tiradas):
             sum_capital_en_tirada_i = 0    
             for i in range(0,len(listados_capital)):
@@ -187,7 +175,6 @@ class Dalambert(Estrategia):
 
 
     def generar_graficos(self, data_simulacion):
-        # listados_capital = [df['capital'].tolist() for df in data_simulacion]
         listados_capital = [df['capital'] for df in data_simulacion]
         listado_frecuencias_relativas = [df["fr"] for df in data_simulacion]
 
@@ -195,8 +182,6 @@ class Dalambert(Estrategia):
         self.grafico_flujo_caja_promedio(listados_capital)
         self.generar_histograma(data_simulacion)
         self.generar_histograma_promedio(listado_frecuencias_relativas)
-        
-        # self.generar_histograma_densidad(data_simulacion)
 
 
     def ejecutar_estrategia(self):
@@ -205,6 +190,7 @@ class Dalambert(Estrategia):
             data_simulacion.append(self.simulacion())
 
         self.generar_graficos(data_simulacion)
+
 
     def simulacion(self):
 
@@ -222,11 +208,8 @@ class Dalambert(Estrategia):
             self.listado_wins.append(is_win)
             proxima_apuesta = self.estrategia(is_win)
             
-
-            # self.listado_frecuencia_relativa.append(self.listado_wins.count(True)/(tirada+1))
             fr = self.cantidad_ganadas/(tirada)
             self.listado_frecuencia_relativa.append(fr)
-
 
             if not self.es_capital_infinito and proxima_apuesta > self.capital: # banca rota
                 break
@@ -236,7 +219,6 @@ class Dalambert(Estrategia):
 
 
             self.listado_unidades.append(self.listado_unidades[-1] +1 if is_win else self.listado_unidades[-1] -1 )
-            # listado_unidades.append( sum(listado_unidades) +1 if is_win else sum(listado_unidades) -1 )
             self.listado_apuestas.append(proxima_apuesta)
             self.listado_capital.append(self.capital)
 

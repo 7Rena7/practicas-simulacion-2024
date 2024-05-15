@@ -38,7 +38,6 @@ class Martingala(Estrategia):
 
         return proxima_apuesta
 
-
     def grafico_flujo_caja(self):
         fig, ax = plt.subplots()
 
@@ -51,7 +50,8 @@ class Martingala(Estrategia):
             max_value = max(listado_capital)
             ax.scatter([0], [max_value])
 
-        ax.axhline(self.capital_inicial, color='r', linestyle='--', label='fci (flujo de caja inicial)')
+        ax.axhline(self.capital_inicial, color='r', linestyle='--',
+                   label='fci (flujo de caja inicial)')
 
         ax.ticklabel_format(axis='y', style='plain')
 
@@ -75,7 +75,8 @@ class Martingala(Estrategia):
 
         # Calcular el promedio del capital para cada tirada
 
-        max_tiradas = max(len(listado) for listado in listados_capital)  # Obtener la longitud máxima de las listas
+        # Obtener la longitud máxima de las listas
+        max_tiradas = max(len(listado) for listado in listados_capital)
         promedio_capital = []
         # promedio_capital = np.zeros(max_len)
         for j in range(0, max_tiradas):
@@ -85,7 +86,8 @@ class Martingala(Estrategia):
                     sum_capital_en_tirada_i += listados_capital[i][j]
                 except:
                     sum_capital_en_tirada_i += 0
-            promedio_capital.append(sum_capital_en_tirada_i / self.cant_corridas)
+            promedio_capital.append(
+                sum_capital_en_tirada_i / self.cant_corridas)
 
         # Graficar el promedio del capital
         ax.plot(promedio_capital, label='Promedio del Capital', color='blue')
@@ -99,7 +101,8 @@ class Martingala(Estrategia):
     def generar_histograma_promedio(self, listado_frecuencia_relativa):
         fig, ax = plt.subplots(figsize=(10, 6))
 
-        max_tiradas = max(len(listado) for listado in listado_frecuencia_relativa)
+        max_tiradas = max(len(listado)
+                          for listado in listado_frecuencia_relativa)
         promedio_frecuencias = []
 
         for j in range(max_tiradas):
@@ -109,7 +112,8 @@ class Martingala(Estrategia):
                     sum_frecuencias_en_tirada_j += listado_frecuencia_relativa[i][j]
                 except:
                     sum_frecuencias_en_tirada_j += 0
-            promedio_frecuencias.append(sum_frecuencias_en_tirada_j / self.cant_corridas)
+            promedio_frecuencias.append(
+                sum_frecuencias_en_tirada_j / self.cant_corridas)
 
         # Use a proper range for the x values
         x_values = range(len(promedio_frecuencias))
@@ -141,7 +145,8 @@ class Martingala(Estrategia):
                 is_win = tirada in self.resultados_rojo
                 listado_wins.append(is_win)
 
-                listado_frecuencia_relativa.append(listado_wins.count(True) / (index + 1))
+                listado_frecuencia_relativa.append(
+                    listado_wins.count(True) / (index + 1))
 
                 proxima_apuesta = self.martingala(listado_apuestas[-1], is_win)
 
@@ -165,7 +170,6 @@ class Martingala(Estrategia):
                 'win': listado_wins,
                 'fr': listado_frecuencia_relativa
             })
-            print(df)
 
             self.listado_dfs.append(df)
 
@@ -178,4 +182,3 @@ class Martingala(Estrategia):
 
         self.grafico_flujo_caja_promedio(listados_capital)
         self.generar_histograma_promedio(listado_frecuencias_relativas)
-
