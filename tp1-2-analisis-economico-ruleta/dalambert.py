@@ -103,9 +103,8 @@ class Dalambert(Estrategia):
 
         # Configuración del primer eje Y para el capital
         color = 'tab:blue'
-        ax1.set_xlabel('Número de Tiradas')
-        # ax1.set_ylabel('Capital Total', color=color)
-        ax1.set_ylabel('Capital Total')
+        ax1.set_xlabel('Número de Tiradas', fontsize=14)
+        ax1.set_ylabel('Capital Total', fontsize=14)
 
         for corrida, listado_capital in enumerate(listados_capital):
             ax1.plot(listado_capital, label=f'Corrida {corrida+1}', alpha=1)
