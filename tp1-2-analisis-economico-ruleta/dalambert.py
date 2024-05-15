@@ -101,7 +101,6 @@ class Dalambert(Estrategia):
     def grafico_flujo_caja(self,listados_capital):
         fig, ax1 = plt.subplots(figsize=(20, 10))
 
-        # Configuración del primer eje Y para el capital
         color = 'tab:blue'
         ax1.set_xlabel('Número de Tiradas', fontsize=14)
         ax1.set_ylabel('Capital Total', fontsize=14)
@@ -121,10 +120,8 @@ class Dalambert(Estrategia):
 
     def grafico_flujo_caja_promedio(self, listados_capital):
         fig, ax = plt.subplots(figsize=(10, 6))
-
-        # Calcular el promedio del capital para cada tirada
         
-        max_tiradas = max(len(listado) for listado in listados_capital)  # Obtener la longitud máxima de las listas
+        max_tiradas = max(len(listado) for listado in listados_capital) 
         promedio_capital = []
         for j in range(0,max_tiradas):
             sum_capital_en_tirada_i = 0    
@@ -161,7 +158,6 @@ class Dalambert(Estrategia):
                     sum_frecuencias_en_tirada_j += 0
             promedio_frecuencias.append(sum_frecuencias_en_tirada_j / self.cant_corridas)
 
-        # Use a proper range for the x values
         x_values = range(len(promedio_frecuencias))
         
         ax.set_title(f"HISTOGRAMA PROMEDIO DE {self.cant_corridas} CORRIDAS")
