@@ -1,48 +1,20 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+
 from estrategia import Estrategia
 
 
 class Martingala(Estrategia):
-
-    def __init__(self, cant_tiradas, cant_corridas, numero_elegido, tipo_capital='i' or 'f'):
+    def __init__(self, cant_tiradas, cant_corridas, numero_elegido, tipo_capital='i' or 'f', ):
         super().__init__(cant_tiradas, cant_corridas, numero_elegido, tipo_capital)
-        self.tiradas = np.random.randint(0, 37, size=[self.cant_tiradas])
-        self.listado_apuestas = []
-        self.listado_capital = []
-        self.listado_wins = []
+        self.listado_apuestas_total = []
+        self.listado_capital_total = []
+        self.listado_wins_total = []
+        self.listado_frecuencia_total = []
+        self.listado_dfs = []
         self.capital = self.capital_inicial
-
-    def ejecutar_estrategia(self):
-        self.listado_apuestas.append(self.apuesta_inicial)
-        self.listado_capital.append(self.capital)
-
-        for tirada in self.tiradas:
-            is_win = tirada in self.resultados_rojo
-            self.listado_wins.append(is_win)
-
-            proxima_apuesta = self.martingala(
-                self.listado_apuestas[-1], is_win)
-
-            if proxima_apuesta > self.capital and self.tipo_capital == 'f':  # banca rota
-                break
-
-            if len(self.listado_apuestas) == self.cant_tiradas:
-                break
-
-            self.listado_apuestas.append(proxima_apuesta)
-            self.listado_capital.append(self.capital)
-
-        # Crear DataFrame
-        df = pd.DataFrame({
-            'apuesta': self.listado_apuestas,
-            'win': self.listado_wins,
-            'capital': self.listado_capital
-        })
-
-        # Mostrar gráfico
-        self.grafico_flujo_caja()
+        self.victorias_seguidas = 0
 
     def martingala(self, apuesta_actual, is_win):
         """
@@ -66,105 +38,144 @@ class Martingala(Estrategia):
 
         return proxima_apuesta
 
+
     def grafico_flujo_caja(self):
-        global cantidad_tiradas
+        fig, ax = plt.subplots()
 
-        _, ax = plt.subplots()
+        ax.set_title(f"ESTRATEGIA MARTINGALA CAPITAL {self.tipo_capital}")
+        ax.set_xlabel('n (número de tiradas)')
+        ax.set_ylabel('c (capital)')
 
-        ax.set_title(
-            f"ESTRATEGIA MARTINGALA - CAPITAL INICIAL: {self.listado_capital[0]}")
-        ax.set_xlabel('n (Número de tiradas)')
-        ax.set_ylabel('cc (Cantidad de capital)')
+        for listado_capital in self.listado_capital_total:
+            ax.plot(listado_capital, linewidth=2.0, )
+            max_value = max(listado_capital)
+            ax.scatter([0], [max_value])
 
-        ax.plot([i for i in range(1, len(self.listado_apuestas) + 1)],
-                self.listado_capital, linewidth=2.0, label='fc (Flujo de caja)')
-        ax.axhline(self.listado_capital[0], color='r',
-                   linestyle='--', label='fci (Flujo de caja inicial)')
+        ax.axhline(self.capital_inicial, color='r', linestyle='--', label='fci (flujo de caja inicial)')
+
+        ax.ticklabel_format(axis='y', style='plain')
 
         plt.legend()
         plt.show()
 
-# Como estaba antes de la refactorización a clase Martingala 👇🏽👇🏽👇🏽
-# if __name__ == "__main__":
-#     cantidad_tiradas = 10000
-#     apuesta_inicial = 1
-#     capital = 100
-#     tipo_capital = 'f'
-#     rojo = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36]
+    def graficar_histograma(self):
+        fig, ax = plt.subplots()
 
-#     def martingala(apuesta_actual, is_win):
-#         """
-#         Implementa la estrategia de apuestas de Martingala.
-#         Si la apuesta es ganadora, se vuelve a apostar la apuesta inicial.
-#         Si la apuesta es perdedora, se duplica la apuesta.
+        ax.set_title(f"HISTOGRAMA {self.cant_corridas} CORRIDAS")
+        ax.set_xlabel('n (número de tiradas)')
+        ax.set_ylabel('fr (frecuencia relativa)')
 
-#         Parameters:
-#         apuesta_actual (float): La cantidad apostada en la última tirada.
-#         is_win (bool): Indica si la última apuesta fue ganadora (True) o perdedora (False).
+        for df in self.listado_dfs:
+            ax.bar(df.index, df['fr'], alpha=0.5)
 
-#         Returns:
-#         float: El monto de la próxima apuesta según la estrategia de Martingala.
-#         """
-#         global capital, apuesta_inicial
+        plt.show()
 
-#         if is_win:
-#             capital += apuesta_actual
-#             proxima_apuesta = apuesta_inicial
-#         else:
-#             capital -= apuesta_actual
-#             proxima_apuesta = apuesta_actual * 2
+    def grafico_flujo_caja_promedio(self, listados_capital):
+        fig, ax = plt.subplots(figsize=(10, 6))
 
-#         return proxima_apuesta
+        # Calcular el promedio del capital para cada tirada
 
-#     tiradas = np.random.randint(0, 37, size=[cantidad_tiradas])
-#     listado_apuestas = []
-#     listado_capital = []
-#     listado_wins = []
+        max_tiradas = max(len(listado) for listado in listados_capital)  # Obtener la longitud máxima de las listas
+        promedio_capital = []
+        # promedio_capital = np.zeros(max_len)
+        for j in range(0, max_tiradas):
+            sum_capital_en_tirada_i = 0
+            for i in range(0, len(listados_capital)):
+                try:
+                    sum_capital_en_tirada_i += listados_capital[i][j]
+                except:
+                    sum_capital_en_tirada_i += 0
+            promedio_capital.append(sum_capital_en_tirada_i / self.cant_corridas)
 
-#     listado_apuestas.append(apuesta_inicial)
-#     listado_capital.append(capital)
+        # Graficar el promedio del capital
+        ax.plot(promedio_capital, label='Promedio del Capital', color='blue')
+        ax.set_title('Flujo de caja promedio a lo largo de las tiradas')
+        ax.set_xlabel('Número de Tiradas')
+        ax.set_ylabel('Capital Promedio')
+        ax.legend()
+        ax.grid(True)
+        plt.show()
 
-#     for tirada in tiradas:
-#         is_win = tirada in rojo
-#         listado_wins.append(is_win)
+    def generar_histograma_promedio(self, listado_frecuencia_relativa):
+        fig, ax = plt.subplots(figsize=(10, 6))
 
-#         proxima_apuesta = martingala(listado_apuestas[-1], is_win)
+        max_tiradas = max(len(listado) for listado in listado_frecuencia_relativa)
+        promedio_frecuencias = []
 
-#         if proxima_apuesta > capital and tipo_capital == 'f':  # banca rota
-#             break
+        for j in range(max_tiradas):
+            sum_frecuencias_en_tirada_j = 0
+            for i in range(len(listado_frecuencia_relativa)):
+                try:
+                    sum_frecuencias_en_tirada_j += listado_frecuencia_relativa[i][j]
+                except:
+                    sum_frecuencias_en_tirada_j += 0
+            promedio_frecuencias.append(sum_frecuencias_en_tirada_j / self.cant_corridas)
 
-#         if len(listado_apuestas) == cantidad_tiradas:
-#             break
+        # Use a proper range for the x values
+        x_values = range(len(promedio_frecuencias))
 
-#         listado_apuestas.append(proxima_apuesta)
-#         listado_capital.append(capital)
+        ax.set_title(f"HISTOGRAMA PROMEDIO DE {self.cant_corridas} CORRIDAS")
+        ax.set_xlabel('n (número de tiradas)')
+        ax.set_ylabel('fr (frecuencia relativa)')
+        ax.bar(x_values, promedio_frecuencias, alpha=0.5)
+        plt.show()
 
-#     # Crear DataFrame
-#     df = pd.DataFrame({
-#         'apuesta': listado_apuestas,
-#         'win': listado_wins,
-#         'capital': listado_capital
-#     })
+    def ejecutar_estrategia(self):
+        print('Ejecutando estrategia de Martingala...')
 
-#     # Función para graficar el flujo de caja
+        for corrida in range(self.cant_corridas):
 
-#     def grafico_flujo_caja(listado_capital):
-#         global cantidad_tiradas
+            self.capital = self.capital_inicial
+            tiradas = np.random.randint(0, 37, size=[self.cant_tiradas])
 
-#         fig, ax = plt.subplots()
+            listado_apuestas = []
+            listado_capital = []
+            listado_wins = []
+            listado_frecuencia_relativa = []
 
-#         ax.set_title(
-#             f"ESTRATEGIA MARTINGALA - CAPITAL INICIAL: {listado_capital[0]}")
-#         ax.set_xlabel('n (Número de tiradas)')
-#         ax.set_ylabel('cc (Cantidad de capital)')
+            listado_apuestas.append(self.apuesta_inicial)
+            listado_capital.append(self.capital)
 
-#         ax.plot([i for i in range(1, len(listado_apuestas) + 1)],
-#                 listado_capital, linewidth=2.0, label='fc (Flujo de caja)')
-#         ax.axhline(listado_capital[0], color='r',
-#                    linestyle='--', label='fci (Flujo de caja inicial)')
+            for index, tirada in enumerate(tiradas):
 
-#         plt.legend()
-#         plt.show()
+                is_win = tirada in self.resultados_rojo
+                listado_wins.append(is_win)
 
-#     # Mostrar gráfico
-#     grafico_flujo_caja(listado_capital)
+                listado_frecuencia_relativa.append(listado_wins.count(True) / (index + 1))
+
+                proxima_apuesta = self.martingala(listado_apuestas[-1], is_win)
+
+                if proxima_apuesta > self.capital and self.tipo_capital == 'f':  # banca rota
+                    break
+
+                if len(listado_apuestas) == self.cant_tiradas:
+                    break
+
+                listado_apuestas.append(proxima_apuesta)
+                listado_capital.append(self.capital)
+
+            self.listado_apuestas_total.append(listado_apuestas)
+            self.listado_capital_total.append(listado_capital)
+            self.listado_wins_total.append(listado_wins)
+            self.listado_frecuencia_total.append(listado_frecuencia_relativa)
+
+            df = pd.DataFrame({
+                'capital': listado_capital,
+                'apuesta': listado_apuestas,
+                'win': listado_wins,
+                'fr': listado_frecuencia_relativa
+            })
+            print(df)
+
+            self.listado_dfs.append(df)
+
+        # Mostrar gráfico
+        self.grafico_flujo_caja()
+        self.graficar_histograma()
+
+        listados_capital = [df['capital'] for df in self.listado_dfs]
+        listado_frecuencias_relativas = [df["fr"] for df in self.listado_dfs]
+
+        self.grafico_flujo_caja_promedio(listados_capital)
+        self.generar_histograma_promedio(listado_frecuencias_relativas)
+
