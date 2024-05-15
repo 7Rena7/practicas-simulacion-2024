@@ -59,7 +59,7 @@ class Dalambert(Estrategia):
         ax.set_ylabel('fr (frecuencia relativa)')
 
         for df in listado_dfs:
-            ax.bar(df.index, df['fr'], alpha=0.5)
+            ax.bar(df.index, df['fr'], alpha=1)
 
         plt.show()
 
@@ -82,12 +82,12 @@ class Dalambert(Estrategia):
 
         fig, axs = plt.subplots(2, 1, figsize=(10, 8))
 
-        axs[0].hist(ganancias_maximas, bins=10, alpha=0.5, color='green')
+        axs[0].hist(ganancias_maximas, bins=10, alpha=1, color='green')
         axs[0].set_ylabel('Frecuencia')
         axs[0].set_xlabel('Proporción (%)')
         axs[0].set_title('Histograma de la proporción de ganancias máximas')
 
-        axs[1].hist(perdidas_maximas, bins=10, alpha=0.5, color='red')
+        axs[1].hist(perdidas_maximas, bins=10, alpha=1, color='red')
         axs[1].set_xlabel('Proporción (%)')
         axs[1].set_ylabel('Frecuencia')
         axs[1].set_title('Histograma de la proporción de pérdidas máximas')
@@ -108,7 +108,7 @@ class Dalambert(Estrategia):
         ax1.set_ylabel('Capital Total')
 
         for corrida, listado_capital in enumerate(listados_capital):
-            ax1.plot(listado_capital, label=f'Corrida {corrida+1}', alpha=0.5)
+            ax1.plot(listado_capital, label=f'Corrida {corrida+1}', alpha=1)
             max_value = max(listado_capital)
             ax1.scatter([0], [max_value])
 
@@ -168,7 +168,7 @@ class Dalambert(Estrategia):
         ax.set_title(f"HISTOGRAMA PROMEDIO DE {self.cant_corridas} CORRIDAS")
         ax.set_xlabel('n (número de tiradas)')
         ax.set_ylabel('fr (frecuencia relativa)')
-        ax.bar(x_values, promedio_frecuencias, alpha=0.5)
+        ax.bar(x_values, promedio_frecuencias, alpha=1)
         plt.show()
 
 
@@ -214,7 +214,7 @@ class Dalambert(Estrategia):
             if not self.es_capital_infinito and proxima_apuesta > self.capital: # banca rota
                 break
 
-            if self.es_capital_infinito and len(self.listado_apuestas) == self.cant_tiradas:
+            if len(self.listado_apuestas) == self.cant_tiradas:
                 break
 
 
