@@ -62,7 +62,7 @@ def generar_ruido_por_binarios():
             (numeros_mt, 'Mersenne Twister'), 
             (numeros_python, 'Python Random')]:
         
-        generar_imagen(numeros,nombre_generador)
+        generar_imagen(numeros,nombre_generador,'binarios ')
     
 
 # <?php
@@ -81,7 +81,7 @@ def generar_ruido_por_binarios():
 # imagepng($im);
 # imagedestroy($im);
 
-def generar_imagen(numeros, nombre_generador):
+def generar_imagen(numeros, nombre_generador,extra=''):
     # Inicializa un arreglo que representa una imagen en blanco (lleno de 0s)
     img = np.zeros((512, 512), dtype=np.uint8)
 
@@ -93,11 +93,11 @@ def generar_imagen(numeros, nombre_generador):
 
     # Mostrar y guardar la imagen
     plt.imshow(img, cmap='gray', vmin=0, vmax=255)
-    plt.title(f'Ruido atmosferico - {nombre_generador}')
+    plt.title(f'Ruido atmosferico {extra}- {nombre_generador}')
     plt.axis('off')
-    plt.savefig(f'Ruido atmosferico - {nombre_generador}.png')
+    plt.savefig(f'Ruido atmosferico {extra}- {nombre_generador}.png')
     plt.show()
 
 
- 
+generar_ruido_por_paridad()
 generar_ruido_por_binarios()
