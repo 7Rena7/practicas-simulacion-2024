@@ -64,24 +64,6 @@ def generar_ruido_por_binarios():
         
         generar_imagen(numeros,nombre_generador)
     
-def generar_imagen_de_paridad(numeros, nombre_generador):
-    # Crear una imagen en blanco
-    img = np.zeros((512, 512), dtype=np.uint8)
-
-    for i in range(512):
-        for j in range(512):
-            # Establecer el color del píxel basado en el número aleatorio
-            if numeros[i * 512 + j] == 1:
-                img[i, j] = 255  # Blanco
-
-    # Mostrar y guardar la imagen
-    plt.imshow(img, cmap='gray', vmin=0, vmax=255)
-    plt.title(f'Ruido atmosferico - {nombre_generador}')
-    plt.axis('off')
-    plt.savefig(f'Ruido atmosferico - {nombre_generador}.png')
-    plt.show()
-
-
 
 # <?php
 # // Requires the GD Library
