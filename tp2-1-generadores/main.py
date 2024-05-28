@@ -3,7 +3,8 @@ import numpy as np
 import random
 from scipy import stats
 from gcl_generator import generador_gcl
-from mersenne_twister_generator import generador_mersenne_twister
+from mersenne_twister_generator import generador_mersenne_twister 
+import pandas as pd
 
 # Parámetros
 m = 2**32
@@ -11,11 +12,13 @@ a = 1664525
 c = 1013904223
 seed = 12345
 n = 1000
-
+ 
 # Generar números pseudoaleatorios
 numeros_gcl = generador_gcl(m, a, c, seed, n)
 numeros_mt = generador_mersenne_twister(seed, n)
 numeros_python = [random.randint(0, 2**32 - 1) for _ in range(n)]
+
+
 
 # Prueba de distribución uniforme
 def prueba_distribucion_uniforme(numeros, nombre_generador):
@@ -32,23 +35,48 @@ def prueba_media_varianza(numeros, nombre_generador):
     print(f'Media de los números generados por {nombre_generador}: {media}')
     print(f'Varianza de los números generados por {nombre_generador}: {varianza}')
 
-# Prueba de chi-cuadrado
+
 def prueba_chi_cuadrado(numeros, nombre_generador):
-    frec_esperada = len(numeros) / 50  # Esperamos que haya 20 números en cada bin (50 bins)
-    frec_observada, bins, _ = plt.hist(numeros, bins=50, color='blue', alpha=0.7)
-    chi_cuadrado, p_valor = stats.chisquare(frec_observada, frec_esperada)
+    # Esperamos que haya una frecuencia esperada en cada bin
+    frec_esperada = len(numeros) / 50
+    # Generar histograma y obtener la frecuencia observada
+    frec_observada, bins, _ = plt.hist(numeros, bins=50, color='blue', alpha=0.7, edgecolor='black')
+    
+    # Calcular chi-cuadrado
+    chi_cuadrado, p_valor = stats.chisquare(frec_observada, [frec_esperada]*len(frec_observada))
     print(f'Chi-cuadrado para {nombre_generador}: {chi_cuadrado}')
+    print(f'Frecuencia observada para {nombre_generador}: {sum(frec_observada)/len(frec_observada)} vs {frec_esperada}')
     print(f'p-valor para {nombre_generador}: {p_valor}')
+    
+    # Añadir títulos y etiquetas
+    plt.title(f'Histograma de {nombre_generador}')
+    plt.xlabel('Valor')
+    plt.ylabel('Frecuencia')
+    
+    # Guardar la gráfica
+    plt.savefig(f'histograma_{nombre_generador}.png')
+    plt.show()
+    
+    return chi_cuadrado, p_valor
 
-# Realizar pruebas y graficar resultados
-prueba_distribucion_uniforme(numeros_gcl, 'GCL')
-prueba_media_varianza(numeros_gcl, 'GCL')
-prueba_chi_cuadrado(numeros_gcl, 'GCL')
+# Tabla de resultados
+resultados = []
 
-prueba_distribucion_uniforme(numeros_mt, 'Mersenne Twister')
-prueba_media_varianza(numeros_mt, 'Mersenne Twister')
-prueba_chi_cuadrado(numeros_mt, 'Mersenne Twister')
 
-prueba_distribucion_uniforme(numeros_python, 'Python Random')
-prueba_media_varianza(numeros_python, 'Python Random')
-prueba_chi_cuadrado(numeros_python, 'Python Random')
+for numeros, nombre_generador in [
+        (numeros_gcl, 'GCL'), 
+        (numeros_mt, 'Mersenne Twister'), 
+        (numeros_python, 'Python Random')]:
+    prueba_distribucion_uniforme(numeros,nombre_generador)
+    prueba_media_varianza(numeros,nombre_generador)
+    chi_cuadrado, p_valor = prueba_chi_cuadrado(numeros,nombre_generador)
+    resultados.append([nombre_generador, chi_cuadrado, p_valor])
+
+# Crear tabla
+df = pd.DataFrame(resultados, columns=['Generador ($O_i$)', 'Chi-cuadrado ($X_i^2$)', 'p-valor'])
+df['Chi-cuadrado ($X_i^2$)'] = df['Chi-cuadrado ($X_i^2$)'].map(lambda x: f'{x:.1f}')
+df['p-valor'] = df['p-valor'].map(lambda x: f'{x:.4f}'.replace('.', ','))
+
+# Mostrar tabla
+print(df)
+
