@@ -1,24 +1,23 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+import pandas as pd
 from scipy import stats
+
 from gcl_generator import generador_gcl
 from mersenne_twister_generator import generador_mersenne_twister 
-import pandas as pd
 
 # Parámetros
-m = 2**32
-a = 1664525
-c = 1013904223
-seed = 12345
-n = 1000
+m = 2**32 # Módulo
+a = 1664525 # Multiplicador
+c = 1013904223 # Incremento
+seed = 12345 # Semilla
+n = 512 ** 2 # Cantidad de números a generar
  
 # Generar números pseudoaleatorios
 numeros_gcl = generador_gcl(m, a, c, seed, n)
 numeros_mt = generador_mersenne_twister(seed, n)
 numeros_python = [random.randint(0, 2**32 - 1) for _ in range(n)]
-
-
 
 # Prueba de distribución uniforme
 def prueba_distribucion_uniforme(numeros, nombre_generador):
@@ -54,14 +53,13 @@ def prueba_chi_cuadrado(numeros, nombre_generador):
     plt.ylabel('Frecuencia')
     
     # Guardar la gráfica
-    plt.savefig(f'histograma_{nombre_generador}.png')
+    plt.savefig(f'./images/histograma_{nombre_generador}.png')
     plt.show()
     
     return chi_cuadrado, p_valor
 
 # Tabla de resultados
 resultados = []
-
 
 for numeros, nombre_generador in [
         (numeros_gcl, 'GCL'), 
