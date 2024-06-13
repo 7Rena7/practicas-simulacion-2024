@@ -7,7 +7,7 @@ from mersenne_twister_generator import generador_mersenne_twister
 from main import seed,m,c,a,n
 
 # Transforma los números reales positivos a números enteros 0 o 1
-def transf_lineal_a_binario(numeros):
+def transf_a_binario(numeros):
     return [1 if x % 2 == 0 else 0 for x in numeros]
 
 def crear_imagen_con_ruido(numbers, size):
@@ -16,8 +16,6 @@ def crear_imagen_con_ruido(numbers, size):
     # Devuelve una matriz cuadrada del tamaño de size
     noise_image = normalized_numbers.reshape(size, size)
 
-    plt.figure(figsize=(10, 5))
-    plt.subplot(1, 2, 1)
     plt.imshow(noise_image, cmap='gray')
     plt.title('Ruido atmosferico - GCL')
     plt.axis('off')
@@ -30,8 +28,6 @@ def crear_imagen_con_ruido(numbers, size,nombre_generador):
     # Devuelve una matriz cuadrada del tamaño de size
     noise_image = normalized_numbers.reshape(size, size)
 
-    plt.figure(figsize=(10, 5))
-    plt.subplot(1, 2, 1)
     plt.imshow(noise_image, cmap='gray')
     plt.title(f'Ruido atmosferico - {nombre_generador}')
     plt.axis('off')
@@ -44,8 +40,8 @@ def generar_ruido_por_paridad():
     numeros_mt = generador_mersenne_twister(seed, n)
     numeros_python = [random.randint(0, 2**32 - 1) for _ in range(n)]
  
-    numeros_mt = transf_lineal_a_binario(numeros_mt)
-    numeros_python = transf_lineal_a_binario(numeros_python)
+    numeros_mt = transf_a_binario(numeros_mt)
+    numeros_python = transf_a_binario(numeros_python)
 
     # crear_imagen_con_ruido(numbers,512)
     for numeros, nombre_generador in [

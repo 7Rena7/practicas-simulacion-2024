@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+from math import log2
 import pandas as pd
 from scipy import stats
 
@@ -25,6 +26,7 @@ def prueba_distribucion_uniforme(numeros, nombre_generador):
     plt.title(f'Distribución Uniforme - {nombre_generador}')
     plt.xlabel('Valor')
     plt.ylabel('Frecuencia')
+    plt.savefig(f'./images/distribucion_{nombre_generador}.png')
     plt.show()
 
 # Prueba de media y varianza
@@ -37,9 +39,10 @@ def prueba_media_varianza(numeros, nombre_generador):
 
 def prueba_chi_cuadrado(numeros, nombre_generador):
     # Esperamos que haya una frecuencia esperada en cada bin
-    frec_esperada = len(numeros) / 50
+    subintervalos =  int(1 + log2(len(numeros))) # para 512^2 = 262144
+    frec_esperada = len(numeros) / subintervalos
     # Generar histograma y obtener la frecuencia observada
-    frec_observada, bins, _ = plt.hist(numeros, bins=50, color='blue', alpha=0.7, edgecolor='black')
+    frec_observada, bins, _ = plt.hist(numeros, bins=subintervalos, color='blue', alpha=0.7, edgecolor='black')
     
     # Calcular chi-cuadrado
     chi_cuadrado, p_valor = stats.chisquare(frec_observada, [frec_esperada]*len(frec_observada))
@@ -61,20 +64,21 @@ def prueba_chi_cuadrado(numeros, nombre_generador):
 # Tabla de resultados
 resultados = []
 
-for numeros, nombre_generador in [
-        (numeros_gcl, 'GCL'), 
-        (numeros_mt, 'Mersenne Twister'), 
-        (numeros_python, 'Python Random')]:
-    prueba_distribucion_uniforme(numeros,nombre_generador)
-    prueba_media_varianza(numeros,nombre_generador)
-    chi_cuadrado, p_valor = prueba_chi_cuadrado(numeros,nombre_generador)
-    resultados.append([nombre_generador, chi_cuadrado, p_valor])
 
-# Crear tabla
-df = pd.DataFrame(resultados, columns=['Generador ($O_i$)', 'Chi-cuadrado ($X_i^2$)', 'p-valor'])
-df['Chi-cuadrado ($X_i^2$)'] = df['Chi-cuadrado ($X_i^2$)'].map(lambda x: f'{x:.1f}')
-df['p-valor'] = df['p-valor'].map(lambda x: f'{x:.4f}'.replace('.', ','))
+# for numeros, nombre_generador in [
+#         (numeros_gcl, 'GCL'), 
+#         (numeros_mt, 'Mersenne Twister'), 
+#         (numeros_python, 'Python Random')]:
+#     prueba_distribucion_uniforme(numeros,nombre_generador)
+#     prueba_media_varianza(numeros,nombre_generador)
+#     chi_cuadrado, p_valor = prueba_chi_cuadrado(numeros,nombre_generador)
+#     resultados.append([nombre_generador, chi_cuadrado, p_valor])
 
-# Mostrar tabla
-print(df)
+# # Crear tabla
+# df = pd.DataFrame(resultados, columns=['Generador ($O_i$)', 'Chi-cuadrado ($X_i^2$)', 'p-valor'])
+# df['Chi-cuadrado ($X_i^2$)'] = df['Chi-cuadrado ($X_i^2$)'].map(lambda x: f'{x:.1f}')
+# df['p-valor'] = df['p-valor'].map(lambda x: f'{x:.4f}'.replace('.', ','))
+
+# # Mostrar tabla
+# print(df)
 
