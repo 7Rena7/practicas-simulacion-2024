@@ -60,25 +60,3 @@ def prueba_chi_cuadrado(numeros, nombre_generador):
     plt.show()
     
     return chi_cuadrado, p_valor
-
-# Tabla de resultados
-resultados = []
-
-
-# for numeros, nombre_generador in [
-#         (numeros_gcl, 'GCL'), 
-#         (numeros_mt, 'Mersenne Twister'), 
-#         (numeros_python, 'Python Random')]:
-#     prueba_distribucion_uniforme(numeros,nombre_generador)
-#     prueba_media_varianza(numeros,nombre_generador)
-#     chi_cuadrado, p_valor = prueba_chi_cuadrado(numeros,nombre_generador)
-#     resultados.append([nombre_generador, chi_cuadrado, p_valor])
-
-# # Crear tabla
-# df = pd.DataFrame(resultados, columns=['Generador ($O_i$)', 'Chi-cuadrado ($X_i^2$)', 'p-valor'])
-# df['Chi-cuadrado ($X_i^2$)'] = df['Chi-cuadrado ($X_i^2$)'].map(lambda x: f'{x:.1f}')
-# df['p-valor'] = df['p-valor'].map(lambda x: f'{x:.4f}'.replace('.', ','))
-
-# # Mostrar tabla
-# print(df)
-
