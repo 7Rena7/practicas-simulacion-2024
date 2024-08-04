@@ -94,16 +94,17 @@ def evaluate():
 
 def report():
     global area_holding, area_shortage, total_ordering_cost, num_months, smalls, bigs, holding_cost, shortage_cost
-    # global final_tot, final_holding, final_shortage, final_ordering
-    # global total_costs, ordering_costs, holding_costs, shortage_costs
-    # global tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
+    
+    global final_tot, final_holding, final_shortage, final_ordering
+    global total_costs, ordering_costs, holding_costs, shortage_costs
+    global tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
 
 
     avg_ordering_cost = total_ordering_cost / num_months
     avg_holding_cost = holding_cost * area_holding / num_months
     avg_shortage_cost = shortage_cost * area_shortage / num_months
 
-    with open("inv.out.md", "a") as outfile:
+    with open("readme.md", "a") as outfile:
         outfile.write(f"| ({smalls},{bigs}) | {avg_ordering_cost + avg_holding_cost + avg_shortage_cost:15.2f} |"
                         f" {avg_ordering_cost:15.2f} | {avg_holding_cost:15.2f} | {avg_shortage_cost:15.2f} |\n")
 
@@ -112,6 +113,34 @@ def report():
 
 
 # def inventory_history_chart...
+
+def calculate_costs():
+    global area_holding, area_shortage, total_ordering_cost, num_months, smalls, bigs, holding_cost, shortage_cost
+
+    global final_tot, final_holding, final_shortage, final_ordering
+    global total_costs, ordering_costs, holding_costs, shortage_costs
+    global tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
+
+    # Calcula y devuelve estimaciones de medidas deseadas de rendimiento.
+    avg_holding_cost = holding_cost * area_holding / num_months
+    avg_shortage_cost = shortage_cost * area_shortage / num_months
+    avg_ordering_cost = total_ordering_cost / num_months
+
+    # Suma el acumulado total
+    final_tot += avg_holding_cost + avg_shortage_cost + avg_ordering_cost
+    final_holding += avg_holding_cost
+    final_shortage += avg_shortage_cost
+    final_ordering += avg_ordering_cost
+
+    tot_per_pol.append(avg_holding_cost + avg_shortage_cost + avg_ordering_cost)
+    ord_per_pol.append(avg_ordering_cost)
+    hold_per_pol.append(avg_holding_cost)
+    short_per_pol.append(avg_shortage_cost)
+
+    total_costs.append(avg_holding_cost + avg_shortage_cost + avg_ordering_cost)
+    ordering_costs.append(avg_ordering_cost)
+    holding_costs.append(avg_holding_cost)
+    shortage_costs.append(avg_shortage_cost)
 
 def cost_pie_chart(ordering_costs, holding_costs, shortage_costs, smallsArray, bigsArray):
     
@@ -140,7 +169,7 @@ def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
     policies = []
 
     for small, big in zip(smallsArray, bigsArray):
-        policy = f"Policy: {small}-{big}"
+        policy = f"{small}-{big}"
         policies.append(policy)
 
     # Configuración de la gráfica de barras
@@ -168,6 +197,25 @@ def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
 
     # Mostrar la gráfica
     plt.show()
+
+def time_cost_graphs(months, total_costs, ordering_costs, holding_costs, shortage_costs):
+    
+    plt.figure(figsize=(10, 6))
+    plt.plot(range(1, months+1), total_costs, marker='o', linestyle='-', label='Total Costs')
+    plt.plot(range(1, months+1), ordering_costs, marker='s', linestyle='--', label='Ordering Costs')
+    plt.plot(range(1, months+1), holding_costs, marker='^', linestyle='--', label='Holding Costs')
+    plt.plot(range(1, months+1), shortage_costs, marker='d', linestyle='--', label='Shortage Costs')
+
+    plt.xlabel('Meses')
+    plt.ylabel('Valor')
+    plt.title('Variación de costos a lo largo del tiempo')
+    plt.legend()
+
+    # ValueError: x and y must have same first dimension, but have shapes (8,) and (9,)
+
+    # Mostrar la gráfica
+    plt.show()
+
 
 
 
@@ -199,7 +247,7 @@ def main():
     global setup_cost, incremental_cost, holding_cost, shortage_cost, minlag
     global maxlag, prob_distrib_demand, num_events, smalls, bigs
 
-    with open("inv_data.json", "r") as json_file, open("inv.out.md", "w") as outfile:
+    with open("inv_data.json", "r") as json_file, open("readme.md", "w") as outfile:
         data = json.load(json_file)
 
         num_events = 4
@@ -234,10 +282,14 @@ def main():
         outfile.write("| Policy | Average total cost | Average ordering cost | Average holding cost | Average shortage cost |\n")
         outfile.write("|--------|--------------------|-----------------------|----------------------|-----------------------|\n")
 
+        smallsArray = []
+        bigsArray = []
 
         for policy in policies:
             smalls = policy["smalls"]
             bigs = policy["bigs"]
+            smallsArray.append(smalls)
+            bigsArray.append(bigs)
             initialize()
  
             while True:
@@ -251,6 +303,7 @@ def main():
                     demand()
                 # End of the simulation after n months
                 elif next_event_type == 3:
+                    calculate_costs()
                     report()
                 # Inventory evaluation (and possible ordering) at the beginning of a month
                 elif next_event_type == 4:
@@ -260,9 +313,11 @@ def main():
                     break
    
 
-
+                
     cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
     cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
+    time_cost_graphs(num_months, total_costs, ordering_costs, holding_costs, shortage_costs)
+    
     # este
         # print("\n\n" + "\033[4m" + "Final costs" + "\033[0m")
         # print("Total cost:", round(final_tot, 2))
