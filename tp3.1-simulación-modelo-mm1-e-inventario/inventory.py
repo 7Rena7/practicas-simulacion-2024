@@ -169,7 +169,7 @@ def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
     policies = []
 
     for small, big in zip(smallsArray, bigsArray):
-        policy = f"Policy: {small}-{big}"
+        policy = f"{small}-{big}"
         policies.append(policy)
 
     # Configuración de la gráfica de barras
@@ -197,6 +197,25 @@ def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
 
     # Mostrar la gráfica
     plt.show()
+
+def time_cost_graphs(months, total_costs, ordering_costs, holding_costs, shortage_costs):
+    
+    plt.figure(figsize=(10, 6))
+    plt.plot(range(1, months+1), total_costs, marker='o', linestyle='-', label='Total Costs')
+    plt.plot(range(1, months+1), ordering_costs, marker='s', linestyle='--', label='Ordering Costs')
+    plt.plot(range(1, months+1), holding_costs, marker='^', linestyle='--', label='Holding Costs')
+    plt.plot(range(1, months+1), shortage_costs, marker='d', linestyle='--', label='Shortage Costs')
+
+    plt.xlabel('Meses')
+    plt.ylabel('Valor')
+    plt.title('Variación de costos a lo largo del tiempo')
+    plt.legend()
+
+    # ValueError: x and y must have same first dimension, but have shapes (8,) and (9,)
+
+    # Mostrar la gráfica
+    plt.show()
+
 
 
 
@@ -297,6 +316,8 @@ def main():
                 
     cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
     cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
+    time_cost_graphs(num_months, total_costs, ordering_costs, holding_costs, shortage_costs)
+    
     # este
         # print("\n\n" + "\033[4m" + "Final costs" + "\033[0m")
         # print("Total cost:", round(final_tot, 2))
