@@ -10,7 +10,6 @@ inv_level = 0
 next_event_type = 0
 num_events = 0
 num_months = 0
-num_values_demand = 0
 smalls = 0
 area_holding = 0.0
 area_shortage = 0.0
@@ -215,7 +214,6 @@ def time_cost_graphs(months, total_costs, ordering_costs, holding_costs, shortag
 
 
 
-
 def update_time_avg_stats():
     global area_holding, area_shortage, time_last_event
 
@@ -230,6 +228,7 @@ def update_time_avg_stats():
 def timing():
     global sim_time, next_event_type
 
+
     next_event = min(time_next_event[1:5])
     next_event_type = time_next_event[1:5].index(next_event) + 1
 
@@ -239,8 +238,27 @@ def timing():
 
     sim_time = next_event
 
+
+def timing():
+    global sim_time, next_event_type, time_next_event, num_events
+
+    # Determina el siguiente tipo de evento y avanza el reloj de simulación
+    min_time_next_event = 1.0e+30
+    next_event_type = 0
+    for i in range(1, num_events + 1):
+        if time_next_event[i] < min_time_next_event:
+            min_time_next_event = time_next_event[i]
+            next_event_type = i
+        
+    if next_event_type == 0:
+        print("Event list empty at time {}".format(sim_time))
+        exit(1)
+
+    sim_time = min_time_next_event
+
 def main():
-    global initial_inv_level, num_months, num_values_demand, mean_interdemand
+
+    global initial_inv_level, num_months, mean_interdemand
     global setup_cost, incremental_cost, holding_cost, shortage_cost, minlag
     global maxlag, prob_distrib_demand, num_events, smalls, bigs
 
@@ -250,8 +268,6 @@ def main():
         num_events = 4
         initial_inv_level = data["initial_inv_level"]
         num_months = data["num_months"]
-        num_policies = data["num_policies"]
-        num_values_demand = data["num_values_demand"]
         mean_interdemand = data["mean_interdemand"]
         setup_cost = data["setup_cost"]
         incremental_cost = data["incremental_cost"]
@@ -265,17 +281,13 @@ def main():
 
         outfile.write("# Single-product inventory system\n\n")
         outfile.write(f"**Initial inventory level**: {initial_inv_level} items\n\n")
-        outfile.write(f"**Number of demand sizes**: {num_values_demand}\n\n")
-        outfile.write("**Distribution function of demand sizes**:  ")
-        numbers = []
-        for i in range(1, int(num_values_demand) + 1):
-            numbers.append(str(prob_distrib_demand[i]))
-        outfile.write("   ".join(numbers) + "\n\n")
+        outfile.write(f"**Number of demand sizes**: {len(prob_distrib_demand)}\n\n")  
+        outfile.write("**Distribution function of demand sizes**:  "+" ".join([str(prob_distr) for prob_distr in prob_distrib_demand])+"\n\n")
         outfile.write(f"**Mean interdemand time**: {mean_interdemand:.2f} months\n\n")
         outfile.write(f"**Delivery lag range**: {minlag:.2f} to {maxlag:.2f} months\n\n")
         outfile.write(f"**Length of the simulation**: {num_months} months\n\n")
         outfile.write(f"K = {setup_cost:.1f}, i = {incremental_cost:.1f}, h = {holding_cost:.1f}, pi = {shortage_cost:.1f}\n\n")
-        outfile.write(f"**Number of policies**: {num_policies}\n\n")
+        outfile.write(f"**Number of policies**: {len(policies)}\n\n")
         outfile.write("| Policy | Average total cost | Average ordering cost | Average holding cost | Average shortage cost |\n")
         outfile.write("|--------|--------------------|-----------------------|----------------------|-----------------------|\n")
 
@@ -316,18 +328,10 @@ def main():
 
 
                 
-    cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
-    cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
-    time_cost_graphs(num_months, total_costs, ordering_costs, holding_costs, shortage_costs)
-
-
-    # outfile.write("|--------|--------------------|-----------------------|----------------------|-----------------------|\n")
-    # este
-        # print("\n\n" + "\033[4m" + "Final costs" + "\033[0m")
-        # print("Total cost:", round(final_tot, 2))
-        # print("Ordering cost:", round(final_ordering, 2))
-        # print("Holding cost:", round(final_holding, 2))
-        # print("Shortage cost:", round(final_shortage, 2))
+    # cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
+    # cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
+    # time_cost_graphs(num_months, total_costs, ordering_costs, holding_costs, shortage_costs)
+ 
 
 if __name__ == "__main__":
     main()
