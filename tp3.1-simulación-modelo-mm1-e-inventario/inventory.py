@@ -92,7 +92,7 @@ def evaluate():
         time_next_event[1] = sim_time + uniform(minlag, maxlag)
     time_next_event[4] = sim_time + 1.0
 
-def report():
+def report(outfile):
     global area_holding, area_shortage, total_ordering_cost, num_months, smalls, bigs, holding_cost, shortage_cost
     
     global final_tot, final_holding, final_shortage, final_ordering
@@ -104,13 +104,10 @@ def report():
     avg_holding_cost = holding_cost * area_holding / num_months
     avg_shortage_cost = shortage_cost * area_shortage / num_months
 
-    with open("readme.md", "a") as outfile:
-        outfile.write(f"| ({smalls},{bigs}) | {avg_ordering_cost + avg_holding_cost + avg_shortage_cost:15.2f} |"
-                        f" {avg_ordering_cost:15.2f} | {avg_holding_cost:15.2f} | {avg_shortage_cost:15.2f} |\n")
+    outfile.write(f"| ({smalls},{bigs}) | {avg_ordering_cost + avg_holding_cost + avg_shortage_cost:15.2f} |"
+                    f" {avg_ordering_cost:15.2f} | {avg_holding_cost:15.2f} | {avg_shortage_cost:15.2f} |\n")
 
-    print(f"({smalls},{bigs}){avg_ordering_cost + avg_holding_cost + avg_shortage_cost:15.2f}"
-          f"{avg_ordering_cost:15.2f}{avg_holding_cost:15.2f}{avg_shortage_cost:15.2f}")
-
+   
 
 # def inventory_history_chart...
 
@@ -304,7 +301,7 @@ def main():
                 # End of the simulation after n months
                 elif next_event_type == 3:
                     calculate_costs()
-                    report()
+                    report(outfile)
                 # Inventory evaluation (and possible ordering) at the beginning of a month
                 elif next_event_type == 4:
                     evaluate()
@@ -313,11 +310,18 @@ def main():
                     break
    
 
+
+    with open("readme.md", "a") as outfile:
+        outfile.write(f"| **Total** | {round(final_tot, 2)} |{round(final_ordering, 2)} | {round(final_holding, 2)} | {round(final_shortage, 2)} |\n")
+
+
                 
     cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
     cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
     time_cost_graphs(num_months, total_costs, ordering_costs, holding_costs, shortage_costs)
-    
+
+
+    # outfile.write("|--------|--------------------|-----------------------|----------------------|-----------------------|\n")
     # este
         # print("\n\n" + "\033[4m" + "Final costs" + "\033[0m")
         # print("Total cost:", round(final_tot, 2))
