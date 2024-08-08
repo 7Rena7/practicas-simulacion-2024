@@ -1,6 +1,8 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import math
+import random
 
 # Definición de variables globales
 amount = 0
@@ -31,6 +33,7 @@ final_tot = 0.0
 final_holding = 0.0
 final_shortage = 0.0
 final_ordering = 0.0
+
 total_costs = []
 ordering_costs = []
 holding_costs = []
@@ -39,6 +42,16 @@ tot_per_pol = []
 ord_per_pol = []
 hold_per_pol = []
 short_per_pol = []
+
+
+total_costs_per_run = []
+ordering_costs_per_run = []
+holding_costs_per_run = []
+shortage_costs_per_run = []
+tot_per_pol_per_run = []
+ord_per_pol_per_run = []
+hold_per_pol_per_run = []
+short_per_pol_per_run = []
 
 
 
@@ -57,18 +70,20 @@ def initialize():
     time_next_event[3] = num_months
     time_next_event[4] = 0.0
 
-def expon(mean):
-    return np.random.exponential(mean)
+def expon(mean): 
+    return -mean * math.log(random.random())
 
 def uniform(a, b):
-    return np.random.uniform(a, b)
+    return a + random.random() * (b - a)
 
 def random_integer(prob_distrib):
-    u = np.random.rand()
-    for i in range(1, len(prob_distrib)):
-        if u < prob_distrib[i]:
-            return i
-    return len(prob_distrib)
+    u = random.random()
+
+    # Retorna un entero aleatorio de acuerdo con la función de distribución acumulativa "prob_distrib"
+    i = 1
+    while u >= prob_distrib[i]:
+        i += 1
+    return i
 
 def order_arrival():
     global inv_level, amount, time_next_event
@@ -92,25 +107,6 @@ def evaluate():
     time_next_event[4] = sim_time + 1.0
 
 def report(outfile):
-    global area_holding, area_shortage, total_ordering_cost, num_months, smalls, bigs, holding_cost, shortage_cost
-    
-    global final_tot, final_holding, final_shortage, final_ordering
-    global total_costs, ordering_costs, holding_costs, shortage_costs
-    global tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
-
-
-    avg_ordering_cost = total_ordering_cost / num_months
-    avg_holding_cost = holding_cost * area_holding / num_months
-    avg_shortage_cost = shortage_cost * area_shortage / num_months
-
-    outfile.write(f"| ({smalls},{bigs}) | {avg_ordering_cost + avg_holding_cost + avg_shortage_cost:15.2f} |"
-                    f" {avg_ordering_cost:15.2f} | {avg_holding_cost:15.2f} | {avg_shortage_cost:15.2f} |\n")
-
-   
-
-# def inventory_history_chart...
-
-def calculate_costs():
     global area_holding, area_shortage, total_ordering_cost, num_months, smalls, bigs, holding_cost, shortage_cost
 
     global final_tot, final_holding, final_shortage, final_ordering
@@ -138,28 +134,39 @@ def calculate_costs():
     holding_costs.append(avg_holding_cost)
     shortage_costs.append(avg_shortage_cost)
 
-def cost_pie_chart(ordering_costs, holding_costs, shortage_costs, smallsArray, bigsArray):
-    
-    policies = []
 
-    for small, big in zip(smallsArray, bigsArray):
-        policy = f"Policy: {small}-{big}"
-        policies.append(policy)
-        policies = [...]
+    outfile.write(f"| ({smalls},{bigs}) | {avg_ordering_cost + avg_holding_cost + avg_shortage_cost:15.2f} |"
+                    f" {avg_ordering_cost:15.2f} | {avg_holding_cost:15.2f} | {avg_shortage_cost:15.2f} |\n")
 
+   
+
+# def inventory_history_chart...
+
+def calculate_costs():
+    pass
+
+def cost_pie_chart(ordering_cost, holding_cost, shortage_cost, policy):
     # Creación de la figura y los ejes
     fig, ax = plt.subplots()
 
+    # Colores personalizados para que coincidan con la gráfica de pastel
+    colors = ['#FFDD44', '#A4D144', '#FF4444']  # Amarillo, Verde, Rojo
+
     # Creación del gráfico de torta
-    labels = ['Ordering Cost', 'Holding Cost', 'Shortage Cost']
-    sizes = [ordering_costs, holding_costs, shortage_costs]
-    ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+    labels = ['Costo por pedido', 'Costo de mantenimiento', 'Costo por faltante']
+    sizes = [ordering_cost, holding_cost, shortage_cost]
+    total_cost = sum(sizes)
+    autopct = lambda p: f'{p:.1f}%\n({p * total_cost / 100:.2f})'
+
+    ax.pie(sizes, labels=labels, colors=colors, autopct=autopct, startangle=90)
 
     # Título de la gráfica
-    ax.set_title('Costos finales')
+    ax.set_title(f'Costos finales para la política {policy}')
 
-    # Mostrar la gráfica
-    plt.show()
+    # Guardar la gráfica
+    plt.savefig(f'./inventory-images/{policy}_python.png')
+    plt.close()
+
 
 def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray):
     policies = []
@@ -170,21 +177,26 @@ def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
 
     # Configuración de la gráfica de barras
     x = range(len(policies))
-    width = 0.2              # Ancho de las barras
+    width = 0.2  # Ancho de las barras
 
     # Creación de la figura y los ejes
     fig, ax = plt.subplots()
 
-    # Creación de las barras para cada tipo de costo
-    bar1 = ax.bar(x, tot_per_pol, width, label='Total Cost')
-    bar2 = ax.bar([i + width for i in x], ord_per_pol, width, label='Ordering Cost')
-    bar3 = ax.bar([i + 2*width for i in x], hold_per_pol, width, label='Holding Cost')
-    bar4 = ax.bar([i + 3*width for i in x], short_per_pol, width, label='Shortage Cost')
+    # Colores personalizados para que coincidan con la gráfica de pastel
+    color_order = '#FFDD44'  # Amarillo
+    color_maintenance = '#A4D144'  # Verde
+    color_shortage = '#FF4444'  # Rojo
+
+    # Creación de las barras para cada tipo de costo con los colores especificados
+    ax.bar(x, tot_per_pol, width, label='Costo Total', color='lightblue')
+    ax.bar([i + width for i in x], ord_per_pol, width, label='Costo por pedido', color=color_order)
+    ax.bar([i + 2*width for i in x], hold_per_pol, width, label='Costo por mantenimiento', color=color_maintenance)
+    ax.bar([i + 3*width for i in x], short_per_pol, width, label='Costo por faltante', color=color_shortage)
 
     # Etiquetas de los ejes y título de la gráfica
     ax.set_xlabel('Políticas de inventario')
     ax.set_ylabel('Valor')
-    ax.set_title('Desgloce de costos por política de inventario')
+    ax.set_title('Costos por política de inventario')
     ax.set_xticks([i + 1.5*width for i in x])
     ax.set_xticklabels(policies)
 
@@ -193,50 +205,19 @@ def cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol
 
     # Mostrar la gráfica
     plt.show()
-
-def time_cost_graphs(months, total_costs, ordering_costs, holding_costs, shortage_costs):
-    
-    plt.figure(figsize=(10, 6))
-    plt.plot(range(1, months+1), total_costs, marker='o', linestyle='-', label='Total Costs')
-    plt.plot(range(1, months+1), ordering_costs, marker='s', linestyle='--', label='Ordering Costs')
-    plt.plot(range(1, months+1), holding_costs, marker='^', linestyle='--', label='Holding Costs')
-    plt.plot(range(1, months+1), shortage_costs, marker='d', linestyle='--', label='Shortage Costs')
-
-    plt.xlabel('Meses')
-    plt.ylabel('Valor')
-    plt.title('Variación de costos a lo largo del tiempo')
-    plt.legend()
-
-    # ValueError: x and y must have same first dimension, but have shapes (8,) and (9,)
-
-    # Mostrar la gráfica
-    plt.show()
-
-
+ 
 
 def update_time_avg_stats():
-    global area_holding, area_shortage, time_last_event
-
+    global sim_time, time_last_event, inv_level, area_shortage, area_holding
+ 
     time_since_last_event = sim_time - time_last_event
     time_last_event = sim_time
 
+ 
     if inv_level < 0:
         area_shortage -= inv_level * time_since_last_event
     elif inv_level > 0:
         area_holding += inv_level * time_since_last_event
-
-def timing():
-    global sim_time, next_event_type
-
-
-    next_event = min(time_next_event[1:5])
-    next_event_type = time_next_event[1:5].index(next_event) + 1
-
-    if next_event < sim_time:
-        print(f"\nAttempt to schedule event type {next_event_type} for time {next_event} at time {sim_time}")
-        exit(1)
-
-    sim_time = next_event
 
 
 def timing():
@@ -257,7 +238,6 @@ def timing():
     sim_time = min_time_next_event
 
 def main():
-
     global initial_inv_level, num_months, mean_interdemand
     global setup_cost, incremental_cost, holding_cost, shortage_cost, minlag
     global maxlag, prob_distrib_demand, num_events, smalls, bigs
@@ -295,15 +275,19 @@ def main():
         bigsArray = []
 
         for policy in policies:
+            # for i in range (1,10):
+            #     pass
             smalls = policy["smalls"]
             bigs = policy["bigs"]
             smallsArray.append(smalls)
+            print(smalls,bigs)
             bigsArray.append(bigs)
             initialize()
  
             while True:
                 timing()
                 update_time_avg_stats()
+
                 # Arrival of an order to the company from the supplier
                 if next_event_type == 1:
                     order_arrival()
@@ -314,13 +298,10 @@ def main():
                 elif next_event_type == 3:
                     calculate_costs()
                     report(outfile)
+                    break
                 # Inventory evaluation (and possible ordering) at the beginning of a month
                 elif next_event_type == 4:
                     evaluate()
-                
-                if next_event_type == 3:
-                    break
-   
 
 
     with open("readme.md", "a") as outfile:
@@ -328,10 +309,8 @@ def main():
 
 
                 
-    # cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
-    # cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
-    # time_cost_graphs(num_months, total_costs, ordering_costs, holding_costs, shortage_costs)
+    cost_pie_chart(final_ordering, final_holding, final_shortage, smallsArray, bigsArray)
+    cost_per_policy_graphs(tot_per_pol, ord_per_pol, hold_per_pol, short_per_pol, smallsArray, bigsArray)
  
-
 if __name__ == "__main__":
     main()
