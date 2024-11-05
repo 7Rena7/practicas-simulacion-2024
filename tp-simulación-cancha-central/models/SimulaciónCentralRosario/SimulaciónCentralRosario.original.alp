@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 *************************************************
-	         AnyLogic Project File
-*************************************************
+	         AnyLogic Project File 
+*************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.9.2.202410172112" AlpVersion="8.9.2">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.9.0.202404161236" AlpVersion="8.9.0">
 <Model>
 	<Id>1730651775673</Id>
 	<Name><![CDATA[SimulaciónCentralRosario]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[simulacióncentralrosario]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Second]]></ModelTimeUnit>
-	
-	<Folders>
-		
-	</Folders>
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
@@ -72,7 +68,9 @@
 					<RowsCountCode><![CDATA[100]]></RowsCountCode>
 					<NeigborhoodType>MOORE</NeigborhoodType>
 					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
 					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
 					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
 					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
 					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
@@ -131,143 +129,6 @@
 				</AgentLink>
 			</AgentLinks>
 
-			<EmbeddedObjects>
-				<EmbeddedObject>
-					<Id>1730840803070</Id>
-					<Name><![CDATA[pedSource]]></Name>
-					<X>1880</X><Y>-400</Y>
-					<Label><X>-15</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedSource]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-							<ClassName><![CDATA[PedSource]]></ClassName>
-							<ItemName><![CDATA[1412464601074]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[locationType]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationLine]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[level]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationX]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationY]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationNode]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[arrivalType]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[interarrivalTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rateSchedule]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modifyRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rateExpression]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[arrivalSchedule]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitArrivals]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxArrivals]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[newPed]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[comfortableSpeed]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialSpeed]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[diameter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[createGroups]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[groupSize]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[groupMemberInterarrivalTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[groupFormation]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[serviceGroupBehavior]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[solidCancelling]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[addToCustomPopulation]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[population]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExit]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onBeginGrouping]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEndGrouping]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>XYZ</InitialLocationType>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-			</EmbeddedObjects>
 
 			<Presentation>
 				<Level>
@@ -286,7 +147,7 @@
 				<Control Type="Window3D">
 					<Id>1730652216010</Id>
 					<Name><![CDATA[window3d]]></Name>
-					<X>300</X><Y>-840</Y>
+					<X>40</X><Y>0</Y>
 					<Width>1040</Width>
 					<Height>610</Height>
 					<MakeDefaultViewArea>true</MakeDefaultViewArea>
@@ -295,79 +156,90 @@
 					<FollowCamera>false</FollowCamera>
 					<NavigationType>full</NavigationType>
 					<FarClippingDistance>2000</FarClippingDistance>
-					<Camera>camera</Camera>
+					<Camera>camera1</Camera>
 				</Control>
 				<Camera3D>
 					<Id>1730652220948</Id>
 					<Name><![CDATA[camera]]></Name>
-					<X>1160</X><Y>1320</Y><Z>100</Z>
+					<X>-100</X><Y>0</Y><Z>100</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ShowLabel>false</ShowLabel>
 					<RotationX>20.0</RotationX>
 					<RotationZ>0.0</RotationZ>
 				</Camera3D>
-				<Camera3D>
-					<Id>1730654034085</Id>
-					<Name><![CDATA[camera1]]></Name>
-					<X>-22880</X><Y>-36560</Y><Z>200</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ShowLabel>false</ShowLabel>
-					<RotationX>0.0</RotationX>
-					<RotationZ>335.0</RotationZ>
-				</Camera3D>
-				<TargetLine>
-					<Id>1730839275691</Id>
-					<Name><![CDATA[targetLine]]></Name>
-					<X>-320</X><Y>360</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-16744448</LineColor>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>260</X><Y>0</Y></Point>
-					</Points>
-				</TargetLine>
-				<Image>
-					<Id>1730839786573</Id>
-					<Name><![CDATA[image1]]></Name>
-					<X>0</X><Y>20</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Width>6400</Width>
-					<Height>5380</Height>
-					<Rotation>0.0</Rotation>
-					<ImageFiles>
-						<ImageResourceReference>
-							<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
-							<ClassName><![CDATA[Estadio Central Satelite Mapa.png]]></ClassName>
-						</ImageResourceReference>
-						<ImageResourceReference>
-							<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
-							<ClassName><![CDATA[Estadio Central.png]]></ClassName>
-						</ImageResourceReference>
-					</ImageFiles>
-					<OriginalSize>false</OriginalSize>
-				</Image>
 				<Figure3D>
-					<Id>1730840322902</Id>
-					<Name><![CDATA[person]]></Name>
-					<X>1320</X><Y>1320</Y>
+					<Id>1730652425126</Id>
+					<Name><![CDATA[cancha]]></Name>
+					<Description><![CDATA[Cancha central en Rosario
+]]></Description>
+					<X>0</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>1320</X><Y>1320</Y><Z>0</Z>
+					<X>0</X><Y>0</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/model.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<OriginalColor>-12171637</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-13262</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-5395027</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-3158065</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-12171172</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-79571</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-12673969</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-12039092</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-9068739</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-9068995</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<OriginalColor>-8816263</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
+				<Figure3D>
+					<Id>1730653052656</Id>
+					<Name><![CDATA[person1]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
@@ -407,158 +279,22 @@
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
-				<Wall>
-					<Id>1730840589790</Id>
-					<Name><![CDATA[wall2]]></Name>
-					<X>2560</X><Y>1640</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
+				<Camera3D>
+					<Id>1730654034085</Id>
+					<Name><![CDATA[camera1]]></Name>
+					<X>-22880</X><Y>-36560</Y><Z>200</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
 					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-3308225</LineColor>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
-					<Closed>false</Closed>
-					<Points>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-25</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>1000</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>975</Y><Z>0</Z></Point>
-						<Point><X>25</X><Y>1000</Y><Z>0</Z></Point>
-						<Point><X>1080</X><Y>1000</Y><Z>0</Z></Point>
-						<Point><X>1055</X><Y>1000</Y><Z>0</Z></Point>
-						<Point><X>1080</X><Y>975</Y><Z>0</Z></Point>
-						<Point><X>1080</X><Y>-40</Y><Z>0</Z></Point>
-						<Point><X>1080</X><Y>-15</Y><Z>0</Z></Point>
-						<Point><X>1055.017</X><Y>-39.075</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>24.983</X><Y>-0.925</Y><Z>0</Z></Point>
-						<Point><X>1060</X><Y>-40</Y><Z>0</Z></Point>
-					</Points>
-				</Wall>
-				<RectangleWall>
-					<Id>1730840620041</Id>
-					<Name><![CDATA[wall]]></Name>
-					<X>1424</X><Y>504</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-3308225</LineColor>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
-					<Rotation>0.0</Rotation>
-					<Width>920</Width>
-					<Height>960</Height>
-				</RectangleWall>
-				<RectangleWall>
-					<Id>1730840639968</Id>
-					<Name><![CDATA[wall1]]></Name>
-					<X>2640</X><Y>1680</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-3308225</LineColor>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
-					<Rotation>0.0</Rotation>
-					<Width>920</Width>
-					<Height>960</Height>
-				</RectangleWall>
-				<RectangleWall>
-					<Id>1730840646376</Id>
-					<Name><![CDATA[wall3]]></Name>
-					<X>1440</X><Y>1680</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-3308225</LineColor>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
-					<Rotation>0.0</Rotation>
-					<Width>920</Width>
-					<Height>960</Height>
-				</RectangleWall>
-				<RectangleWall>
-					<Id>1730840648770</Id>
-					<Name><![CDATA[wall4]]></Name>
-					<X>2600</X><Y>520</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-3308225</LineColor>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
-					<Rotation>0.0</Rotation>
-					<Width>1000</Width>
-					<Height>520</Height>
-				</RectangleWall>
-				<RectangleWall>
-					<Id>1730840658713</Id>
-					<Name><![CDATA[wall5]]></Name>
-					<X>2600</X><Y>1160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-3308225</LineColor>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillingType>HATCHED_AREA</FillingType>
-					<ZHeight>20</ZHeight>
-					<Rotation>0.0</Rotation>
-					<Width>1000</Width>
-					<Height>360</Height>
-				</RectangleWall>
-				<TargetLine>
-					<Id>1730840691678</Id>
-					<Name><![CDATA[targetLine1]]></Name>
-					<X>2520</X><Y>640</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-16744448</LineColor>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-100</X><Y>0</Y></Point>
-					</Points>
-				</TargetLine>
+					<RotationX>0.0</RotationX>
+					<RotationZ>335.0</RotationZ>
+				</Camera3D>
 			</Presentation>
 
 				</Level>
 			</Presentation>
 
 		</ActiveObjectClass>
-	</ActiveObjectClasses>
+	</ActiveObjectClasses>	
 	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
 	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
 	<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
@@ -579,7 +315,7 @@
 		<ExportSettings>
 		</ExportSettings>
 	</Database>
-
+	
 	<RunConfiguration ActiveObjectClassId="1730651775676">
 		<Id>1730651775688</Id>
 		<Name><![CDATA[RunConfiguration]]></Name>
@@ -669,12 +405,7 @@
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
 		<Resource>
-			<Path><![CDATA[Estadio Central.png]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-			<Location>FILE_SYSTEM</Location>
-		</Resource>
-		<Resource>
-			<Path><![CDATA[Estadio Central Satelite Mapa.png]]></Path>
+			<Path><![CDATA[3d/model.dae]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
@@ -684,12 +415,6 @@
 		<VersionMajor>1</VersionMajor>
 		<VersionMinor>0</VersionMinor>
 		<VersionBuild>0</VersionBuild>
-    </RequiredLibraryReference>
-    <RequiredLibraryReference>
-		<LibraryName><![CDATA[com.anylogic.libraries.pedestrian]]></LibraryName>
-		<VersionMajor>8</VersionMajor>
-		<VersionMinor>0</VersionMinor>
-		<VersionBuild>5</VersionBuild>
     </RequiredLibraryReference>
 </Model>
 </AnyLogicWorkspace>
