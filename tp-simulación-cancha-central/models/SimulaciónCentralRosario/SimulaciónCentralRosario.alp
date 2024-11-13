@@ -109,6 +109,41 @@
 			</ScaleRuler>
 			<CurrentLevel>1730651775683</CurrentLevel>
 			<ConnectionsId>1730651775677</ConnectionsId>
+			<Connectors>
+				<Connector>
+					<Id>1730841261765</Id>
+					<Name><![CDATA[connector]]></Name>
+					<X>2205</X><Y>-480</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoTo]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSource]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSource]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-95</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+			</Connectors>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1730651775677</Id>
@@ -135,7 +170,7 @@
 				<EmbeddedObject>
 					<Id>1730840803070</Id>
 					<Name><![CDATA[pedSource]]></Name>
-					<X>1880</X><Y>-400</Y>
+					<X>2080</X><Y>-480</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -157,6 +192,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[locationLine]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[targetLine]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[level]]></Name>
@@ -267,6 +305,93 @@
 					<QuantityColumn>
 					</QuantityColumn>
 				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1730841259797</Id>
+					<Name><![CDATA[pedGoTo]]></Name>
+					<X>2205</X><Y>-490</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedGoTo]]></ClassName>
+							<ItemName><![CDATA[1412464601103]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLine]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[targetLine1]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[route]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[walkInReverseDirection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[reachTolerance]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
 			</EmbeddedObjects>
 
 			<Presentation>
@@ -315,22 +440,6 @@
 					<RotationX>0.0</RotationX>
 					<RotationZ>335.0</RotationZ>
 				</Camera3D>
-				<TargetLine>
-					<Id>1730839275691</Id>
-					<Name><![CDATA[targetLine]]></Name>
-					<X>-320</X><Y>360</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-16744448</LineColor>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>260</X><Y>0</Y></Point>
-					</Points>
-				</TargetLine>
 				<Image>
 					<Id>1730839786573</Id>
 					<Name><![CDATA[image1]]></Name>
@@ -463,7 +572,7 @@
 				<RectangleWall>
 					<Id>1730840639968</Id>
 					<Name><![CDATA[wall1]]></Name>
-					<X>2640</X><Y>1680</Y>
+					<X>2580</X><Y>1660</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -476,8 +585,8 @@
 					<FillingType>HATCHED_AREA</FillingType>
 					<ZHeight>20</ZHeight>
 					<Rotation>0.0</Rotation>
-					<Width>920</Width>
-					<Height>960</Height>
+					<Width>1020</Width>
+					<Height>980</Height>
 				</RectangleWall>
 				<RectangleWall>
 					<Id>1730840646376</Id>
@@ -501,7 +610,7 @@
 				<RectangleWall>
 					<Id>1730840648770</Id>
 					<Name><![CDATA[wall4]]></Name>
-					<X>2600</X><Y>520</Y>
+					<X>2560</X><Y>520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -514,13 +623,13 @@
 					<FillingType>HATCHED_AREA</FillingType>
 					<ZHeight>20</ZHeight>
 					<Rotation>0.0</Rotation>
-					<Width>1000</Width>
+					<Width>1040</Width>
 					<Height>520</Height>
 				</RectangleWall>
 				<RectangleWall>
 					<Id>1730840658713</Id>
 					<Name><![CDATA[wall5]]></Name>
-					<X>2600</X><Y>1160</Y>
+					<X>2560</X><Y>1160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -533,7 +642,7 @@
 					<FillingType>HATCHED_AREA</FillingType>
 					<ZHeight>20</ZHeight>
 					<Rotation>0.0</Rotation>
-					<Width>1000</Width>
+					<Width>1040</Width>
 					<Height>360</Height>
 				</RectangleWall>
 				<TargetLine>
@@ -550,6 +659,22 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-100</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1730841162956</Id>
+					<Name><![CDATA[targetLine]]></Name>
+					<X>3580</X><Y>2780</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-40</X><Y>10</Y></Point>
 					</Points>
 				</TargetLine>
 			</Presentation>
