@@ -1610,6 +1610,9 @@
 							<ClassName><![CDATA[PedService]]></ClassName>
 							<ItemName><![CDATA[1416228850252]]></ItemName>
 						</GenericParameterSubstituteReference>
+						<GenericParameterSubstituteValue Class="CodeValue">
+							<Code><![CDATA[hinchas]]></Code>
+						</GenericParameterSubstituteValue>
 					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
@@ -1789,16 +1792,22 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
 										<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
-										<ClassName><![CDATA[Hincha]]></ClassName>
+										<ClassName><![CDATA[hinchas]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
 											<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
-											<ClassName><![CDATA[Hincha]]></ClassName>
-											<ItemName><![CDATA[1732842777022]]></ItemName>
+											<ClassName><![CDATA[hinchas]]></ClassName>
+											<ItemName><![CDATA[1732843459765]]></ItemName>
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
+										<Parameter>
+											<Name><![CDATA[tiempoArribo]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[tiempoDeEspera]]></Name>
+										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
@@ -1991,16 +2000,22 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
 										<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
-										<ClassName><![CDATA[hincha]]></ClassName>
+										<ClassName><![CDATA[hinchas]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
 											<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
-											<ClassName><![CDATA[hincha]]></ClassName>
-											<ItemName><![CDATA[1732843350062]]></ItemName>
+											<ClassName><![CDATA[hinchas]]></ClassName>
+											<ItemName><![CDATA[1732843459765]]></ItemName>
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
+										<Parameter>
+											<Name><![CDATA[tiempoArribo]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[tiempoDeEspera]]></Name>
+										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
