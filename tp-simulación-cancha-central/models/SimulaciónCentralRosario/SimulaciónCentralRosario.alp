@@ -807,7 +807,7 @@
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[exponential(1)]]></Code>
+								<Code><![CDATA[weibull(0.5,0.03)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -852,6 +852,12 @@
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
+										<Parameter>
+											<Name><![CDATA[tiempoArribo]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[tiempoDeEspera]]></Name>
+										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
@@ -1757,7 +1763,7 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[exponential(1)]]></Code>
+								<Code><![CDATA[weibull(0.5,0.03)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -1965,7 +1971,7 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[exponential(1)]]></Code>
+								<Code><![CDATA[weibull(0.5,0.03)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -6562,7 +6568,7 @@ return apetitoMaximo * (L_t / (concentracionGrelina + L_t)) * Math.exp(-lambdaIn
 					<Body><![CDATA[this.nivelGlerina = 100 + 50 * Math.sin(2 * Math.PI * t / 24);
 this.nivelGlucosa = 5 + 0.5 * Math.sin(2 * Math.PI * (t - 4) / 24);
 
-this.calcularApetito()]]></Body>
+this.calcularApetito();]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
