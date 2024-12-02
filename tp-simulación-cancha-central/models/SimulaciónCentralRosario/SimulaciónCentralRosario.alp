@@ -200,6 +200,126 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733090961180</Id>
+					<Name><![CDATA[Ingresos1A]]></Name>
+					<X>1530</X><Y>-480</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733090976470</Id>
+					<Name><![CDATA[Ingresos1B]]></Name>
+					<X>1530</X><Y>-450</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733092285099</Id>
+					<Name><![CDATA[Pancho]]></Name>
+					<X>1370</X><Y>-830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[4000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733092285097</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733092304450</Id>
+					<Name><![CDATA[Hamburguesa]]></Name>
+					<X>1370</X><Y>-800</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[6500]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733092304448</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733092306020</Id>
+					<Name><![CDATA[Choripan]]></Name>
+					<X>1370</X><Y>-770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[6500]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733092306018</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733094699649</Id>
+					<Name><![CDATA[Gaseosa]]></Name>
+					<X>1370</X><Y>-740</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[4000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733094699647</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<Connectors>
 				<Connector>
@@ -757,6 +877,46 @@
     } else {
         return k * Math.exp(-b * (t - t_max));
     }]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[int]]></ReturnType>
+					<Id>1733094239310</Id>
+					<Name><![CDATA[elegirComidaAComprar]]></Name>
+					<Description><![CDATA[determina que comida va a comprar el hincha]]></Description>
+					<X>1520</X><Y>-830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[double choripan = 0.5;
+double pancho = 0.3;
+double hamburguesa = 0.4;
+
+Random rand = new Random();
+double randValue = rand.nextDouble();
+
+if (randValue < choripan) { 
+	return 1; // choripan
+} else if (randValue < choripan + pancho) { 
+	return 2; // pancho
+} else { 
+	return 3; // hamburguesa
+}]]></Body>
+				</Function>
+				<Function AccessType="public" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1733094251531</Id>
+					<Name><![CDATA[conBebida]]></Name>
+					<X>1520</X><Y>-800</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[Random rand = new Random(); 
+
+return rand.nextBoolean();]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
@@ -1688,7 +1848,10 @@
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[ped.tiempoArribo = time()]]></Code>
+								<Code><![CDATA[ped.tiempoArribo = time();
+
+ped.comidaElegida = elegirComidaAComprar();
+ped.incluyeBebida = conBebida();]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1699,13 +1862,37 @@
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
  
-TiempoEsperaVenta1B += time() - ped.tiempoArribo;
-
-]]></Code>
+TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[int valorComida = 0;
+
+if(ped.incluyeBebida) {
+	valorComida += Gaseosa;
+	System.out.println("Eligio bebida");
+}
+
+System.out.println("Comida elegida " + ped.comidaElegida);
+
+switch(ped.comidaElegida) {
+	case 1:
+		valorComida = Choripan;
+		break;
+	case 2:
+		valorComida = Pancho;
+		break;
+	case 3:
+		valorComida = Hamburguesa;
+		break;
+	default:
+		break;
+}
+
+Ingresos1B += valorComida;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
@@ -2442,7 +2629,10 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[ped.tiempoArribo = time()]]></Code>
+								<Code><![CDATA[ped.tiempoArribo = time();
+
+ped.comidaElegida = elegirComidaAComprar();
+ped.incluyeBebida = conBebida();]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2453,6 +2643,32 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onBeginService]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[int valorComida = 0;
+
+if(ped.incluyeBebida) {
+	valorComida += Gaseosa;
+	System.out.println("Eligio bebida");
+}
+
+System.out.println("Comida elegida " + ped.comidaElegida);
+
+switch(ped.comidaElegida) {
+	case 1:
+		valorComida = Choripan;
+		break;
+	case 2:
+		valorComida = Pancho;
+		break;
+	case 3:
+		valorComida = Hamburguesa;
+		break;
+	default:
+		break;
+}
+
+Ingresos1A += valorComida;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
@@ -6041,6 +6257,33 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
 			<CurrentLevel>1732843459766</CurrentLevel>
 			<ConnectionsId>1732843459760</ConnectionsId>
 			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1733092622453</Id>
+					<Name><![CDATA[comidaElegida]]></Name>
+					<X>40</X><Y>130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733092633535</Id>
+					<Name><![CDATA[incluyeBebida]]></Name>
+					<X>40</X><Y>160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1732843590274</Id>
 					<Name><![CDATA[tiempoArribo]]></Name>
@@ -6271,6 +6514,18 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
 			</Presentation>
 
 			<Parameters>
+				<Parameter>
+					<ParameterName><![CDATA[Pancho]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Hamburguesa]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Choripan]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Gaseosa]]></ParameterName>
+				</Parameter>
 			</Parameters>
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
