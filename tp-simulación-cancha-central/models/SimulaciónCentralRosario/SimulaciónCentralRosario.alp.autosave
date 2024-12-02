@@ -914,11 +914,14 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[addToCustomPopulation]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[population]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[hinchas]]></Code>
+								<Code><![CDATA[hinchases]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -934,7 +937,7 @@
 							<Name><![CDATA[onEndGrouping]]></Name>
 						</Parameter>
 					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
+					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
 						<Code><![CDATA[100]]></Code>
 					</Replication>
@@ -1874,11 +1877,14 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[addToCustomPopulation]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[population]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[hinchas]]></Code>
+								<Code><![CDATA[hinchases]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1894,7 +1900,7 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 							<Name><![CDATA[onEndGrouping]]></Name>
 						</Parameter>
 					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
+					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
 						<Code><![CDATA[100]]></Code>
 					</Replication>
@@ -1909,7 +1915,7 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationType>EMPTY</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<TableReference>
 						</TableReference>
@@ -2078,11 +2084,14 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[addToCustomPopulation]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[population]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[hinchas]]></Code>
+								<Code><![CDATA[hinchases]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2098,7 +2107,7 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 							<Name><![CDATA[onEndGrouping]]></Name>
 						</Parameter>
 					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
+					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
 						<Code><![CDATA[100]]></Code>
 					</Replication>
@@ -2666,6 +2675,74 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
 					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733097345644</Id>
+					<Name><![CDATA[hinchases]]></Name>
+					<X>1480</X><Y>-830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<PresentationId>1733097345646</PresentationId>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[hinchas]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+							<ClassName><![CDATA[hinchas]]></ClassName>
+							<ItemName><![CDATA[1732843459765]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[tiempoArribo]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[tiempoDeEspera]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>true</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<StatisticsItem>
+						<Id>1733097352018</Id>
+						<Name><![CDATA[consumidoresPotenciales]]></Name>
+						<Type>count</Type>
+						<Expression><![CDATA[]]></Expression>
+						<Condition><![CDATA[agent.inState(hinchas.QuiereComprar)]]></Condition>
+					</StatisticsItem>
+					<InEnvironment>true</InEnvironment>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>EMPTY</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<TableReference>
 						</TableReference>
@@ -6029,9 +6106,88 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>HH_mm_ss</LabelFormat>
     			</TimePlot>
+    			<TimeStackChart>
+					<Id>1733096814062</Id>
+					<Name><![CDATA[chart]]></Name>
+					<X>1090</X><Y>-1330</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1733126400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowExpression><![CDATA[100]]></TimeWindowExpression>
+					<DatasetExpression>
+					<Id>1733096814555</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-60269</Color>
+					<Expression2><![CDATA[hinchases.consumidoresPotenciales()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+							<Title><![CDATA[Consumidores potenciales]]></Title>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimeStackChart>
 			</Presentation>
 
 				</Level>
+				<EmbeddedObjectPresentation>
+					<Id>1733097345646</Id>
+					<Name><![CDATA[hinchases_presentation]]></Name>
+					<X>1580</X><Y>-830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
+				</EmbeddedObjectPresentation>
 			</Presentation>
 			<Areas>
 				<Area>
@@ -6180,6 +6336,9 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -6193,6 +6352,9 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -6206,6 +6368,9 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -6219,6 +6384,9 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -6232,6 +6400,9 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -6246,6 +6417,22 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[300]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733093934549</Id>
+					<Name><![CDATA[chi_intake]]></Name>
+					<Description><![CDATA[Nivel inicial de apetito (unidades arbitrarias)]]></Description>
+					<X>40</X><Y>310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -6324,6 +6511,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
+						<Action><![CDATA[this.calcularApetito()]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -6374,6 +6562,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 						<Point><X>0</X><Y>60</Y></Point>
 					</Points>
 					<Properties Target="1732923909929">
+						<Action><![CDATA[this.randomApetito()]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
@@ -6394,7 +6583,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[!this.yaConsumioComida]]></Condition>
+						<Condition><![CDATA[this.tieneApetito()]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
@@ -6430,7 +6619,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
-						<DefaultTransition>false</DefaultTransition>
+						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
 						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
@@ -6452,7 +6641,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<Properties Source="1732924130037" Target="1732924260412" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -6490,7 +6679,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
 						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
-						<DefaultTransition>false</DefaultTransition>
+						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
 						<EqualsExpression><![CDATA["text"]]></EqualsExpression>
 						<SatisfiesExpression><![CDATA[true]]></SatisfiesExpression>
@@ -6542,7 +6731,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<Properties Source="1732924175490" Target="1732923909929" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -6572,7 +6761,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<Properties Source="1732922579958" Target="1732924175490" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
@@ -6593,18 +6782,75 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1732923553557</Id>
 					<Name><![CDATA[calcularApetito]]></Name>
-					<X>40</X><Y>440</Y>
+					<X>40</X><Y>530</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[// Parámetros del modelo
+int t = getHour()*60 + getMinute()*60 +getSecond();
+
+double k_max_LS = 4.16;       // Tasa máxima de producción de grelina (en pM/min)
+double lambda_LS = 0.00462;   // Tasa de disminución de la secreción de grelina en función del contenido gástrico (1/g)
+double k_XL = 0.02;           // Tasa de eliminación de grelina del torrente sanguíneo (1/min)
+double k_XG = 0.0072;         // Tasa aparente de eliminación de glucosa en condiciones normales (1/min)
+double k_XGE = 0.0036;        // Tasa adicional de eliminación de glucosa durante actividad física (1/min)
+double k_G = 0.4464;          // Tasa constante de entrada de glucosa en plasma desde el hígado (mmol/min)
+double rho_GS = 0.9;          // Fracción de glucosa en los alimentos que es realmente absorbida por el intestino
+double eta_G = 0.2;           // Contribución de los alimentos al nivel de glucosa en sangre (g glucosa/g alimento)
+double V_G = 12.4;            // Volumen de distribución de la glucosa en el cuerpo (litros)
+double A_max = 50;            // Valor máximo de apetito en unidades arbitrarias
+double L_A50 = 120;           // Concentración de grelina en plasma cuando el apetito alcanza el 50% de su máximo (pM)
+double lambda_AG = 0.3;       // Factor que representa la reducción del apetito debido a un aumento en la glucosa (1/mM)
+double k_XS = 0.0154;         // Tasa de vaciamiento gástrico (1/min)
+double k_S = 16.5;            // Tasa de ingesta de alimentos cuando la persona está comiendo (g/min)
+double S_50 = 150;            // Contenido gástrico al cual la secreción de grelina se reduce al 50% de su máximo (g)
+double L_ss = 178;            // Nivel de grelina en estado estable durante el ayuno (pM)
+double G_ss = 5;              // Concentración de glucosa en estado estable en condiciones normales (mM)
+
+// Configuración de simulación
+double t_start = 17 * 60;  // Inicio del día en minutos
+double t_end = 22 * 60;    // Fin del día en minutos
+double dt = 1;   
+
+// Horarios de comida en minutos desde la medianoche
+List<Integer> meal_times = Arrays.asList(8 * 60, 13 * 60, 18 * 60);
+    
+// Duración de cada comida en minutos
+int meal_duration = 30;
+
+int H = habitos(t, meal_times, meal_duration); // Hábitos alimenticios
+
+// Apetito
+A = A_max * (L / (L_A50 + L)) * Math.exp(-lambda_AG * G);
+
+// Estado de ingesta
+chi_intake = (H == 1 || A > 200) ? 1 : 0;  // Se come si hay hábito o el apetito es alto
+
+// Grelina
+double dL = k_max_LS * Math.exp(-lambda_LS * S) - k_XL * L;
+L += dL * dt;
+
+// Glucosa
+double dG = -(k_XG + k_XGE * E) * G + (k_G + k_XS * eta_G * rho_GS * S) / V_G;
+G += dG * dt;
+
+// Contenido gástrico
+double dS = -k_XS * S + k_S * chi_intake;
+S += dS * dt;
+if (S < 0) {
+    S = 0;
+}
+
+
+]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1732923837026</Id>
 					<Name><![CDATA[randomApetito]]></Name>
-					<X>40</X><Y>410</Y>
+					<X>40</X><Y>500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6621,7 +6867,7 @@ S = initial_state.equals("fed") ? 200 : 0;
 					<ReturnType><![CDATA[boolean]]></ReturnType>
 					<Id>1732924454016</Id>
 					<Name><![CDATA[quiereHacerFilaParaComprarComida]]></Name>
-					<X>40</X><Y>470</Y>
+					<X>40</X><Y>560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6635,14 +6881,63 @@ return true;
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[boolean]]></ReturnType>
-					<Id>1733012434526</Id>
-					<Name><![CDATA[tieneHambre]]></Name>
-					<X>40</X><Y>380</Y>
+					<ReturnType><![CDATA[int]]></ReturnType>
+					<Id>1733092870847</Id>
+					<Name><![CDATA[habitos]]></Name>
+					<X>40</X><Y>400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[mealDuration]]></Name>
+						<Type><![CDATA[int ]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[mealTimes]]></Name>
+						<Type><![CDATA[List<Integer>]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[t]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Body><![CDATA[int timeOfDay = t % 1440; // Obtener el tiempo del día en minutos
+for (int mealTime : mealTimes) {
+    if (mealTime <= timeOfDay && timeOfDay < (mealTime + mealDuration)) {
+        return 1; // Indica que es hora de comer
+    }
+}
+return 0; // No es hora de comer]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1733094716145</Id>
+					<Name><![CDATA[tieneApetito]]></Name>
+					<X>40</X><Y>470</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[int t = getHour()*60 + getMinute()*60 +getSecond();
+
+System.out.println("-- tiempo:"+t+" | "+A);
+if(A >= 200){
+	return true;
+}
+return false;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1733100027933</Id>
+					<Name><![CDATA[acabaDeConsumirComida]]></Name>
+					<X>40</X><Y>420</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[chi_intake = 1;]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
@@ -6672,6 +6967,21 @@ return true;
 				</AgentLink>
 			</AgentLinks>
 
+			<ContainerLinks>
+				<ContainerLink>
+					<Id>1733097345647</Id>
+					<Name><![CDATA[main]]></Name>
+					<X>50</X><Y>-100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+					</ActiveObjectClass>
+				</ContainerLink>
+			</ContainerLinks>
 
 			<Presentation>
 				<Level>
@@ -6762,6 +7072,74 @@ return true;
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+    			<TimeStackChart>
+					<Id>1733098281826</Id>
+					<Name><![CDATA[chart]]></Name>
+					<X>360</X><Y>370</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1733126400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowExpression><![CDATA[100]]></TimeWindowExpression>
+					<DatasetExpression>
+					<Id>1733098284711</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-2448096</Color>
+					<Expression2><![CDATA[A]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+							<Title><![CDATA[Nivel de apetito]]></Title>
+					</DatasetExpression>
+					<DatasetExpression>
+					<Id>1733098552371</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-9728477</Color>
+					<Expression2><![CDATA[chi_intake]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+							<Title><![CDATA[chi intake]]></Title>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<VerScaleType>AUTO</VerScaleType>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimeStackChart>
 			</Presentation>
 
 				</Level>
