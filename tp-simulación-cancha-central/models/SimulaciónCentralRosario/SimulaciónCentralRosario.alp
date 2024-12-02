@@ -998,6 +998,12 @@
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
+										<Parameter>
+											<Name><![CDATA[tiempoArribo]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[tiempoDeEspera]]></Name>
+										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
@@ -1832,7 +1838,9 @@
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
  
-TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
+TiempoEsperaVenta1B += time() - ped.tiempoArribo;
+
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2432,6 +2440,7 @@ TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[type]]></Name>
+
 							<Value Class="CodeValue">
 								<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
 							</Value>
@@ -2626,6 +2635,11 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
+
+TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onCancel]]></Name>
@@ -4675,7 +4689,7 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 </Figure3D>
 				<ServiceWithArea>
-					<ServiceColor>-16744448</ServiceColor>
+					<ServiceColor>-16711936</ServiceColor>
 					<Id>1732832915418</Id>
 					<Name><![CDATA[services_1_local_abajo]]></Name>
 					<X>3808.404</X><Y>2760.538</Y>
@@ -6053,14 +6067,80 @@ TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>HH_mm_ss</LabelFormat>
     			</TimePlot>
-				<Text>
-					<Id>1733007164179</Id>
-					<Name><![CDATA[text]]></Name>
-					<X>1700</X><Y>-410</Y>
+    			<BarChart>
+					<Id>1733006911395</Id>
+					<Name><![CDATA[TasasDeUtilizacionDePuntosDeVenta]]></Name>
+					<X>300</X><Y>-1420</Y>
+                    
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1733040000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>540</Width>
+					<Height>310</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>460</Width>
+						<Height>220</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Id>1733006912651</Id>
+					<Expression><![CDATA[CantidadDeVentas1A]]></Expression>
+					<Color>-12799119</Color>
+						<Title><![CDATA[PV 1A]]></Title>
+					</DataItem>
+					<DataItem>
+					<Id>1733007394800</Id>
+					<Expression><![CDATA[CantidadDeVentas1B]]></Expression>
+					<Color>-9807155</Color>
+						<Title><![CDATA[PV 1B]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[100]]></ScaleToExpression>
+					<ScaleType>HUNDRED_PERCENTS</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+    			</BarChart>
+            
+            
+
+ 
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+ 				<Text>
+					<Id>1733007164179</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>1700</X><Y>-410</Y>
 					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
