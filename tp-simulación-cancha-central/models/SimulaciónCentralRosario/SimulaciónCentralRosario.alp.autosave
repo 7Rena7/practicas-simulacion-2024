@@ -2650,7 +2650,7 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A > 35]]></Code>
+								<Code><![CDATA[ped.tieneHabmre() && TamanioCola1A > 35]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
