@@ -433,7 +433,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-65</X><Y>0</Y></Point>
+						<Point><X>-70</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -533,13 +533,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>0</Y></Point>
+						<Point><X>-80</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732832333909</Id>
 					<Name><![CDATA[connector6]]></Name>
-					<X>2090</X><Y>-480</Y>
+					<X>2080</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -566,7 +566,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-60</X><Y>0</Y></Point>
+						<Point><X>-50</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -671,7 +671,7 @@
 				<Connector>
 					<Id>1732838939357</Id>
 					<Name><![CDATA[connector9]]></Name>
-					<X>1935</X><Y>-415</Y>
+					<X>1920</X><Y>-410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -698,13 +698,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>55</X><Y>-65</Y></Point>
+						<Point><X>70</X><Y>-70</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732838974827</Id>
 					<Name><![CDATA[connector11]]></Name>
-					<X>1955</X><Y>-540</Y>
+					<X>1920</X><Y>-550</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -731,7 +731,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>35</X><Y>60</Y></Point>
+						<Point><X>70</X><Y>70</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -972,7 +972,7 @@
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1732925137471</Id>
 					<Name><![CDATA[ingreso]]></Name>
-					<X>176.66666666666666</X><Y>36.666666666666664</Y>
+					<X>1520</X><Y>-770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1060,10 +1060,10 @@ return rand.nextBoolean();]]></Body>
 				<EmbeddedObject>
 					<Id>1730840803070</Id>
 					<Name><![CDATA[pedSourceEntrada1]]></Name>
-					<X>1895</X><Y>-480</Y>
+					<X>1890</X><Y>-480</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -1250,7 +1250,7 @@ return rand.nextBoolean();]]></Body>
 							<Name><![CDATA[onEndGrouping]]></Name>
 						</Parameter>
 					</Parameters>
-					<ReplicationFlag>true</ReplicationFlag>
+					<ReplicationFlag>false</ReplicationFlag>
 					<Replication Class="CodeValue">
 						<Code><![CDATA[100]]></Code>
 					</Replication>
@@ -1265,7 +1265,7 @@ return rand.nextBoolean();]]></Body>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationType>EMPTY</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<TableReference>
 						</TableReference>
@@ -1711,7 +1711,7 @@ return rand.nextBoolean();]]></Body>
 				<EmbeddedObject>
 					<Id>1732832331244</Id>
 					<Name><![CDATA[controlPolicial2]]></Name>
-					<X>2090</X><Y>-490</Y>
+					<X>2080</X><Y>-490</Y>
 					<Label><X>-15</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2083,10 +2083,10 @@ Ingresos1B += valorComida;]]></Code>
 				<EmbeddedObject>
 					<Id>1732838935897</Id>
 					<Name><![CDATA[pedSourceEntrada12]]></Name>
-					<X>1905</X><Y>-415</Y>
+					<X>1890</X><Y>-410</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -2106,7 +2106,7 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[locationLine]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[ingresoPublicoE1]]></Code>
+								<Code><![CDATA[ingresoPublicoE12]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2271,7 +2271,7 @@ Ingresos1B += valorComida;]]></Code>
 							<Name><![CDATA[onEndGrouping]]></Name>
 						</Parameter>
 					</Parameters>
-					<ReplicationFlag>true</ReplicationFlag>
+					<ReplicationFlag>false</ReplicationFlag>
 					<Replication Class="CodeValue">
 						<Code><![CDATA[100]]></Code>
 					</Replication>
@@ -2298,10 +2298,10 @@ Ingresos1B += valorComida;]]></Code>
 				<EmbeddedObject>
 					<Id>1732838967223</Id>
 					<Name><![CDATA[pedSourceEntrada13]]></Name>
-					<X>1925</X><Y>-540</Y>
+					<X>1890</X><Y>-550</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -2321,7 +2321,7 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[locationLine]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[ingresoPublicoE12]]></Code>
+								<Code><![CDATA[ingresoPublicoE1]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2482,7 +2482,7 @@ Ingresos1B += valorComida;]]></Code>
 							<Name><![CDATA[onEndGrouping]]></Name>
 						</Parameter>
 					</Parameters>
-					<ReplicationFlag>true</ReplicationFlag>
+					<ReplicationFlag>false</ReplicationFlag>
 					<Replication Class="CodeValue">
 						<Code><![CDATA[100]]></Code>
 					</Replication>
@@ -2497,7 +2497,7 @@ Ingresos1B += valorComida;]]></Code>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationType>EMPTY</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<TableReference>
 						</TableReference>
@@ -2852,13 +2852,14 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1733181625384</Id>
+					<Id>1733185280612</Id>
 					<Name><![CDATA[hinchases]]></Name>
-					<X>940</X><Y>-1300</Y>
+					<X>1480</X><Y>-690</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<PresentationId>1733185280614</PresentationId>
 					<ActiveObjectClass>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[hinchas]]></ClassName>
@@ -2891,6 +2892,13 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<StatisticsItem>
+						<Id>1733185308716</Id>
+						<Name><![CDATA[ConsumidoresPotenciales]]></Name>
+						<Type>count</Type>
+						<Expression><![CDATA[]]></Expression>
+						<Condition><![CDATA[agent.inState(hinchas.QuiereComprar)]]></Condition>
+					</StatisticsItem>
 					<InEnvironment>true</InEnvironment>
 					<InitialLocationType>XYZ</InitialLocationType>
 					<ColumnCode Class="CodeValue">
@@ -6401,9 +6409,112 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+    			<TimeStackChart>
+					<Id>1733184050854</Id>
+					<Name><![CDATA[chart]]></Name>
+					<X>860</X><Y>-1330</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1733212800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowExpression><![CDATA[100]]></TimeWindowExpression>
+					<DatasetExpression>
+					<Id>1733184051359</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-23296</Color>
+					<Expression2><![CDATA[hinchases.ConsumidoresPotenciales()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+							<Title><![CDATA[Consumidores potenciales]]></Title>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimeStackChart>
+				<DensityMap>
+					<Id>1733184720005</Id>
+					<Name><![CDATA[densityMap]]></Name>
+					<X>2440</X><Y>3240</Y>
+					<Label><X>-15</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Width>10</Width>
+					<Height>200</Height>
+					<Transparency>0.25</Transparency>
+					<CriticalDensity>1.5</CriticalDensity>
+					<Type>PEDESTRIAN</Type>
+					<TimePeriod>COMPLETE</TimePeriod>
+					<WindowTime Class="UnitValue">
+						<Value Class="Double">5</Value>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</WindowTime>
+					<DisplayedValue>MAX</DisplayedValue>
+					<EnableAttenuation>true</EnableAttenuation>
+					<ColorScheme>LOGARITHMIC</ColorScheme>
+				</DensityMap>
 			</Presentation>
 
 				</Level>
+				<EmbeddedObjectPresentation>
+					<Id>1733185280614</Id>
+					<Name><![CDATA[hinchases_presentation]]></Name>
+					<X>1840</X><Y>-1640</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
+				</EmbeddedObjectPresentation>
 			</Presentation>
 			<Areas>
 				<Area>
@@ -6530,7 +6641,7 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 				<Variable Class="PlainVariable">
 					<Id>1733092622453</Id>
 					<Name><![CDATA[comidaElegida]]></Name>
-					<X>40</X><Y>130</Y>
+					<X>195</X><Y>65</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6542,7 +6653,7 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 				<Variable Class="PlainVariable">
 					<Id>1733092633535</Id>
 					<Name><![CDATA[incluyeBebida]]></Name>
-					<X>40</X><Y>160</Y>
+					<X>195</X><Y>40</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -6655,7 +6766,7 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 					<Id>1733093934549</Id>
 					<Name><![CDATA[chi_intake]]></Name>
 					<Description><![CDATA[Nivel inicial de apetito (unidades arbitrarias)]]></Description>
-					<X>40</X><Y>310</Y>
+					<X>40</X><Y>305</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7187,7 +7298,7 @@ return false;]]></Body>
 
 			<ContainerLinks>
 				<ContainerLink>
-					<Id>1733181625413</Id>
+					<Id>1733185280615</Id>
 					<Name><![CDATA[main]]></Name>
 					<X>50</X><Y>-100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -7269,7 +7380,7 @@ return false;]]></Body>
 					<Name><![CDATA[text]]></Name>
 					<X>1010</X><Y>20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
+					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D</DrawMode>
@@ -7295,7 +7406,7 @@ return false;]]></Body>
 					<Name><![CDATA[chart]]></Name>
 					<X>360</X><Y>370</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
+					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
