@@ -2055,7 +2055,7 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B -= 1;]]></Code>
+								<Code><![CDATA[TamanioCola1B = TamanioCola1B - 1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2935,7 +2935,7 @@ Ingresos1A += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A -= 1;]]></Code>
+								<Code><![CDATA[TamanioCola1A = TamanioCola1A - 1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
