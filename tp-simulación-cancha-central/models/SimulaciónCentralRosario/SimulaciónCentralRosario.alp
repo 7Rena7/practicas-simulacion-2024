@@ -6549,6 +6549,69 @@ TiempoEsperaVenta1A += time() - agent.tiempoArribo;]]></Code>
 					<EnableAttenuation>true</EnableAttenuation>
 					<ColorScheme>LOGARITHMIC</ColorScheme>
 				</DensityMap>
+    			<PieChart>
+					<Id>1733186958691</Id>
+					<Name><![CDATA[chart1]]></Name>
+					<X>1122.862</X><Y>-1370</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1733212800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>398.562</Width>
+					<Height>270</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>10</YOffset>
+						<Width>164.276</Width>
+						<Height>154.286</Height>
+						<BorderColor/>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>85.714</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Id>1733186960210</Id>
+					<Expression><![CDATA[choripanesVendidos]]></Expression>
+					<Color>-16181</Color>
+						<Title><![CDATA[Choripan]]></Title>
+					</DataItem>
+					<DataItem>
+					<Id>1733186960211</Id>
+					<Expression><![CDATA[panchosVendidos]]></Expression>
+					<Color>-360334</Color>
+						<Title><![CDATA[Pancho]]></Title>
+					</DataItem>
+					<DataItem>
+					<Id>1733186964217</Id>
+					<Expression><![CDATA[hamburguesasVendidas]]></Expression>
+					<Color>-23296</Color>
+						<Title><![CDATA[Hamburguesa]]></Title>
+					</DataItem>
+    			</PieChart>
 			</Presentation>
 
 				</Level>
