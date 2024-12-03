@@ -2967,12 +2967,15 @@ System.out.println("Comida elegida " + ped.comidaElegida);
 switch(ped.comidaElegida) {
 	case 1:
 		valorComida = Choripan;
+		choripanesVendidos++;
 		break;
 	case 2:
 		valorComida = Pancho;
+		panchosVendidos++;
 		break;
 	case 3:
 		valorComida = Hamburguesa;
+		hamburguesasVendidas++;
 		break;
 	default:
 		break;
