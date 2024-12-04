@@ -143,7 +143,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732841479290</Id>
 					<Name><![CDATA[TiempoEsperaVenta1A]]></Name>
-					<X>1690</X><Y>-565</Y>
+					<X>1370</X><Y>-500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -158,7 +158,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732841512055</Id>
 					<Name><![CDATA[TiempoEsperaVenta1B]]></Name>
-					<X>1690</X><Y>-540</Y>
+					<X>1530</X><Y>-500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -173,7 +173,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732844612173</Id>
 					<Name><![CDATA[CantidadDeVentas1A]]></Name>
-					<X>1525</X><Y>-565</Y>
+					<X>1370</X><Y>-420</Y>
 					<Label><X>15</X><Y>1</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -188,7 +188,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732844702094</Id>
 					<Name><![CDATA[CantidadDeVentas1B]]></Name>
-					<X>1525</X><Y>-540</Y>
+					<X>1530</X><Y>-420</Y>
 					<Label><X>15</X><Y>1</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -203,7 +203,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733006680233</Id>
 					<Name><![CDATA[CantidadAbandonos1A]]></Name>
-					<X>1525</X><Y>-510</Y>
+					<X>1370</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -215,7 +215,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733006692239</Id>
 					<Name><![CDATA[CantidadAbandonos1B]]></Name>
-					<X>1525</X><Y>-490</Y>
+					<X>1530</X><Y>-260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -227,7 +227,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733013588592</Id>
 					<Name><![CDATA[TamanioCola1B]]></Name>
-					<X>1690</X><Y>-460</Y>
+					<X>1530</X><Y>-340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -239,7 +239,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733095105477</Id>
 					<Name><![CDATA[TamanioCola1A]]></Name>
-					<X>1690</X><Y>-490</Y>
+					<X>1370</X><Y>-340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -251,7 +251,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733090961180</Id>
 					<Name><![CDATA[Ingresos1A]]></Name>
-					<X>1530</X><Y>-470</Y>
+					<X>1370</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -263,7 +263,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733090976470</Id>
 					<Name><![CDATA[Ingresos1B]]></Name>
-					<X>1530</X><Y>-410</Y>
+					<X>1530</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -333,6 +333,132 @@
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
 						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733347369852</Id>
+					<Name><![CDATA[TamanioCola2A]]></Name>
+					<X>1370</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733347375778</Id>
+					<Name><![CDATA[TamanioCola2B]]></Name>
+					<X>1530</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348056639</Id>
+					<Name><![CDATA[Ingresos2A]]></Name>
+					<X>1370</X><Y>-140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348063681</Id>
+					<Name><![CDATA[Ingresos2B]]></Name>
+					<X>1530</X><Y>-140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348077090</Id>
+					<Name><![CDATA[CantidadAbandonos2A]]></Name>
+					<X>1370</X><Y>-220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348082833</Id>
+					<Name><![CDATA[CantidadAbandonos2B]]></Name>
+					<X>1530</X><Y>-220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348092909</Id>
+					<Name><![CDATA[CantidadDeVentas2A]]></Name>
+					<X>1370</X><Y>-380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348098986</Id>
+					<Name><![CDATA[CantidadDeVentas2B]]></Name>
+					<X>1530</X><Y>-380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348174636</Id>
+					<Name><![CDATA[TiempoEsperaVenta2A]]></Name>
+					<X>1370</X><Y>-460</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733348198016</Id>
+					<Name><![CDATA[TiempoEsperaVenta2B]]></Name>
+					<X>1530</X><Y>-460</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
@@ -436,7 +562,7 @@
 				<Connector>
 					<Id>1732755717352</Id>
 					<Name><![CDATA[connector]]></Name>
-					<X>2250</X><Y>-480</Y>
+					<X>2210</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -463,7 +589,8 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>-180</Y></Point>
+						<Point><X>0</X><Y>-170</Y></Point>
+						<Point><X>60</X><Y>-170</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -502,7 +629,7 @@
 				<Connector>
 					<Id>1732756129655</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>2455</X><Y>-625</Y>
+					<X>2500</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -510,7 +637,7 @@
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedGoToAcceso1A]]></ItemName>
+						<ItemName><![CDATA[pedGoNearTarget_1]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -520,7 +647,7 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedWait]]></ItemName>
+						<ItemName><![CDATA[tribuna]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -529,13 +656,14 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>45</X><Y>105</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+						<Point><X>80</X><Y>190</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732756135878</Id>
 					<Name><![CDATA[connector5]]></Name>
-					<X>2540</X><Y>-520</Y>
+					<X>2620</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -543,7 +671,7 @@
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedWait]]></ItemName>
+						<ItemName><![CDATA[tribuna]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -562,14 +690,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>95</X><Y>-5</Y></Point>
 						<Point><X>90</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732832333909</Id>
 					<Name><![CDATA[connector6]]></Name>
-					<X>2090</X><Y>-480</Y>
+					<X>2070</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -596,13 +723,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-60</X><Y>0</Y></Point>
+						<Point><X>-40</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732833142323</Id>
 					<Name><![CDATA[connector1]]></Name>
-					<X>2250</X><Y>-460</Y>
+					<X>2210</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -629,13 +756,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>100</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732833142325</Id>
 					<Name><![CDATA[connector7]]></Name>
-					<X>2270</X><Y>-360</Y>
+					<X>2290</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -653,7 +780,7 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedGoToAcceso1B]]></ItemName>
+						<ItemName><![CDATA[pedGoNearTarget_2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -662,13 +789,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>185</X><Y>-25</Y></Point>
+						<Point><X>170</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732833235058</Id>
 					<Name><![CDATA[connector10]]></Name>
-					<X>2370</X><Y>-340</Y>
+					<X>2390</X><Y>-420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -686,7 +813,7 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedGoToAcceso1B]]></ItemName>
+						<ItemName><![CDATA[pedGoNearTarget_2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -695,7 +822,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>85</X><Y>-45</Y></Point>
+						<Point><X>70</X><Y>-40</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -767,7 +894,7 @@
 				<Connector>
 					<Id>1732839616093</Id>
 					<Name><![CDATA[connector12]]></Name>
-					<X>2500</X><Y>-520</Y>
+					<X>2580</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -775,7 +902,7 @@
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedWait]]></ItemName>
+						<ItemName><![CDATA[tribuna]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -785,7 +912,7 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedGoToAcceso1B]]></ItemName>
+						<ItemName><![CDATA[pedGoNearTarget_2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -794,13 +921,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-35</X><Y>135</Y></Point>
+						<Point><X>-80</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732840493354</Id>
 					<Name><![CDATA[connector13]]></Name>
-					<X>2270</X><Y>-650</Y>
+					<X>2290</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -818,7 +945,7 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedGoToAcceso1A]]></ItemName>
+						<ItemName><![CDATA[pedGoNearTarget_1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -827,13 +954,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>175</X><Y>35</Y></Point>
+						<Point><X>170</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1733095977371</Id>
 					<Name><![CDATA[connector16]]></Name>
-					<X>2270</X><Y>-570</Y>
+					<X>2290</X><Y>-570</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -860,13 +987,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>-50</Y></Point>
+						<Point><X>50</X><Y>-50</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1733096854798</Id>
 					<Name><![CDATA[connector8]]></Name>
-					<X>2270</X><Y>-340</Y>
+					<X>2290</X><Y>-440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -893,13 +1020,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>20</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1733096859178</Id>
 					<Name><![CDATA[connector17]]></Name>
-					<X>2270</X><Y>-280</Y>
+					<X>2290</X><Y>-380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -926,13 +1053,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>-60</Y></Point>
+						<Point><X>60</X><Y>-40</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1733186097935</Id>
 					<Name><![CDATA[connector14]]></Name>
-					<X>2270</X><Y>-630</Y>
+					<X>2290</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -959,7 +1086,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>10</Y></Point>
+						<Point><X>50</X><Y>10</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -983,7 +1110,7 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedGoToAcceso1A]]></ItemName>
+						<ItemName><![CDATA[pedGoNearTarget_1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -998,7 +1125,7 @@
 				<Connector>
 					<Id>1733268913428</Id>
 					<Name><![CDATA[connector15]]></Name>
-					<X>2230</X><Y>-480</Y>
+					<X>2190</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1025,7 +1152,403 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-110</X><Y>0</Y></Point>
+						<Point><X>-80</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346639508</Id>
+					<Name><![CDATA[connector19]]></Name>
+					<X>2290</X><Y>-150</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2B]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out2]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[localComida2B]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>80</X><Y>40</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346643057</Id>
+					<Name><![CDATA[connector20]]></Name>
+					<X>2210</X><Y>-440</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out3]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2A]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>130</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346645565</Id>
+					<Name><![CDATA[connector21]]></Name>
+					<X>2210</X><Y>-420</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out4]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2B]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>250</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346665967</Id>
+					<Name><![CDATA[connector2]]></Name>
+					<X>2360</X><Y>-260</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[localComida2A]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2A]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out2]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-70</X><Y>-30</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346678810</Id>
+					<Name><![CDATA[connector22]]></Name>
+					<X>2460</X><Y>-320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoNearTarget_3]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[localComida2A]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-60</X><Y>60</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346681245</Id>
+					<Name><![CDATA[connector23]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoNearTarget_4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[localComida2B]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>2470</X><Y>-160</Y></Point>
+						<Point><X>2410</X><Y>-110</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346685421</Id>
+					<Name><![CDATA[connector24]]></Name>
+					<X>2470</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoNearTarget_4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2B]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out1]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-180</X><Y>-10</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346687504</Id>
+					<Name><![CDATA[connector25]]></Name>
+					<X>2290</X><Y>-310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2A]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out1]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoNearTarget_3]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>170</X><Y>-10</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346691768</Id>
+					<Name><![CDATA[connector26]]></Name>
+					<X>2500</X><Y>-320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoNearTarget_3]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[tribuna]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedWait]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>80</X><Y>-140</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733346694636</Id>
+					<Name><![CDATA[connector27]]></Name>
+					<X>2510</X><Y>-160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedGoNearTarget_4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[tribuna]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedWait]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>70</X><Y>-300</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733347312072</Id>
+					<Name><![CDATA[connector28]]></Name>
+					<X>2290</X><Y>-90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2B]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out5]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[localComida2B]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>80</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1733347314675</Id>
+					<Name><![CDATA[connector29]]></Name>
+					<X>2290</X><Y>-230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectComida2A]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out5]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[localComida2A]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>70</X><Y>-30</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -1149,14 +1672,14 @@ return probabilidad < 0.85;]]></Body>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[gastoPromedio = ( Ingresos1A + Ingresos1B ) / (CantidadDeVentas1A + CantidadDeVentas1B);]]></Body>
+					<Body><![CDATA[gastoPromedio = ( Ingresos1A + Ingresos1B + Ingresos2A + Ingresos2B ) / (CantidadDeVentas1A + CantidadDeVentas1B + CantidadDeVentas2A + CantidadDeVentas2B );]]></Body>
 				</Function>
 			</Functions>
 			<Schedules>
 				<Schedule>
 					<Id>1733188246752</Id>
 					<Name><![CDATA[arrivalRate]]></Name>
-					<X>1550</X><Y>-660</Y>
+					<X>1910</X><Y>-780</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1195,22 +1718,22 @@ return probabilidad < 0.85;]]></Body>
 						<Interval>
 							<Start>1800000</Start>
 							<End>1800000</End>
-							<Value>0.25</Value>
+							<Value>0.45</Value>
 						</Interval>
 						<Interval>
 							<Start>3600000</Start>
 							<End>3600000</End>
-							<Value>0.5</Value>
+							<Value>0.35</Value>
 						</Interval>
 						<Interval>
 							<Start>5400000</Start>
 							<End>5400000</End>
-							<Value>0.7</Value>
+							<Value>1.0</Value>
 						</Interval>
 						<Interval>
 							<Start>6000000</Start>
 							<End>6000000</End>
-							<Value>1.0</Value>
+							<Value>0.15</Value>
 						</Interval>
 						<Interval>
 							<Start>7200000</Start>
@@ -1477,7 +2000,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1730841259797</Id>
-					<Name><![CDATA[pedGoToAcceso1A]]></Name>
+					<Name><![CDATA[pedGoNearTarget_1]]></Name>
 					<X>2460</X><Y>-660</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -1504,7 +2027,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 						<Parameter>
 							<Name><![CDATA[locationLine]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[puerta1a]]></Code>
+								<Code><![CDATA[target_1AB]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1565,7 +2088,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				<EmbeddedObject>
 					<Id>1732754011966</Id>
 					<Name><![CDATA[pedSink]]></Name>
-					<X>2630</X><Y>-520</Y>
+					<X>2710</X><Y>-460</Y>
 					<Label><X>-20</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1616,7 +2139,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				<EmbeddedObject>
 					<Id>1732754798528</Id>
 					<Name><![CDATA[pedSelectOutput]]></Name>
-					<X>2220</X><Y>-480</Y>
+					<X>2180</X><Y>-480</Y>
 					<Label><X>-35</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1651,25 +2174,25 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 						<Parameter>
 							<Name><![CDATA[probability1]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[0.5]]></Code>
+								<Code><![CDATA[0.25]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability2]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[0.5]]></Code>
+								<Code><![CDATA[0.25]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability3]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[0]]></Code>
+								<Code><![CDATA[0.25]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability4]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[0]]></Code>
+								<Code><![CDATA[0.25]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1726,8 +2249,8 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1732754841245</Id>
-					<Name><![CDATA[pedGoToAcceso1B]]></Name>
-					<X>2460</X><Y>-370</Y>
+					<Name><![CDATA[pedGoNearTarget_2]]></Name>
+					<X>2460</X><Y>-470</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1753,7 +2276,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 						<Parameter>
 							<Name><![CDATA[locationLine]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[puerta1b]]></Code>
+								<Code><![CDATA[target_2AB]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1912,7 +2435,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				<EmbeddedObject>
 					<Id>1732832331244</Id>
 					<Name><![CDATA[controlPolicial2]]></Name>
-					<X>2090</X><Y>-490</Y>
+					<X>2070</X><Y>-490</Y>
 					<Label><X>-15</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2010,7 +2533,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				<EmbeddedObject>
 					<Id>1732832986172</Id>
 					<Name><![CDATA[pedSelectComida1B]]></Name>
-					<X>2240</X><Y>-360</Y>
+					<X>2260</X><Y>-460</Y>
 					<Label><X>-35</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2136,7 +2659,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				<EmbeddedObject>
 					<Id>1732833157727</Id>
 					<Name><![CDATA[localComida1B]]></Name>
-					<X>2330</X><Y>-350</Y>
+					<X>2350</X><Y>-430</Y>
 					<Label><X>-15</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2188,14 +2711,14 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B = localComida1B.queueSize(colaTienda2A);]]></Code>
+								<Code><![CDATA[TamanioCola1B = localComida1B.queueSize(colaTienda1B);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoArribo = time();
-TamanioCola1B = localComida1B.queueSize(colaTienda2A);
+TamanioCola1B = localComida1B.queueSize(colaTienda1B);
    if (TamanioCola1B > 30) {
        localComida1B.cancel(ped);
        CantidadAbandonos1B += 1;
@@ -2252,7 +2775,7 @@ Ingresos1B += valorComida;]]></Code>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[CantidadDeVentas1B++;
-TamanioCola1B = localComida1B.queueSize(colaTienda2A);]]></Code>
+TamanioCola1B = localComida1B.queueSize(colaTienda1B);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2261,7 +2784,7 @@ TamanioCola1B = localComida1B.queueSize(colaTienda2A);]]></Code>
 						<Parameter>
 							<Name><![CDATA[onCancel]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B = localComida1B.queueSize(colaTienda2A);]]></Code>
+								<Code><![CDATA[TamanioCola1B = localComida1B.queueSize(colaTienda1B);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -2732,7 +3255,7 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
-					<InitializationType>EMPTY</InitializationType>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<TableReference>
 						</TableReference>
@@ -2743,8 +3266,8 @@ ped.esSocio = definirSiEsSocio();]]></Code>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>1732839615019</Id>
-					<Name><![CDATA[pedWait]]></Name>
-					<X>2500</X><Y>-530</Y>
+					<Name><![CDATA[tribuna]]></Name>
+					<X>2580</X><Y>-470</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2866,7 +3389,7 @@ if(ped.gastoTotal > 0) {
 				<EmbeddedObject>
 					<Id>1732840489781</Id>
 					<Name><![CDATA[pedSelectComida1A]]></Name>
-					<X>2240</X><Y>-650</Y>
+					<X>2260</X><Y>-650</Y>
 					<Label><X>-35</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2986,7 +3509,7 @@ if(ped.gastoTotal > 0) {
 				<EmbeddedObject>
 					<Id>1733185280612</Id>
 					<Name><![CDATA[hinchases]]></Name>
-					<X>1550</X><Y>-690</Y>
+					<X>1910</X><Y>-810</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3048,7 +3571,7 @@ if(ped.gastoTotal > 0) {
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
-					<InitializationType>EMPTY</InitializationType>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
 					<InitializationDatabaseTableQuery>
 						<TableReference>
 						</TableReference>
@@ -3185,6 +3708,699 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 							<Value Class="CodeValue">
 								<Code><![CDATA[TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733346568922</Id>
+					<Name><![CDATA[localComida2A]]></Name>
+					<X>2360</X><Y>-270</Y>
+					<Label><X>-15</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedService]]></ClassName>
+							<ItemName><![CDATA[1416228850252]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[services]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[services_3_local_abajo]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queueChoicePolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[chooseQueue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[recoveryDelay]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[reverseQueue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[TamanioCola2A = localComida2A.queueSize(colaTienda2A);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnterQueue]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.tiempoArribo = time();
+   if (TamanioCola2A > 30) {
+       localComida2A.cancel(ped);
+       CantidadAbandonos2A += 1;
+   };
+
+ped.comidaElegida = elegirComidaAComprar();
+ped.incluyeBebida = conBebida();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExitQueue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitQueue]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
+TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onBeginService]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[int valorComida = 0;
+
+if(ped.incluyeBebida) {
+	valorComida += Gaseosa;
+	gaseosasVendidas++;
+	System.out.println("Eligio bebida");
+}
+
+System.out.println("Comida elegida " + ped.comidaElegida);
+
+switch(ped.comidaElegida) {
+	case 1:
+		valorComida = Choripan;
+		choripanesVendidos++;
+		break;
+	case 2:
+		valorComida = Pancho;
+		panchosVendidos++;
+		break;
+	case 3:
+		valorComida = Hamburguesa;
+		hamburguesasVendidas++;
+		break;
+	default:
+		break;
+}
+
+Ingresos2A += valorComida;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEndService]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[CantidadDeVentas2A++;
+TamanioCola2A = localComida2A.queueSize(colaTienda2A);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[TamanioCola2A = localComida2A.queueSize(colaTienda2A);]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733346574401</Id>
+					<Name><![CDATA[localComida2B]]></Name>
+					<X>2370</X><Y>-120</Y>
+					<Label><X>-15</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedService]]></ClassName>
+							<ItemName><![CDATA[1416228850252]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[services]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[services_4_local_abajo]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queueChoicePolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[chooseQueue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[recoveryDelay]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[reverseQueue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[TamanioCola2B = localComida2B.queueSize(colaTienda2B);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnterQueue]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.tiempoArribo = time();
+   if (TamanioCola2B > 30) {
+       localComida2B.cancel(ped);
+       CantidadAbandonos2B += 1;
+   };
+
+ped.comidaElegida = elegirComidaAComprar();
+ped.incluyeBebida = conBebida();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExitQueue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitQueue]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
+TiempoEsperaVenta2B += time() - ped.tiempoArribo;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onBeginService]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[int valorComida = 0;
+
+if(ped.incluyeBebida) {
+	valorComida += Gaseosa;
+	gaseosasVendidas++;
+	System.out.println("Eligio bebida");
+}
+
+System.out.println("Comida elegida " + ped.comidaElegida);
+
+switch(ped.comidaElegida) {
+	case 1:
+		valorComida = Choripan;
+		choripanesVendidos++;
+		break;
+	case 2:
+		valorComida = Pancho;
+		panchosVendidos++;
+		break;
+	case 3:
+		valorComida = Hamburguesa;
+		hamburguesasVendidas++;
+		break;
+	default:
+		break;
+}
+
+Ingresos2B += valorComida;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEndService]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[CantidadDeVentas2B++;
+TamanioCola2B = localComida2B.queueSize(colaTienda2B);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[TamanioCola2B = localComida2B.queueSize(colaTienda2B);]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733346629705</Id>
+					<Name><![CDATA[pedSelectComida2A]]></Name>
+					<X>2260</X><Y>-310</Y>
+					<Label><X>-35</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412464601215]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition1]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[!ped.quiereHacerFilaParaComprarComida(TamanioCola2A);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition2]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.quiereHacerFilaParaComprarComida(TamanioCola2A);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition3]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition4]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability1]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[!ped.quiereHacerFilaParaComprarComida(TamanioCola2A);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability2]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability3]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false	]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability4]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability5]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[exitNumber]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit1]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit2]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit3]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit4]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit5]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733346637792</Id>
+					<Name><![CDATA[pedSelectComida2B]]></Name>
+					<X>2260</X><Y>-170</Y>
+					<Label><X>-35</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412464601215]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.TYPE_CONDITIONS]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition1]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[!ped.quiereHacerFilaParaComprarComida(TamanioCola2B);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition2]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.quiereHacerFilaParaComprarComida(TamanioCola2B);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition3]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition4]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability1]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability2]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability3]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability4]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability5]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[exitNumber]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit1]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit2]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit3]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit4]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit5]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733346677861</Id>
+					<Name><![CDATA[pedGoNearTarget_3]]></Name>
+					<X>2460</X><Y>-330</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedGoTo]]></ClassName>
+							<ItemName><![CDATA[1412464601103]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLine]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[target_3AB]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[route]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[walkInReverseDirection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[reachTolerance]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1733346680221</Id>
+					<Name><![CDATA[pedGoNearTarget_4]]></Name>
+					<X>2470</X><Y>-170</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedGoTo]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedGoTo]]></ClassName>
+							<ItemName><![CDATA[1412464601103]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLine]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[target_4AB]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[route]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[walkInReverseDirection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[reachTolerance]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -3440,8 +4656,8 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				</RectangleWall>
 				<TargetLine>
 					<Id>1732753544477</Id>
-					<Name><![CDATA[puerta1a]]></Name>
-					<X>3335</X><Y>2880</Y>
+					<Name><![CDATA[target_2AB]]></Name>
+					<X>3330</X><Y>2880</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3451,7 +4667,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<LineColor>-16744448</LineColor>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-15</X><Y>0</Y></Point>
+						<Point><X>-20</X><Y>0</Y></Point>
 					</Points>
 				</TargetLine>
 				<Wall>
@@ -3593,8 +4809,8 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				</Wall>
 				<TargetLine>
 					<Id>1732754766230</Id>
-					<Name><![CDATA[puerta1b]]></Name>
-					<X>3680</X><Y>2875</Y>
+					<Name><![CDATA[target_4AB]]></Name>
+					<X>3680</X><Y>2880</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3611,8 +4827,8 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<ServiceColor>-16744448</ServiceColor>
 					<Id>1732755225403</Id>
 					<Name><![CDATA[retenPolicial1]]></Name>
-					<X>3648.698</X><Y>1935</Y>
-					<Label><X>13.93</X><Y>68.5</Y></Label>
+					<X>3648.698</X><Y>2048.617</Y>
+					<Label><X>13.93</X><Y>82.357</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -3695,7 +4911,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<QueueLine>
 					<Id>1732755273412</Id>
 					<Name><![CDATA[queueLine]]></Name>
-					<X>3648.698</X><Y>1863.383</Y>
+					<X>3648.698</X><Y>2016.23</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3707,18 +4923,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>52.391</Y></Point>
-						<Point><X>0</X><Y>52.391</Y></Point>
-						<Point><X>0</X><Y>220.043</Y></Point>
-						<Point><X>0</X><Y>167.652</Y></Point>
-						<Point><X>0</X><Y>167.652</Y></Point>
+						<Point><X>0</X><Y>23.692</Y></Point>
+						<Point><X>0</X><Y>23.692</Y></Point>
+						<Point><X>0</X><Y>99.508</Y></Point>
+						<Point><X>0</X><Y>75.815</Y></Point>
+						<Point><X>0</X><Y>75.815</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<QueueLine>
 					<Id>1732755273414</Id>
 					<Name><![CDATA[queueLine1]]></Name>
-					<X>3635.079</X><Y>1863.383</Y>
+					<X>3635.079</X><Y>2016.23</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3730,18 +4946,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>52.391</Y></Point>
-						<Point><X>0</X><Y>52.391</Y></Point>
-						<Point><X>0</X><Y>220.043</Y></Point>
-						<Point><X>0</X><Y>167.652</Y></Point>
-						<Point><X>0</X><Y>167.652</Y></Point>
+						<Point><X>0</X><Y>23.692</Y></Point>
+						<Point><X>0</X><Y>23.692</Y></Point>
+						<Point><X>0</X><Y>99.508</Y></Point>
+						<Point><X>0</X><Y>75.815</Y></Point>
+						<Point><X>0</X><Y>75.815</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<ServicePoint>
 					<Id>1732755280123</Id>
 					<Name><![CDATA[servicePoint]]></Name>
-					<X>3648.698</X><Y>2110</Y>
+					<X>3648.698</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3755,7 +4971,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<ServicePoint>
 					<Id>1732755280127</Id>
 					<Name><![CDATA[servicePoint1]]></Name>
-					<X>3635.079</X><Y>2110</Y>
+					<X>3635.079</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3769,7 +4985,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<ServicePoint>
 					<Id>1732755314513</Id>
 					<Name><![CDATA[servicePoint2]]></Name>
-					<X>3662.319</X><Y>2110</Y>
+					<X>3662.319</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3783,7 +4999,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<QueueLine>
 					<Id>1732755316260</Id>
 					<Name><![CDATA[queueLine2]]></Name>
-					<X>3662.319</X><Y>1863.383</Y>
+					<X>3662.319</X><Y>2016.23</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3795,18 +5011,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.341</X><Y>218.996</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.341</X><Y>99.034</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<QueueLine>
 					<Id>1732836077379</Id>
 					<Name><![CDATA[queueLine6]]></Name>
-					<X>3675.938</X><Y>1863.383</Y>
+					<X>3675.938</X><Y>2016.23</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3818,18 +5034,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.341</X><Y>218.996</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.341</X><Y>99.034</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<ServicePoint>
 					<Id>1732836078096</Id>
 					<Name><![CDATA[servicePoint8]]></Name>
-					<X>3675.938</X><Y>2110</Y>
+					<X>3675.938</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3843,7 +5059,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<QueueLine>
 					<Id>1732839170814</Id>
 					<Name><![CDATA[queueLine7]]></Name>
-					<X>3689.558</X><Y>1863.383</Y>
+					<X>3689.558</X><Y>2016.23</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3855,18 +5071,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.341</X><Y>218.996</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.341</X><Y>99.034</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<ServicePoint>
 					<Id>1732839172795</Id>
 					<Name><![CDATA[servicePoint9]]></Name>
-					<X>3689.558</X><Y>2110</Y>
+					<X>3689.558</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3880,7 +5096,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<ServicePoint>
 					<Id>1732839267314</Id>
 					<Name><![CDATA[servicePoint10]]></Name>
-					<X>3703.177</X><Y>2110</Y>
+					<X>3703.177</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3894,7 +5110,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<QueueLine>
 					<Id>1732839269262</Id>
 					<Name><![CDATA[queueLine8]]></Name>
-					<X>3703.859</X><Y>1865.478</Y>
+					<X>3703.859</X><Y>2017.178</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3906,18 +5122,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.341</X><Y>218.996</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.341</X><Y>99.034</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<ServicePoint>
 					<Id>1732839863567</Id>
 					<Name><![CDATA[servicePoint11]]></Name>
-					<X>3716.796</X><Y>2110</Y>
+					<X>3716.796</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3931,7 +5147,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<ServicePoint>
 					<Id>1732839864283</Id>
 					<Name><![CDATA[servicePoint12]]></Name>
-					<X>3730.415</X><Y>2110</Y>
+					<X>3730.415</X><Y>2127.755</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3945,7 +5161,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<QueueLine>
 					<Id>1732840056106</Id>
 					<Name><![CDATA[queueLine12]]></Name>
-					<X>3717.476</X><Y>1865.478</Y>
+					<X>3717.476</X><Y>2017.178</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3957,18 +5173,18 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.341</X><Y>218.996</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.341</X><Y>99.034</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
 				<QueueLine>
 					<Id>1732840790988</Id>
 					<Name><![CDATA[queueLine13]]></Name>
-					<X>3731.173</X><Y>1865.478</Y>
+					<X>3731.173</X><Y>2017.178</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3980,14 +5196,14 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Capacity><![CDATA[10]]></Capacity>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.081</X><Y>52.391</Y></Point>
-						<Point><X>-0.03892760445510204</X><Y>24.999969692813856</Y></Point>
-						<Point><X>-0.234</X><Y>150.52</Y></Point>
-						<Point><X>-0.195</X><Y>125.52</Y></Point>
-						<Point><X>-0.273</X><Y>175.52</Y></Point>
-						<Point><X>-0.341</X><Y>218.996</Y></Point>
-						<Point><X>-0.302</X><Y>193.996</Y></Point>
-						<Point><X>-0.26</X><Y>166.604</Y></Point>
+						<Point><X>-0.081</X><Y>23.692</Y></Point>
+						<Point><X>-0.039</X><Y>11.305</Y></Point>
+						<Point><X>-0.234</X><Y>68.068</Y></Point>
+						<Point><X>-0.195</X><Y>56.762</Y></Point>
+						<Point><X>-0.273</X><Y>79.373</Y></Point>
+						<Point><X>-0.341</X><Y>99.034</Y></Point>
+						<Point><X>-0.302</X><Y>87.729</Y></Point>
+						<Point><X>-0.26</X><Y>75.341</Y></Point>
 					</Points>
 					<ExceededQueuePolicy>CROWD_ROUND_AT_THE_QUEUE_END</ExceededQueuePolicy>
 				</QueueLine>
@@ -5976,7 +7192,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 				<Text>
 					<Id>1733007164179</Id>
 					<Name><![CDATA[text]]></Name>
-					<X>1700</X><Y>-410</Y>
+					<X>1800</X><Y>-360</Y>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
@@ -6650,7 +7866,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 			<Presentation>
 				<PolygonNode>
 					<Id>1733279446655</Id>
-					<Name><![CDATA[colaTienda2A]]></Name>
+					<Name><![CDATA[colaTienda1B]]></Name>
 					<X>3480</X><Y>2770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -6807,7 +8023,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1733279446653</Id>
-						<Name><![CDATA[colaTienda2A]]></Name>
+						<Name><![CDATA[colaTienda1B]]></Name>
 						<X>-20</X><Y>-30</Y>
 						<PublicFlag>false</PublicFlag>
 						<PresentationFlag>true</PresentationFlag>
@@ -6877,7 +8093,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 			<Presentation>
 				<PolygonNode>
 					<Id>1733279495791</Id>
-					<Name><![CDATA[colaTienda3A]]></Name>
+					<Name><![CDATA[colaTienda2A]]></Name>
 					<X>3620</X><Y>2770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -7034,7 +8250,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1733279495789</Id>
-						<Name><![CDATA[colaTienda3A]]></Name>
+						<Name><![CDATA[colaTienda2A]]></Name>
 						<X>-20</X><Y>-30</Y>
 						<PublicFlag>false</PublicFlag>
 						<PresentationFlag>true</PresentationFlag>
@@ -7104,7 +8320,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 			<Presentation>
 				<PolygonNode>
 					<Id>1733279504415</Id>
-					<Name><![CDATA[colaTienda4A]]></Name>
+					<Name><![CDATA[colaTienda2B]]></Name>
 					<X>3800</X><Y>2770</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -7261,7 +8477,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1733279504413</Id>
-						<Name><![CDATA[colaTienda4A]]></Name>
+						<Name><![CDATA[colaTienda2B]]></Name>
 						<X>-20</X><Y>-30</Y>
 						<PublicFlag>false</PublicFlag>
 						<PresentationFlag>true</PresentationFlag>
@@ -7797,6 +9013,54 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 </Figure3D>
+				<TargetLine>
+					<Id>1733348318311</Id>
+					<Name><![CDATA[target_1AB]]></Name>
+					<X>3150</X><Y>2880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733348327611</Id>
+					<Name><![CDATA[target_3AB]]></Name>
+					<X>3510</X><Y>2880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733348343568</Id>
+					<Name><![CDATA[target_5AB]]></Name>
+					<X>3830</X><Y>2880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</TargetLine>
 			</Presentation>
 
 				</Level>
@@ -7822,7 +9086,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 			<Areas>
 				<Area>
 					<Id>1732833040080</Id>
-					<Name><![CDATA[flowchart]]></Name>
+					<Name><![CDATA[Puertas1A_1B]]></Name>
 					<X>1850</X><Y>-720</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -7830,7 +9094,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 					<ShowLabel>false</ShowLabel>
 					<Title><![CDATA[]]></Title>
 					<Width>900</Width>
-					<Height>500</Height>
+					<Height>660</Height>
 				</Area>
 				<Area>
 					<Id>1732833048706</Id>
