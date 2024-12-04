@@ -113,7 +113,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732833648072</Id>
 					<Name><![CDATA[cantidadPersonasAcceso1]]></Name>
-					<X>1700</X><Y>-620</Y>
+					<X>1690</X><Y>-620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -128,7 +128,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732841118068</Id>
 					<Name><![CDATA[cantidadVentasTotales]]></Name>
-					<X>1700</X><Y>-650</Y>
+					<X>1690</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -143,7 +143,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732841479290</Id>
 					<Name><![CDATA[TiempoEsperaVenta1A]]></Name>
-					<X>1700</X><Y>-565</Y>
+					<X>1690</X><Y>-565</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -158,7 +158,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1732841512055</Id>
 					<Name><![CDATA[TiempoEsperaVenta1B]]></Name>
-					<X>1700</X><Y>-540</Y>
+					<X>1690</X><Y>-540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -203,7 +203,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733006680233</Id>
 					<Name><![CDATA[CantidadAbandonos1A]]></Name>
-					<X>1530</X><Y>-490</Y>
+					<X>1525</X><Y>-510</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -215,7 +215,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733006692239</Id>
 					<Name><![CDATA[CantidadAbandonos1B]]></Name>
-					<X>1530</X><Y>-460</Y>
+					<X>1525</X><Y>-490</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -227,31 +227,31 @@
 				<Variable Class="PlainVariable">
 					<Id>1733013588592</Id>
 					<Name><![CDATA[TamanioCola1B]]></Name>
-					<X>1700</X><Y>-460</Y>
+					<X>1690</X><Y>-460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<Type><![CDATA[int]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1733095105477</Id>
 					<Name><![CDATA[TamanioCola1A]]></Name>
-					<X>1700</X><Y>-490</Y>
+					<X>1690</X><Y>-490</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<Type><![CDATA[int]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1733090961180</Id>
 					<Name><![CDATA[Ingresos1A]]></Name>
-					<X>1530</X><Y>-480</Y>
+					<X>1525</X><Y>-455</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -263,7 +263,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1733090976470</Id>
 					<Name><![CDATA[Ingresos1B]]></Name>
-					<X>1530</X><Y>-450</Y>
+					<X>1525</X><Y>-435</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -448,7 +448,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>-170</Y></Point>
+						<Point><X>0</X><Y>-180</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -481,13 +481,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>0</Y></Point>
+						<Point><X>-55</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732756129655</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>2470</X><Y>-650</Y>
+					<X>2455</X><Y>-625</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -514,13 +514,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>130</Y></Point>
+						<Point><X>45</X><Y>105</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732756135878</Id>
 					<Name><![CDATA[connector5]]></Name>
-					<X>2510</X><Y>-520</Y>
+					<X>2540</X><Y>-520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -547,8 +547,8 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>95</X><Y>-5</Y></Point>
-						<Point><X>50</X><Y>0</Y></Point>
+						<Point><X>65</X><Y>-5</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -581,13 +581,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-80</X><Y>0</Y></Point>
+						<Point><X>-70</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732832333909</Id>
 					<Name><![CDATA[connector6]]></Name>
-					<X>2080</X><Y>-480</Y>
+					<X>2090</X><Y>-480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -614,7 +614,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-50</X><Y>0</Y></Point>
+						<Point><X>-60</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -680,7 +680,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>190</X><Y>0</Y></Point>
+						<Point><X>185</X><Y>-25</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -713,7 +713,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>90</X><Y>-20</Y></Point>
+						<Point><X>85</X><Y>-45</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -785,7 +785,7 @@
 				<Connector>
 					<Id>1732839616093</Id>
 					<Name><![CDATA[connector12]]></Name>
-					<X>2470</X><Y>-520</Y>
+					<X>2500</X><Y>-520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -812,13 +812,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>160</Y></Point>
+						<Point><X>-35</X><Y>135</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1732840493354</Id>
 					<Name><![CDATA[connector13]]></Name>
-					<X>2240</X><Y>-650</Y>
+					<X>2240</X><Y>-660</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -845,13 +845,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>190</X><Y>0</Y></Point>
+						<Point><X>175</X><Y>35</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1733095977371</Id>
 					<Name><![CDATA[connector16]]></Name>
-					<X>2240</X><Y>-570</Y>
+					<X>2240</X><Y>-580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -878,7 +878,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>70</X><Y>-50</Y></Point>
+						<Point><X>60</X><Y>-50</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -950,7 +950,7 @@
 				<Connector>
 					<Id>1733186097935</Id>
 					<Name><![CDATA[connector14]]></Name>
-					<X>2240</X><Y>-630</Y>
+					<X>2240</X><Y>-640</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -977,13 +977,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>70</X><Y>10</Y></Point>
+						<Point><X>60</X><Y>10</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1733186104935</Id>
 					<Name><![CDATA[connector18]]></Name>
-					<X>2350</X><Y>-620</Y>
+					<X>2340</X><Y>-630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1010,7 +1010,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>80</X><Y>-30</Y></Point>
+						<Point><X>75</X><Y>5</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -1085,6 +1085,76 @@ double prob = rand.nextDouble();
 return prob < 0.65;]]></Body>
 				</Function>
 			</Functions>
+			<Schedules>
+				<Schedule>
+					<Id>1733272720006</Id>
+					<Name><![CDATA[arribos]]></Name>
+					<X>1745</X><Y>-425</Y>
+					<Label><X>13</X><Y>1</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ValueType>double_</ValueType>
+					<UnitType><![CDATA[RATE]]></UnitType>
+					<UnitOfValue Class="RateUnits"><![CDATA[PER_MINUTE]]></UnitOfValue>
+					<DefaultValue>0.0</DefaultValue>
+					<RepresentationMode>exactTimes</RepresentationMode>
+					<RepresentationType>timeUnits</RepresentationType>
+					<FirstDayOfWeek>sunday</FirstDayOfWeek>
+					<TimeUnitsInterval>minutes</TimeUnitsInterval>
+					<RepeatTime>33333300000</RepeatTime>
+					<RepeatTimeInterval>days</RepeatTimeInterval>
+					<IsSnapTo>true</IsSnapTo>
+					<SnapTo>0</SnapTo>
+					<SnapToTimeUnits>minutes</SnapToTimeUnits>
+					<AllDayExceptionMode>false</AllDayExceptionMode>
+					<LoadFromDatabase><![CDATA[false]]></LoadFromDatabase>
+					<IntervalsQuery>
+						<TableReference>
+						</TableReference>
+							<StartColumnReference>
+							</StartColumnReference>
+							<EndColumnReference>
+							</EndColumnReference>
+							<ValueColumnReference>
+							</ValueColumnReference>
+					</IntervalsQuery>
+					<Intervals>
+						<Interval>
+							<Start>0</Start>
+							<End>0</End>
+							<Value>0.05</Value>
+						</Interval>
+						<Interval>
+							<Start>1800000</Start>
+							<End>1800000</End>
+							<Value>0.25</Value>
+						</Interval>
+						<Interval>
+							<Start>3600000</Start>
+							<End>3600000</End>
+							<Value>0.5</Value>
+						</Interval>
+						<Interval>
+							<Start>5400000</Start>
+							<End>5400000</End>
+							<Value>0.7</Value>
+						</Interval>
+						<Interval>
+							<Start>6000000</Start>
+							<End>6000000</End>
+							<Value>1.0</Value>
+						</Interval>
+						<Interval>
+							<Start>7200000</Start>
+							<End>7200000</End>
+							<Value>0.0</Value>
+						</Interval>
+					</Intervals>
+					<Exceptions>
+					</Exceptions>
+				</Schedule>
+			</Schedules>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1730651775677</Id>
@@ -1111,7 +1181,7 @@ return prob < 0.65;]]></Body>
 				<EmbeddedObject>
 					<Id>1730840803070</Id>
 					<Name><![CDATA[pedSourceEntrada1]]></Name>
-					<X>1890</X><Y>-480</Y>
+					<X>1905</X><Y>-480</Y>
 					<Label><X>-15</X><Y>-30</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1152,7 +1222,7 @@ return prob < 0.65;]]></Body>
 						<Parameter>
 							<Name><![CDATA[arrivalType]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[self.INTERARRIVAL_TIME]]></Code>
+								<Code><![CDATA[self.RATE_SCHEDULE]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1165,12 +1235,15 @@ return prob < 0.65;]]></Body>
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[weibull(5,1)]]></Code>
+								<Code><![CDATA[uniform(0, 10000)]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[rateSchedule]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[arribos]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[modifyRate]]></Name>
@@ -1328,7 +1401,7 @@ return prob < 0.65;]]></Body>
 				<EmbeddedObject>
 					<Id>1730841259797</Id>
 					<Name><![CDATA[pedGoToAcceso1A]]></Name>
-					<X>2430</X><Y>-660</Y>
+					<X>2415</X><Y>-635</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1577,7 +1650,7 @@ return prob < 0.65;]]></Body>
 				<EmbeddedObject>
 					<Id>1732754841245</Id>
 					<Name><![CDATA[pedGoToAcceso1B]]></Name>
-					<X>2430</X><Y>-370</Y>
+					<X>2425</X><Y>-395</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1762,7 +1835,7 @@ return prob < 0.65;]]></Body>
 				<EmbeddedObject>
 					<Id>1732832331244</Id>
 					<Name><![CDATA[controlPolicial2]]></Name>
-					<X>2080</X><Y>-490</Y>
+					<X>2090</X><Y>-490</Y>
 					<Label><X>-15</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1886,13 +1959,13 @@ return prob < 0.65;]]></Body>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B > 35]]></Code>
+								<Code><![CDATA[!ped.quiereHacerFilaParaComprarComida(TamanioCola1B);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition2]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B <= 30]]></Code>
+								<Code><![CDATA[ped.quiereHacerFilaParaComprarComida(TamanioCola1B);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1942,9 +2015,6 @@ return prob < 0.65;]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B += 1;]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit1]]></Name>
@@ -2041,15 +2111,16 @@ return prob < 0.65;]]></Body>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B += 1;]]></Code>
+								<Code><![CDATA[TamanioCola1B = localComida1B.queueSize(waitingArea)]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoArribo = time();
+TamanioCola1B = localComida1B.queueSize(waitingArea);
    if (TamanioCola1B > 30) {
-       TamanioCola1B -= 1;
+       localComida1B.cancel(ped);
        CantidadAbandonos1B += 1;
    };
 
@@ -2064,7 +2135,6 @@ ped.incluyeBebida = conBebida();]]></Code>
 							<Name><![CDATA[onExitQueue]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
- 
 TiempoEsperaVenta1B += time() - ped.tiempoArribo;]]></Code>
 							</Value>
 						</Parameter>
@@ -2104,17 +2174,18 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[CantidadDeVentas1B++;]]></Code>
+								<Code><![CDATA[CantidadDeVentas1B++;
+TamanioCola1B = localComida1B.queueSize(waitingArea);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1B -= 1;]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onCancel]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[TamanioCola1B = localComida1B.queueSize(waitingArea);]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2185,7 +2256,7 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[arrivalType]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[self.INTERARRIVAL_TIME]]></Code>
+								<Code><![CDATA[self.RATE_SCHEDULE]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2204,6 +2275,9 @@ Ingresos1B += valorComida;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[rateSchedule]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[arribos]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[modifyRate]]></Name>
@@ -2400,7 +2474,7 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[arrivalType]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[self.INTERARRIVAL_TIME]]></Code>
+								<Code><![CDATA[self.RATE_SCHEDULE]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2419,6 +2493,9 @@ Ingresos1B += valorComida;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[rateSchedule]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[arribos]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[modifyRate]]></Name>
@@ -2570,7 +2647,7 @@ Ingresos1B += valorComida;]]></Code>
 				<EmbeddedObject>
 					<Id>1732839615019</Id>
 					<Name><![CDATA[pedWait]]></Name>
-					<X>2470</X><Y>-530</Y>
+					<X>2500</X><Y>-530</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2685,7 +2762,7 @@ Ingresos1B += valorComida;]]></Code>
 				<EmbeddedObject>
 					<Id>1732840489781</Id>
 					<Name><![CDATA[pedSelectComida1A]]></Name>
-					<X>2210</X><Y>-650</Y>
+					<X>2210</X><Y>-660</Y>
 					<Label><X>-35</X><Y>-30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2711,13 +2788,13 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A > 35]]></Code>
+								<Code><![CDATA[!ped.quiereHacerFilaParaComprarComida(TamanioCola1A);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition2]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A <= 30]]></Code>
+								<Code><![CDATA[ped.quiereHacerFilaParaComprarComida(TamanioCola1A);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2746,9 +2823,6 @@ Ingresos1B += valorComida;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A += 1;]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[probability5]]></Name>
@@ -2808,7 +2882,7 @@ Ingresos1B += valorComida;]]></Code>
 				<EmbeddedObject>
 					<Id>1733185280612</Id>
 					<Name><![CDATA[hinchases]]></Name>
-					<X>1550</X><Y>-670</Y>
+					<X>1535</X><Y>-650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2876,7 +2950,7 @@ Ingresos1B += valorComida;]]></Code>
 				<EmbeddedObject>
 					<Id>1733186076689</Id>
 					<Name><![CDATA[localComida1A]]></Name>
-					<X>2310</X><Y>-630</Y>
+					<X>2300</X><Y>-640</Y>
 					<Label><X>-15</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2925,17 +2999,18 @@ Ingresos1B += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A += 1;]]></Code>
+								<Code><![CDATA[TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoArribo = time();
-   if (TamanioCola1A > 30) {
-       TamanioCola1A -= 1;
-       CantidadAbandonos1A += 1;
-   };
+
+if (ped.quiereSeguirHaciendoFila(localComida1A.queueSize(colaTienda1A))){
+	localComida1A.cancel(ped);
+    CantidadAbandonos1A += 1;
+};
 
 ped.comidaElegida = elegirComidaAComprar();
 ped.incluyeBebida = conBebida();]]></Code>
@@ -2948,8 +3023,9 @@ ped.incluyeBebida = conBebida();]]></Code>
 							<Name><![CDATA[onExitQueue]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[ped.tiempoDeEspera += time() - ped.tiempoArribo;
- 
-TiempoEsperaVenta1A += time() - ped.tiempoArribo;]]></Code>
+TiempoEsperaVenta1A += time() - ped.tiempoArribo;
+
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2987,17 +3063,18 @@ Ingresos1A += valorComida;]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[CantidadDeVentas1A++;]]></Code>
+								<Code><![CDATA[CantidadDeVentas1A++;
+TamanioCola1A = localComida1A.queueSize(colaTienda1A);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[TamanioCola1A -= 1;]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onCancel]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -5080,6 +5157,47 @@ Ingresos1A += valorComida;]]></Code>
 						<Parameters>
 							<Parameter>
 								<Name><![CDATA[appliedClass]]></Name>
+								<Value Class="EntityCodeValue">
+									<IsAgentEntity>false</IsAgentEntity>
+									<EntityEmbeddedObject>
+										<ActiveObjectClass>
+											<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+											<ClassName><![CDATA[hinchas]]></ClassName>
+										</ActiveObjectClass>
+										<GenericParameterSubstitute>
+											<GenericParameterSubstituteReference>
+												<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+												<ClassName><![CDATA[hinchas]]></ClassName>
+												<ItemName><![CDATA[1732843459765]]></ItemName>
+											</GenericParameterSubstituteReference>
+										</GenericParameterSubstitute>
+										<Parameters>
+										</Parameters>
+										<ReplicationFlag>true</ReplicationFlag>
+										<Replication Class="CodeValue">
+											<Code><![CDATA[100]]></Code>
+										</Replication>
+										<CollectionType>ARRAY_LIST_BASED</CollectionType>
+										<InitialLocationType>XYZ</InitialLocationType>
+										<ColumnCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</ColumnCode>
+										<RowCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</RowCode>
+										<LocationNameCode Class="CodeValue">
+											<Code><![CDATA[""]]></Code>
+										</LocationNameCode>
+										<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+										<InitializationDatabaseTableQuery>
+											<TableReference>
+											</TableReference>
+										</InitializationDatabaseTableQuery>
+										<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+										<QuantityColumn>
+										</QuantityColumn>
+									</EntityEmbeddedObject>
+								</Value>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[speedRestricted]]></Name>
@@ -5173,6 +5291,7 @@ Ingresos1A += valorComida;]]></Code>
 
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-5</X><Y>-22</Y></Point>
 						<Point><X>-10</X><Y>-40</Y></Point>
 						<Point><X>-60</X><Y>-50</Y></Point>
 						<Point><X>-100</X><Y>-50</Y></Point>
@@ -6258,6 +6377,7 @@ Ingresos1A += valorComida;]]></Code>
 						<Point><X>-121.741</X><Y>39.462</Y></Point>
 						<Point><X>-88</X><Y>19</Y></Point>
 						<Point><X>-71.22200000000001</X><Y>19.989000000000004</Y></Point>
+						<Point><X>-48</X><Y>35</Y></Point>
 						<Point><X>-41.741</X><Y>39.462</Y></Point>
 						<Point><X>-30</X><Y>28</Y></Point>
 						<Point><X>-21</X><Y>20</Y></Point>
@@ -6688,14 +6808,14 @@ Ingresos1A += valorComida;]]></Code>
 				<Area>
 					<Id>1732833040080</Id>
 					<Name><![CDATA[flowchart]]></Name>
-					<X>1880</X><Y>-680</Y>
+					<X>1850</X><Y>-720</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Title><![CDATA[]]></Title>
 					<Width>900</Width>
-					<Height>440</Height>
+					<Height>500</Height>
 				</Area>
 				<Area>
 					<Id>1732833048706</Id>
@@ -6917,7 +7037,7 @@ Ingresos1A += valorComida;]]></Code>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1733012463745</Id>
-					<Name><![CDATA[apetitoParaComer]]></Name>
+					<Name><![CDATA[umbralApetito]]></Name>
 					<X>40</X><Y>210</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -6926,7 +7046,7 @@ Ingresos1A += valorComida;]]></Code>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[300]]></Code>
+							<Code><![CDATA[3]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -6943,6 +7063,21 @@ Ingresos1A += valorComida;]]></Code>
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1733272169193</Id>
+					<Name><![CDATA[umbralPersonasAEsperar]]></Name>
+					<X>40</X><Y>230</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[30]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -7021,7 +7156,8 @@ Ingresos1A += valorComida;]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Properties>	
-						<Action><![CDATA[this.calcularApetito()]]></Action>
+						<Action><![CDATA[this.randomApetito();
+this.calcularApetito();]]></Action>
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -7212,7 +7348,7 @@ Ingresos1A += valorComida;]]></Code>
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[this.quiereHacerFilaParaComprarComida()]]></Condition>
+						<Condition><![CDATA[true]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
@@ -7369,6 +7505,11 @@ String[] states = {"fed", "fasting"};
 String initial_state = states[rand.nextInt(2)];
 
 S = initial_state.equals("fed") ? 300 : 0;
+
+int min = 30;
+int max = 150;
+umbralPersonasAEsperar = rand.nextInt((max - min) + 1) + min;
+
 ]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
@@ -7376,16 +7517,23 @@ S = initial_state.equals("fed") ? 300 : 0;
 					<ReturnType><![CDATA[boolean]]></ReturnType>
 					<Id>1732924454016</Id>
 					<Name><![CDATA[quiereHacerFilaParaComprarComida]]></Name>
-					<X>40</X><Y>500</Y>
+					<X>35</X><Y>525</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[cantidadPersonasEnCola]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
 					<Body><![CDATA[
 // Lógica a evaluar para determianr si quiere 
 // hacer fila para comprar
-
-return true;
+if(this.tieneApetito() && cantidadPersonasEnCola <= umbralPersonasAEsperar ){
+	return true;
+}else{
+	return false;
+}
 ]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
@@ -7423,17 +7571,66 @@ return 0; // No es hora de comer]]></Body>
 					<ReturnType><![CDATA[boolean]]></ReturnType>
 					<Id>1733094716145</Id>
 					<Name><![CDATA[tieneApetito]]></Name>
-					<X>40</X><Y>390</Y>
+					<X>40</X><Y>400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[int t = getHour()*60 + getMinute()*60 +getSecond();
 
-if(A >= 2){
+if(A >=  umbralApetito){
 	return true;
 }
 return false;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1733270059265</Id>
+					<Name><![CDATA[quiereHacerFilaParaComprarComida1]]></Name>
+					<X>2325</X><Y>-608.5</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[cantidadPersonasEnCola]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Body><![CDATA[
+// Lógica a evaluar para determianr si quiere 
+// hacer fila para comprar
+if(this.tieneApetito() && cantidadPersonasEnCola <= 30 ){
+	return true;
+}else{
+	return false;
+}
+]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1733270971472</Id>
+					<Name><![CDATA[quiereSeguirHaciendoFila]]></Name>
+					<X>35</X><Y>550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[cantidadPersonasEnCola]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Body><![CDATA[
+// Lógica a evaluar para determianr si quiere 
+// hacer fila para comprar
+this.calcularApetito();
+if(this.tieneApetito() && A > umbralApetito ){
+	return true;
+}else{
+	return false;
+}
+]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
