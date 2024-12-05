@@ -8626,10 +8626,10 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 						<Point><X>24.962</X><Y>-1.387</Y><Z>0</Z></Point>
 						<Point><X>360</X><Y>-20</Y><Z>0</Z></Point>
 						<Point><X>335.038</X><Y>-18.613</Y><Z>0</Z></Point>
-						<Point><X>360</X><Y>-20</Y><Z>0</Z></Point>
-						<Point><X>360</X><Y>-20</Y><Z>0</Z></Point>
-						<Point><X>360</X><Y>-20</Y><Z>0</Z></Point>
+						<Point><X>335</X><Y>-20</Y><Z>0</Z></Point>
 						<Point><X>340</X><Y>-20</Y><Z>0</Z></Point>
+						<Point><X>365</X><Y>-20</Y><Z>0</Z></Point>
+						<Point><X>320</X><Y>-20</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
 				<Wall>
@@ -8662,256 +8662,9 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				</Wall>
 				<ServiceWithLine>
 					<ServiceColor>-16744448</ServiceColor>
-					<Id>1733280881086</Id>
-					<Name><![CDATA[retenPolicial5]]></Name>
-					<X>2928.582</X><Y>4417.666</Y>
-					<Label><X>97.772</X><Y>-921.764</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-
-			<Presentation>
-				<PolygonNode>
-					<Id>1733280881082</Id>
-					<Name><![CDATA[waitingArea]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<EmbeddedObject>
-						<ActiveObjectClass>
-							<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
-							<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
-						</ActiveObjectClass>
-						<Parameters>
-						</Parameters>
-						<ReplicationFlag>false</ReplicationFlag>
-						<Replication Class="CodeValue">
-							<Code><![CDATA[100]]></Code>
-						</Replication>
-						<CollectionType>ARRAY_LIST_BASED</CollectionType>
-						<InitialLocationType>XYZ</InitialLocationType>
-						<ColumnCode Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</ColumnCode>
-						<RowCode Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</RowCode>
-						<LocationNameCode Class="CodeValue">
-							<Code><![CDATA[""]]></Code>
-						</LocationNameCode>
-						<InitializationType>SPECIFIED_NUMBER</InitializationType>
-						<InitializationDatabaseTableQuery>
-							<TableReference>
-							</TableReference>
-						</InitializationDatabaseTableQuery>
-						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-						<QuantityColumn>
-						</QuantityColumn>
-					</EmbeddedObject>
-					<LineColor>-16744448</LineColor>
-					<FillColor/>
-					<LineWidth>2</LineWidth>
-					<LineMaterial>null</LineMaterial>
-					<FillMaterial>null</FillMaterial>
-					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
-					<Sloped>false</Sloped>
-					<Slope>
-						<Id>1733280881080</Id>
-						<Name><![CDATA[waitingArea]]></Name>
-						<X>0</X><Y>10</Y>
-						<PublicFlag>false</PublicFlag>
-						<PresentationFlag>true</PresentationFlag>
-						<ShowLabel>true</ShowLabel>
-						<Dx>20</Dx>
-						<Dy>0</Dy>
-						<Dz>0</Dz>
-						<AngleX>30</AngleX>
-						<AngleZ>0</AngleZ>
-						<SlopeType>angle</SlopeType>	
-					</Slope>
-
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>70</Y></Point>
-						<Point><X>20</X><Y>70</Y></Point>
-						<Point><X>20</X><Y>30</Y></Point>
-						<Point><X>70</X><Y>30</Y></Point>
-						<Point><X>70</X><Y>0</Y></Point>
-					</Points>
-				</PolygonNode>
-				<QueueLine>
-					<Id>1733280881088</Id>
-					<Name><![CDATA[queueLine24]]></Name>
-					<X>2845.576</X><Y>4213.63</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<Reversed>false</Reversed>
-					<LimitedCapacity>false</LimitedCapacity>
-					<Capacity><![CDATA[10]]></Capacity>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-10.565</X><Y>-22.658</Y></Point>
-						<Point><X>-10.565</X><Y>-22.658</Y></Point>
-						<Point><X>-44.375</X><Y>-95.162</Y></Point>
-						<Point><X>-33.809</X><Y>-72.505</Y></Point>
-						<Point><X>-33.809</X><Y>-72.505</Y></Point>
-					</Points>
-					<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
-				</QueueLine>
-				<QueueLine>
-					<Id>1733280881090</Id>
-					<Name><![CDATA[queueLine25]]></Name>
-					<X>2863.702</X><Y>4205.177</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<Reversed>false</Reversed>
-					<LimitedCapacity>false</LimitedCapacity>
-					<Capacity><![CDATA[10]]></Capacity>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-10.565</X><Y>-22.658</Y></Point>
-						<Point><X>-10.565</X><Y>-22.658</Y></Point>
-						<Point><X>-44.375</X><Y>-95.162</Y></Point>
-						<Point><X>-33.809</X><Y>-72.505</Y></Point>
-						<Point><X>-33.809</X><Y>-72.505</Y></Point>
-					</Points>
-					<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
-				</QueueLine>
-				<ServicePoint>
-					<Id>1733280881092</Id>
-					<Name><![CDATA[servicePoint28]]></Name>
-					<X>2793.955</X><Y>4105.295</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
-					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-					<Rotation>245</Rotation>
-				</ServicePoint>
-				<ServicePoint>
-					<Id>1733280881094</Id>
-					<Name><![CDATA[servicePoint29]]></Name>
-					<X>2812.081</X><Y>4096.843</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
-					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-					<Rotation>245</Rotation>
-				</ServicePoint>
-				<ServicePoint>
-					<Id>1733280881096</Id>
-					<Name><![CDATA[servicePoint30]]></Name>
-					<X>2775.829</X><Y>4113.748</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
-					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-					<Rotation>245</Rotation>
-				</ServicePoint>
-				<QueueLine>
-					<Id>1733280881098</Id>
-					<Name><![CDATA[queueLine26]]></Name>
-					<X>2827.449</X><Y>4222.082</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<Reversed>false</Reversed>
-					<LimitedCapacity>false</LimitedCapacity>
-					<Capacity><![CDATA[10]]></Capacity>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-10.457</X><Y>-22.708</Y></Point>
-						<Point><X>-10.457</X><Y>-22.708</Y></Point>
-						<Point><X>-43.71</X><Y>-94.92</Y></Point>
-						<Point><X>-33.254</X><Y>-72.212</Y></Point>
-						<Point><X>-33.254</X><Y>-72.212</Y></Point>
-					</Points>
-					<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
-				</QueueLine>
-				<ServicePoint>
-					<Id>1733280881100</Id>
-					<Name><![CDATA[servicePoint31]]></Name>
-					<X>2757.703</X><Y>4122.2</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
-					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-					<Rotation>245</Rotation>
-				</ServicePoint>
-				<QueueLine>
-					<Id>1733280881104</Id>
-					<Name><![CDATA[queueLine27]]></Name>
-					<X>2802.556</X><Y>4232.586</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<Reversed>false</Reversed>
-					<LimitedCapacity>false</LimitedCapacity>
-					<Capacity><![CDATA[10]]></Capacity>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-10.457</X><Y>-22.708</Y></Point>
-						<Point><X>-10.457</X><Y>-22.708</Y></Point>
-						<Point><X>-43.71</X><Y>-94.92</Y></Point>
-						<Point><X>-33.254</X><Y>-72.212</Y></Point>
-						<Point><X>-33.254</X><Y>-72.212</Y></Point>
-					</Points>
-					<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
-				</QueueLine>
-			</Presentation>
-
-					<Z>0</Z>
-					<Type>POINT</Type>
-					<QueueType>LINE</QueueType>
-					<Bidirectional>false</Bidirectional>
-					<WaitingAreaEnabled>false</WaitingAreaEnabled>
-					<QueueColor>-16744448</QueueColor>
-					<ReverseQueueColor>-65281</ReverseQueueColor>
-					<GroupBehaviorMode>SAME_FOR_ALL_GROUPS</GroupBehaviorMode>
-					<GroupBehavior>ALL_MEMBERS_INDIVIDUALLY</GroupBehavior>
-					<WaitForExit>false</WaitForExit>
-					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
-				</ServiceWithLine>
-				<ServiceWithLine>
-					<ServiceColor>-16744448</ServiceColor>
 					<Id>1733281052984</Id>
 					<Name><![CDATA[retenPolicial6]]></Name>
-					<X>2447.433</X><Y>4754.542</Y>
+					<X>1930</X><Y>4620</Y>
 					<Label><X>329.757</X><Y>248.869</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -8995,7 +8748,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<QueueLine>
 					<Id>1733281052986</Id>
 					<Name><![CDATA[queueLine28]]></Name>
-					<X>2657.09</X><Y>4822.107</Y>
+					<X>2139.657</X><Y>4687.565</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9018,7 +8771,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<QueueLine>
 					<Id>1733281052988</Id>
 					<Name><![CDATA[queueLine29]]></Name>
-					<X>2651.913</X><Y>4841.426</Y>
+					<X>2134.48</X><Y>4706.884</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9041,7 +8794,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<ServicePoint>
 					<Id>1733281052990</Id>
 					<Name><![CDATA[servicePoint32]]></Name>
-					<X>2773.259</X><Y>4852.199</Y>
+					<X>2255.826</X><Y>4717.657</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9055,7 +8808,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<ServicePoint>
 					<Id>1733281052992</Id>
 					<Name><![CDATA[servicePoint33]]></Name>
-					<X>2768.083</X><Y>4871.518</Y>
+					<X>2250.65</X><Y>4736.976</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9069,7 +8822,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<ServicePoint>
 					<Id>1733281052994</Id>
 					<Name><![CDATA[servicePoint34]]></Name>
-					<X>2778.436</X><Y>4832.881</Y>
+					<X>2261.003</X><Y>4698.339</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9083,7 +8836,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<QueueLine>
 					<Id>1733281052996</Id>
 					<Name><![CDATA[queueLine30]]></Name>
-					<X>2662.266</X><Y>4802.789</Y>
+					<X>2144.833</X><Y>4668.247</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9106,7 +8859,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<ServicePoint>
 					<Id>1733281052998</Id>
 					<Name><![CDATA[servicePoint35]]></Name>
-					<X>2783.612</X><Y>4813.562</Y>
+					<X>2266.179</X><Y>4679.02</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9120,7 +8873,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<ServicePoint>
 					<Id>1733281053000</Id>
 					<Name><![CDATA[servicePoint36]]></Name>
-					<X>2788.789</X><Y>4794.244</Y>
+					<X>2271.356</X><Y>4659.702</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9134,7 +8887,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<QueueLine>
 					<Id>1733281053002</Id>
 					<Name><![CDATA[queueLine31]]></Name>
-					<X>2670.22</X><Y>4776.967</Y>
+					<X>2152.787</X><Y>4642.425</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9157,7 +8910,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<QueueLine>
 					<Id>1733281053004</Id>
 					<Name><![CDATA[queueLine32]]></Name>
-					<X>2675.396</X><Y>4757.649</Y>
+					<X>2157.963</X><Y>4623.107</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9180,7 +8933,7 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<ServicePoint>
 					<Id>1733281059750</Id>
 					<Name><![CDATA[servicePoint37]]></Name>
-					<X>2762.907</X><Y>4890.837</Y>
+					<X>2245.474</X><Y>4756.295</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9194,7 +8947,44 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<QueueLine>
 					<Id>1733281060549</Id>
 					<Name><![CDATA[queueLine33]]></Name>
-					<X>2643</X><Y>4858</Y>
+					<X>2125.567</X><Y>4723.458</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Reversed>false</Reversed>
+					<LimitedCapacity>false</LimitedCapacity>
+					<Capacity><![CDATA[10]]></Capacity>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>24.117</X><Y>6.586</Y></Point>
+						<Point><X>24.117</X><Y>6.586</Y></Point>
+						<Point><X>100.81</X><Y>27.53</Y></Point>
+						<Point><X>76.693</X><Y>20.943</Y></Point>
+						<Point><X>76.693</X><Y>20.943</Y></Point>
+					</Points>
+					<ExceededQueuePolicy>EXTEND_QUEUE_TO_THE_FREE_SPACE</ExceededQueuePolicy>
+				</QueueLine>
+				<ServicePoint>
+					<Id>1733436189099</Id>
+					<Name><![CDATA[servicePoint28]]></Name>
+					<X>2240.298</X><Y>4775.614</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
+					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
+					<Rotation>15</Rotation>
+				</ServicePoint>
+				<QueueLine>
+					<Id>1733436190289</Id>
+					<Name><![CDATA[queueLine24]]></Name>
+					<X>2120</X><Y>4743</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9231,13 +9021,13 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<Figure3D>
 					<Id>1733281082222</Id>
 					<Name><![CDATA[barrier_9]]></Name>
-					<X>2810</X><Y>4730</Y>
+					<X>2288.134</X><Y>4608.916</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>2810</X><Y>4730</Y><Z>0</Z>
+					<X>2288.134</X><Y>4608.916</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
@@ -9260,13 +9050,13 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 				<Figure3D>
 					<Id>1733281109600</Id>
 					<Name><![CDATA[barrier_10]]></Name>
-					<X>2742</X><Y>4955</Y>
+					<X>2220.134</X><Y>4833.916</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>2742</X><Y>4955</Y><Z>0</Z>
+					<X>2220.134</X><Y>4833.916</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
@@ -9286,6 +9076,666 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 </Figure3D>
+				<Figure3D>
+					<Id>1733436206321</Id>
+					<Name><![CDATA[policeman24]]></Name>
+					<X>2275.567</X><Y>4658.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2275.567</X><Y>4658.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1733436209752</Id>
+					<Name><![CDATA[policeman25]]></Name>
+					<X>2270.567</X><Y>4678.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2270.567</X><Y>4678.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1733436213001</Id>
+					<Name><![CDATA[policeman26]]></Name>
+					<X>2265.567</X><Y>4698.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2265.567</X><Y>4698.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1733436215665</Id>
+					<Name><![CDATA[policeman27]]></Name>
+					<X>2260.567</X><Y>4718.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2260.567</X><Y>4718.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1733436218607</Id>
+					<Name><![CDATA[policeman28]]></Name>
+					<X>2255.567</X><Y>4738.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2255.567</X><Y>4738.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1733436222345</Id>
+					<Name><![CDATA[policeman29]]></Name>
+					<X>2250.567</X><Y>4758.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2250.567</X><Y>4758.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1733436224603</Id>
+					<Name><![CDATA[policeman30]]></Name>
+					<X>2245.567</X><Y>4773.458</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>2245.567</X><Y>4773.458</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/policeman.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_001]]></Name>
+							<OriginalColor>-1973791</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_002]]></Name>
+							<OriginalColor>-9418966</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_I22]]></Name>
+							<OriginalColor>-16185037</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_J24]]></Name>
+							<OriginalColor>-14148045</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_004]]></Name>
+							<OriginalColor>-3361146</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_007]]></Name>
+							<OriginalColor>-13027015</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<TargetLine>
+					<Id>1733436275433</Id>
+					<Name><![CDATA[ingresoPublicoAvellaneda]]></Name>
+					<X>300</X><Y>4140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-40</X><Y>140</Y></Point>
+						<Point><X>-40</X><Y>280</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733436296983</Id>
+					<Name><![CDATA[puerta3]]></Name>
+					<X>2700</X><Y>3180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>80</Y></Point>
+						<Point><X>0</X><Y>140</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733436321730</Id>
+					<Name><![CDATA[puerta4]]></Name>
+					<X>2688</X><Y>3500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>80</Y></Point>
+						<Point><X>0</X><Y>140</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733436328458</Id>
+					<Name><![CDATA[puerta5]]></Name>
+					<X>2760</X><Y>3960</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>20</Y></Point>
+						<Point><X>60</X><Y>40</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733436385520</Id>
+					<Name><![CDATA[puerta6]]></Name>
+					<X>3680</X><Y>4860</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>20</Y></Point>
+						<Point><X>140</X><Y>20</Y></Point>
+					</Points>
+				</TargetLine>
+				<TargetLine>
+					<Id>1733436402447</Id>
+					<Name><![CDATA[puerta7]]></Name>
+					<X>4320</X><Y>4820</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>-20</Y></Point>
+						<Point><X>100</X><Y>-40</Y></Point>
+					</Points>
+				</TargetLine>
+				<Wall>
+					<Id>1733436423123</Id>
+					<Name><![CDATA[wall17]]></Name>
+					<X>2210</X><Y>4880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>20</ZHeight>
+					<Closed>false</Closed>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-24.435</X><Y>-5.283</Y><Z>0</Z></Point>
+						<Point><X>24.435</X><Y>5.283</Y><Z>0</Z></Point>
+						<Point><X>1110</X><Y>240</Y><Z>0</Z></Point>
+						<Point><X>1085.565</X><Y>234.717</Y><Z>0</Z></Point>
+						<Point><X>1134.62</X><Y>244.345</Y><Z>0</Z></Point>
+						<Point><X>1450</X><Y>300</Y><Z>0</Z></Point>
+						<Point><X>1425.38</X><Y>295.655</Y><Z>0</Z></Point>
+						<Point><X>1475</X><Y>300</Y><Z>0</Z></Point>
+						<Point><X>1810</X><Y>300</Y><Z>0</Z></Point>
+						<Point><X>1785</X><Y>300</Y><Z>0</Z></Point>
+						<Point><X>1834.847</X><Y>297.239</Y><Z>0</Z></Point>
+						<Point><X>1990</X><Y>280</Y><Z>0</Z></Point>
+						<Point><X>1965.153</X><Y>282.761</Y><Z>0</Z></Point>
+						<Point><X>2014.66</X><Y>275.89</Y><Z>0</Z></Point>
+						<Point><X>2110</X><Y>260</Y><Z>0</Z></Point>
+						<Point><X>2085.34</X><Y>264.11</Y><Z>0</Z></Point>
+						<Point><X>2133.717</X><Y>252.094</Y><Z>0</Z></Point>
+						<Point><X>2290</X><Y>200</Y><Z>0</Z></Point>
+						<Point><X>2266.283</X><Y>207.906</Y><Z>0</Z></Point>
+						<Point><X>2312.759</X><Y>189.655</Y><Z>0</Z></Point>
+						<Point><X>2510</X><Y>100</Y><Z>0</Z></Point>
+						<Point><X>2487.241</X><Y>110.345</Y><Z>0</Z></Point>
+						<Point><X>2531.947</X><Y>88.029</Y><Z>0</Z></Point>
+						<Point><X>2730</X><Y>-20</Y><Z>0</Z></Point>
+						<Point><X>2708.053</X><Y>-8.029</Y><Z>0</Z></Point>
+						<Point><X>2713.995</X><Y>-39.206</Y><Z>0</Z></Point>
+						<Point><X>2530</X><Y>-260</Y><Z>0</Z></Point>
+						<Point><X>2546.005</X><Y>-240.794</Y><Z>0</Z></Point>
+						<Point><X>2507.639</X><Y>-248.82</Y><Z>0</Z></Point>
+						<Point><X>2250</X><Y>-120</Y><Z>0</Z></Point>
+						<Point><X>2272.361</X><Y>-131.18</Y><Z>0</Z></Point>
+						<Point><X>2250</X><Y>-120</Y><Z>0</Z></Point>
+						<Point><X>2250</X><Y>-120</Y><Z>0</Z></Point>
+						<Point><X>2250</X><Y>-120</Y><Z>0</Z></Point>
+						<Point><X>2230</X><Y>-120</Y><Z>0</Z></Point>
+					</Points>
+				</Wall>
+				<Wall>
+					<Id>1733436465745</Id>
+					<Name><![CDATA[wall23]]></Name>
+					<X>3840</X><Y>4880</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>20</ZHeight>
+					<Closed>false</Closed>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-25</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>25</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>220</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>195</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>244.515</X><Y>-4.903</Y><Z>0</Z></Point>
+						<Point><X>420</X><Y>-40</Y><Z>0</Z></Point>
+						<Point><X>395.485</X><Y>-35.097</Y><Z>0</Z></Point>
+						<Point><X>420</X><Y>-40</Y><Z>0</Z></Point>
+						<Point><X>420</X><Y>-40</Y><Z>0</Z></Point>
+						<Point><X>420</X><Y>-40</Y><Z>0</Z></Point>
+						<Point><X>400</X><Y>-40</Y><Z>0</Z></Point>
+					</Points>
+				</Wall>
+				<Wall>
+					<Id>1733436494810</Id>
+					<Name><![CDATA[wall24]]></Name>
+					<X>2900</X><Y>4180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>20</ZHeight>
+					<Closed>false</Closed>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-25</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>540</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>515</Y><Z>0</Z></Point>
+						<Point><X>-25</X><Y>540</Y><Z>0</Z></Point>
+						<Point><X>-20</X><Y>540</Y><Z>0</Z></Point>
+						<Point><X>5</X><Y>540</Y><Z>0</Z></Point>
+						<Point><X>-20</X><Y>540</Y><Z>0</Z></Point>
+					</Points>
+				</Wall>
+				<Wall>
+					<Id>1733436504335</Id>
+					<Name><![CDATA[wall25]]></Name>
+					<X>2900</X><Y>4720</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-3308225</LineColor>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillingType>HATCHED_AREA</FillingType>
+					<ZHeight>20</ZHeight>
+					<Closed>false</Closed>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-24.586</X><Y>-4.529</Y><Z>0</Z></Point>
+						<Point><X>24.586</X><Y>4.529</Y><Z>0</Z></Point>
+						<Point><X>760</X><Y>140</Y><Z>0</Z></Point>
+						<Point><X>735.414</X><Y>135.471</Y><Z>0</Z></Point>
+						<Point><X>70</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>760</X><Y>140</Y><Z>0</Z></Point>
+						<Point><X>780</X><Y>140</Y><Z>0</Z></Point>
+						<Point><X>740</X><Y>140</Y><Z>0</Z></Point>
+					</Points>
+				</Wall>
+				<TargetLine>
+					<Id>1733436549457</Id>
+					<Name><![CDATA[ingresoPublicoSur]]></Name>
+					<X>320</X><Y>2720</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-16744448</LineColor>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>0</X><Y>40</Y></Point>
+						<Point><X>0</X><Y>80</Y></Point>
+					</Points>
+				</TargetLine>
 			</Presentation>
 
 				</Level>
