@@ -4863,7 +4863,7 @@ ped.yaConsumioComida = true;]]></Code>
 				<Wall>
 					<Id>1732754509687</Id>
 					<Name><![CDATA[divisor1_10]]></Name>
-					<X>3800</X><Y>2620</Y>
+					<X>3890</X><Y>2620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -4891,7 +4891,7 @@ ped.yaConsumioComida = true;]]></Code>
 				<Wall>
 					<Id>1732754540275</Id>
 					<Name><![CDATA[divisor1_2]]></Name>
-					<X>3500</X><Y>2640</Y>
+					<X>3415</X><Y>2640</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9231,6 +9231,581 @@ ped.yaConsumioComida = true;]]></Code>
 						<Point><X>20</X><Y>0</Y></Point>
 					</Points>
 				</TargetLine>
+				<Figure3D>
+					<Id>1734133949582</Id>
+					<Name><![CDATA[woman_9]]></Name>
+					<X>3424</X><Y>2683</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>3424</X><Y>2683</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/woman_1.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_B18]]></Name>
+							<OriginalColor>-10078168</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_006]]></Name>
+							<OriginalColor>-3367560</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_A03]]></Name>
+							<OriginalColor>-39836</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_12]]></Name>
+							<OriginalColor>-2148</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_11]]></Name>
+							<OriginalColor>-16777216</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_009]]></Name>
+							<OriginalColor>-16777216</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_B24]]></Name>
+							<OriginalColor>-4650994</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_H10]]></Name>
+							<OriginalColor>-6107956</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>89.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<ServiceWithArea>
+					<ServiceColor>-16744448</ServiceColor>
+					<Id>1734133949623</Id>
+					<Name><![CDATA[services_4_local_abajo1]]></Name>
+					<X>3537.022</X><Y>2709.09</Y>
+					<Label><X>25.292</X><Y>103.575</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+
+			<Presentation>
+				<PolygonNode>
+					<Id>1734133949595</Id>
+					<Name><![CDATA[colaTienda2B1]]></Name>
+					<X>3505</X><Y>2730</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<EmbeddedObject>
+						<ActiveObjectClass>
+							<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
+							<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
+								<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
+								<ItemName><![CDATA[1574694148121]]></ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters>
+							<Parameter>
+								<Name><![CDATA[appliedClass]]></Name>
+								<Value Class="EntityCodeValue">
+									<IsAgentEntity>false</IsAgentEntity>
+									<EntityEmbeddedObject>
+										<ActiveObjectClass>
+											<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+											<ClassName><![CDATA[hinchas]]></ClassName>
+										</ActiveObjectClass>
+										<GenericParameterSubstitute>
+											<GenericParameterSubstituteReference>
+												<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+												<ClassName><![CDATA[hinchas]]></ClassName>
+												<ItemName><![CDATA[1732843459765]]></ItemName>
+											</GenericParameterSubstituteReference>
+										</GenericParameterSubstitute>
+										<Parameters>
+											<Parameter>
+												<Name><![CDATA[tiempoArribo]]></Name>
+											</Parameter>
+											<Parameter>
+												<Name><![CDATA[tiempoDeEspera]]></Name>
+											</Parameter>
+											<Parameter>
+												<Name><![CDATA[esSocio]]></Name>
+											</Parameter>
+											<Parameter>
+												<Name><![CDATA[gastoTotal]]></Name>
+											</Parameter>
+										</Parameters>
+										<ReplicationFlag>true</ReplicationFlag>
+										<Replication Class="CodeValue">
+											<Code><![CDATA[100]]></Code>
+										</Replication>
+										<CollectionType>ARRAY_LIST_BASED</CollectionType>
+										<InitialLocationType>XYZ</InitialLocationType>
+										<ColumnCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</ColumnCode>
+										<RowCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</RowCode>
+										<LocationNameCode Class="CodeValue">
+											<Code><![CDATA[""]]></Code>
+										</LocationNameCode>
+										<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+										<InitializationDatabaseTableQuery>
+											<TableReference>
+											</TableReference>
+										</InitializationDatabaseTableQuery>
+										<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+										<QuantityColumn>
+										</QuantityColumn>
+									</EntityEmbeddedObject>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[speedRestricted]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[maxSpeed]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestricted]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestrictionType]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestrictionCondition]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[capacity]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[35]]></Code>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[throughput]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[schedule]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[avoidedIfClosed]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onEnter]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onEnterDenied]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onExit]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onOpen]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onClose]]></Name>
+							</Parameter>
+						</Parameters>
+						<ReplicationFlag>false</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>SPECIFIED_NUMBER</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<TableReference>
+							</TableReference>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn>
+						</QuantityColumn>
+					</EmbeddedObject>
+					<LineColor>-16744448</LineColor>
+					<FillColor/>
+					<LineWidth>2</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillMaterial>null</FillMaterial>
+					<LineStyle>DASHED</LineStyle>
+					<AttractorsLayout>random</AttractorsLayout>
+					<Sloped>false</Sloped>
+					<Slope>
+						<Id>1734133949593</Id>
+						<Name><![CDATA[colaTienda2B1]]></Name>
+						<X>19.301</X><Y>-50.169</Y>
+						<PublicFlag>false</PublicFlag>
+						<PresentationFlag>true</PresentationFlag>
+						<ShowLabel>true</ShowLabel>
+						<Dx>20</Dx>
+						<Dy>0</Dy>
+						<Dz>0</Dz>
+						<AngleX>30</AngleX>
+						<AngleZ>0</AngleZ>
+						<SlopeType>angle</SlopeType>	
+					</Slope>
+
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>-30</Y></Point>
+						<Point><X>5</X><Y>-65</Y></Point>
+						<Point><X>-35</X><Y>-60</Y></Point>
+						<Point><X>-55</X><Y>-60</Y></Point>
+						<Point><X>-55</X><Y>-35</Y></Point>
+						<Point><X>-60</X><Y>-10</Y></Point>
+						<Point><X>-50</X><Y>0</Y></Point>
+					</Points>
+				</PolygonNode>
+				<ServicePoint>
+					<Id>1734133949625</Id>
+					<Name><![CDATA[servicePoint32]]></Name>
+					<X>3437.022</X><Y>2699.089</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
+					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
+					<Rotation>180</Rotation>
+				</ServicePoint>
+				<ServicePoint>
+					<Id>1734133949627</Id>
+					<Name><![CDATA[servicePoint33]]></Name>
+					<X>3437.021</X><Y>2679.089</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<OverrideQueueChoicePolicy>false</OverrideQueueChoicePolicy>
+					<QueueChoicePolicy>CLOSEST_QUEUE_STRICT</QueueChoicePolicy>
+					<Rotation>180</Rotation>
+				</ServicePoint>
+			</Presentation>
+
+					<Z>0</Z>
+				</ServiceWithArea>
+				<Figure3D>
+					<Id>1734133949637</Id>
+					<Name><![CDATA[cashDesk4]]></Name>
+					<X>3426.134</X><Y>2684.856</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>3426.134</X><Y>2684.856</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/cash_desk.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Material_(1)_Surf]]></Name>
+							<OriginalColor>-12040120</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material_(4)_Surf]]></Name>
+							<OriginalColor>-10828110</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material_(2)_Surf]]></Name>
+							<OriginalColor>-3618616</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material_(3)_Surf]]></Name>
+							<OriginalColor>-9793861</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material_(5)_Surf]]></Name>
+							<OriginalColor>-9793861</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.3</Scale>
+					<Rotation>359.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<Figure3D>
+					<Id>1734133949639</Id>
+					<Name><![CDATA[woman_10]]></Name>
+					<X>3426.253</X><Y>2700.886</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>3426.253</X><Y>2700.886</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[3d/woman_1.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[MA_material]]></Name>
+							<OriginalColor>-1</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_B18]]></Name>
+							<OriginalColor>-10078168</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_006]]></Name>
+							<OriginalColor>-3367560</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_003]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_A03]]></Name>
+							<OriginalColor>-39836</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_12]]></Name>
+							<OriginalColor>-2148</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Shape_11]]></Name>
+							<OriginalColor>-16777216</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_009]]></Name>
+							<OriginalColor>-16777216</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_B24]]></Name>
+							<OriginalColor>-4650994</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[MA_Color_H10]]></Name>
+							<OriginalColor>-6107956</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>89.0</Rotation>
+					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+</Figure3D>
+				<RectangleNode>
+					<Id>1734134353863</Id>
+					<Name><![CDATA[areaOlorComida]]></Name>
+					<X>3415</X><Y>2660</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<EmbeddedObject>
+						<ActiveObjectClass>
+							<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
+							<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></PackageName>
+								<ClassName><![CDATA[AreaNodeDescriptor]]></ClassName>
+								<ItemName><![CDATA[1574694148121]]></ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters>
+							<Parameter>
+								<Name><![CDATA[appliedClass]]></Name>
+								<Value Class="EntityCodeValue">
+									<IsAgentEntity>false</IsAgentEntity>
+									<EntityEmbeddedObject>
+										<ActiveObjectClass>
+											<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+											<ClassName><![CDATA[hinchas]]></ClassName>
+										</ActiveObjectClass>
+										<GenericParameterSubstitute>
+											<GenericParameterSubstituteReference>
+												<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+												<ClassName><![CDATA[hinchas]]></ClassName>
+												<ItemName><![CDATA[1732843459765]]></ItemName>
+											</GenericParameterSubstituteReference>
+										</GenericParameterSubstitute>
+										<Parameters>
+										</Parameters>
+										<ReplicationFlag>true</ReplicationFlag>
+										<Replication Class="CodeValue">
+											<Code><![CDATA[100]]></Code>
+										</Replication>
+										<CollectionType>ARRAY_LIST_BASED</CollectionType>
+										<InitialLocationType>XYZ</InitialLocationType>
+										<ColumnCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</ColumnCode>
+										<RowCode Class="CodeValue">
+											<Code><![CDATA[0]]></Code>
+										</RowCode>
+										<LocationNameCode Class="CodeValue">
+											<Code><![CDATA[""]]></Code>
+										</LocationNameCode>
+										<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+										<InitializationDatabaseTableQuery>
+											<TableReference>
+											</TableReference>
+										</InitializationDatabaseTableQuery>
+										<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+										<QuantityColumn>
+										</QuantityColumn>
+									</EntityEmbeddedObject>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[speedRestricted]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[maxSpeed]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestricted]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[true]]></Code>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestrictionType]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[accessRestrictionCondition]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[capacity]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[999999]]></Code>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[throughput]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[schedule]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[avoidedIfClosed]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onEnter]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[agent.modificaInfluenciaPorOlor();]]></Code>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onEnterDenied]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onExit]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[agent.modificaInfluenciaPorOlor();]]></Code>
+								</Value>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onOpen]]></Name>
+							</Parameter>
+							<Parameter>
+								<Name><![CDATA[onClose]]></Name>
+							</Parameter>
+						</Parameters>
+						<ReplicationFlag>false</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>SPECIFIED_NUMBER</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<TableReference>
+							</TableReference>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn>
+						</QuantityColumn>
+					</EmbeddedObject>
+					<LineColor>-65536</LineColor>
+					<FillColor/>
+					<LineWidth>1</LineWidth>
+					<LineMaterial>null</LineMaterial>
+					<FillMaterial>null</FillMaterial>
+					<LineStyle>DASHED</LineStyle>
+					<AttractorsLayout>random</AttractorsLayout>
+					<Sloped>false</Sloped>
+					<Slope>
+						<Id>1734134353861</Id>
+						<Name><![CDATA[areaOlorComida]]></Name>
+						<X>0</X><Y>10</Y>
+						<PublicFlag>false</PublicFlag>
+						<PresentationFlag>true</PresentationFlag>
+						<ShowLabel>true</ShowLabel>
+						<Dx>20</Dx>
+						<Dy>0</Dy>
+						<Dz>0</Dz>
+						<AngleX>30</AngleX>
+						<AngleZ>0</AngleZ>
+						<SlopeType>angle</SlopeType>	
+					</Slope>
+
+					<Width>190</Width>
+					<Height>80</Height>
+					<Rotation>0.0</Rotation>
+				</RectangleNode>
 			</Presentation>
 
 				</Level>
@@ -9420,7 +9995,7 @@ ped.yaConsumioComida = true;]]></Code>
 				<Variable Class="PlainVariable">
 					<Id>1732923515079</Id>
 					<Name><![CDATA[yaConsumioComida]]></Name>
-					<X>40</X><Y>150</Y>
+					<X>40</X><Y>155</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9555,6 +10130,21 @@ ped.yaConsumioComida = true;]]></Code>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[PedService]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1734134655185</Id>
+					<Name><![CDATA[influenciadoPorOlor]]></Name>
+					<X>40</X><Y>135</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
@@ -9758,6 +10348,7 @@ posicionCola = 0;]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-14</X><Y>26</Y></Point>
 						<Point><X>-25</X><Y>45</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
@@ -10001,7 +10592,7 @@ posicionCola = 0;]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[// Parámetros del modelo
-int t = getHour()*60 + getMinute()*60 +getSecond();
+int t = getHour() * 60 + getMinute() * 60 + getSecond();
 
 double k_max_LS = 4.16;       // Tasa máxima de producción de grelina (en pM/min)
 double lambda_LS = 0.00462;   // Tasa de disminución de la secreción de grelina en función del contenido gástrico (1/g)
@@ -10034,15 +10625,22 @@ int meal_duration = 30;
 
 int H = habitos(t, meal_times, meal_duration); // Hábitos alimenticios
 
+// Variable externa que influye en el apetito
+boolean influenciadoPorOlor = true;
+
 // Apetito
-A = A_max * (L / (L_A50 + L)) * Math.exp(-lambda_AG * G);
+double factorOlor = influenciadoPorOlor ? 1.2 : 1.0; // Incrementa el apetito en un 20% si hay influencia del olor
+
+A = A_max * (L / (L_A50 + L)) * Math.exp(-lambda_AG * G) * factorOlor;
 
 // Estado de ingesta
-//chi_intake = (H == 1 || A > 200) ? 1 : 0;  // Se come si hay hábito o el apetito es alto
-chi_intake = (yaConsumioComida) ? 13: 0;
+//chi_intake = (yaConsumioComida) ? 13 : 0;
+chi_intake = (yaConsumioComida || A > 200 * factorOlor) ? 1 : 0;
 
 // Grelina
-double dL = k_max_LS * Math.exp(-lambda_LS * S) - k_XL * L;
+//double dL = k_max_LS * Math.exp(-lambda_LS * S) - k_XL * L;
+double dL = k_max_LS * Math.exp(-lambda_LS * S) * factorOlor - k_XL * L;
+
 L += dL * dt;
 
 // Glucosa
@@ -10050,14 +10648,14 @@ double dG = -(k_XG + k_XGE * E) * G + (k_G + k_XS * eta_G * rho_GS * S) / V_G;
 G += dG * dt;
 
 // Contenido gástrico
-double dS = -k_XS * S + k_S * chi_intake;
+//double dS = -k_XS * S + k_S * chi_intake;
+double k_S_ajustado = k_S * factorOlor;
+double dS = -k_XS * S + k_S_ajustado * chi_intake;
+
 S += dS * dt;
 if (S < 0) {
     S = 0;
-}
-
-
-]]></Body>
+}]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
@@ -10155,7 +10753,11 @@ if( S <=  150){
 }else{
 
 	return false;
-}]]></Body>
+}
+
+
+ 
+]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
@@ -10203,6 +10805,18 @@ if(this.tieneApetito() && posicionCola <= umbralPersonasAEsperar && !yaConsumioC
 	return false;
 }
 ]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1734136313932</Id>
+					<Name><![CDATA[modificaInfluenciaPorOlor]]></Name>
+					<X>40</X><Y>370</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[influenciadoPorOlor = !influenciadoPorOlor;]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
