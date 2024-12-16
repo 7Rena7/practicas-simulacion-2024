@@ -2147,10 +2147,10 @@
 							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
 						</Rate>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1734336000000</OccurrenceDate>
+						<OccurrenceDate>1734249600000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							<Code><![CDATA[105]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
