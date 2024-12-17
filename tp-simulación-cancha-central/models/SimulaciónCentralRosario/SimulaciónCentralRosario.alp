@@ -20,6 +20,7 @@
 		<ActiveObjectClass>
 			<Id>1730651775676</Id>
 			<Name><![CDATA[Main]]></Name>
+			<DestroyCode><![CDATA[this.exportExcel();]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1730651775682</Id>
@@ -422,7 +423,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<Type><![CDATA[int]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -434,7 +435,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<Type><![CDATA[int]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -2294,6 +2295,80 @@ return probabilidad < 0.85;]]></Body>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[return time();]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1734401784479</Id>
+					<Name><![CDATA[exportExcel]]></Name>
+					<X>-390</X><Y>40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[double tiempoEsperaPromedio = (TiempoEsperaVenta1A + TiempoEsperaVenta1B + TiempoEsperaVenta2A + TiempoEsperaVenta2B) / 4;
+
+excelFile.setCellValue("Tiempo promedio", 1, 1, 1);
+excelFile.setCellValue(tiempoEsperaPromedio, 1, 1, 2);
+
+excelFile.setCellValue("Tiempo de espera PV 1A", 1, 2, 1);
+excelFile.setCellValue(TiempoEsperaVenta1A, 1, 2, 2);
+
+excelFile.setCellValue("Tiempo de espera PV 1B", 1, 3, 1);
+excelFile.setCellValue(TiempoEsperaVenta2B, 1, 3, 2);
+
+excelFile.setCellValue("Tiempo de espera PV 2A", 1, 4, 1);
+excelFile.setCellValue(TiempoEsperaVenta2A, 1, 4, 2);
+
+excelFile.setCellValue("Tiempo de espera PV 2B", 1, 5, 1);
+excelFile.setCellValue(TiempoEsperaVenta2B, 1, 5, 2);
+
+excelFile.setCellValue("Tasas de utilizacion", 1, 7, 1);
+
+int ventasTotales = CantidadDeVentas1A + CantidadDeVentas1B + CantidadDeVentas2A + CantidadDeVentas2B + CantidadDeVentasAC + CantidadDeVentasBC;
+
+excelFile.setCellValue("PV 1A", 1, 8, 1);
+excelFile.setCellValue((CantidadDeVentas1A * 100) / ventasTotales, 1, 8, 2);
+
+excelFile.setCellValue("PV 1B", 1, 9, 1);
+excelFile.setCellValue((CantidadDeVentas1B * 100) / ventasTotales, 1, 9, 2);
+
+excelFile.setCellValue("PV 2A", 1, 10, 1);
+excelFile.setCellValue((CantidadDeVentas2A * 100) / ventasTotales, 1, 10, 2);
+
+excelFile.setCellValue("PV 2B", 1, 11, 1);
+excelFile.setCellValue((CantidadDeVentas2B * 100) / ventasTotales, 1, 11, 2);
+
+excelFile.setCellValue("PV AC", 1, 12, 1);
+excelFile.setCellValue((CantidadDeVentasAC * 100) / ventasTotales, 1, 12, 2);
+
+excelFile.setCellValue("PV BC", 1, 13, 1);
+excelFile.setCellValue((CantidadDeVentasBC * 100) / ventasTotales, 1, 13, 2);
+
+excelFile.setCellValue("Ingresos por punto de venta", 1, 14, 1);
+
+excelFile.setCellValue("PV 1A", 1, 15, 1);
+excelFile.setCellValue(Ingresos1A, 1, 15, 2);
+
+excelFile.setCellValue("PV 1B", 1, 16, 1);
+excelFile.setCellValue(Ingresos1B, 1, 16, 2);
+
+excelFile.setCellValue("PV 2A", 1, 17, 1);
+excelFile.setCellValue(Ingresos2A, 1, 17, 2);
+
+excelFile.setCellValue("PV 2B", 1, 18, 1);
+excelFile.setCellValue(Ingresos2B, 1, 18, 2);
+
+excelFile.setCellValue("PV AC", 1, 19, 1);
+excelFile.setCellValue(IngresosAC, 1, 19, 2);
+
+excelFile.setCellValue("PV BC", 1, 20, 1);
+excelFile.setCellValue(IngresosBC, 1, 20, 2);
+
+excelFile.setCellValue("Ingresos totales", 1, 21, 1);
+excelFile.setCellValue(Ingresos1A + Ingresos1B + Ingresos2A + Ingresos2B + IngresosAC + IngresosBC, 1, 21, 2);
+
+excelFile.writeFile();]]></Body>
+				</Function>
 			</Functions>
 			<Schedules>
 				<Schedule>
@@ -2365,6 +2440,24 @@ return probabilidad < 0.85;]]></Body>
 					</Exceptions>
 				</Schedule>
 			</Schedules>
+			<Connectivity>
+				<ExcelFile>
+					<Id>1734401722689</Id>
+					<Name><![CDATA[excelFile]]></Name>
+					<X>-240</X><Y>40</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ResourceReference>
+						<PackageName><![CDATA[simulacióncentralrosario]]></PackageName>
+						<ClassName><![CDATA[C:/Users/frank/Downloads/resultados_cancha.xlsx]]></ClassName>
+					</ResourceReference>
+					<SaveInSnapshot>false</SaveInSnapshot>
+					<LoadOnStartup>true</LoadOnStartup>
+					<SaveOnDispose>true</SaveOnDispose>
+				</ExcelFile>
+			</Connectivity>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1730651775677</Id>
@@ -4322,6 +4415,10 @@ TamanioCola1A = localComida1A.queueSize(colaTienda1A)]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[uniform(10.0, 15.0)]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[recoveryDelay]]></Name>
@@ -4384,7 +4481,7 @@ switch(ped.comidaElegida) {
 		break;
 }
 
-IngresosAC += valorComida;]]></Code>
+Ingresos2A += valorComida;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -4463,6 +4560,10 @@ ped.yaConsumioComida = true;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[uniform(10.0, 15.0)]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[recoveryDelay]]></Name>
@@ -5459,7 +5560,7 @@ switch(ped.comidaElegida) {
 		break;
 }
 
-Ingresos1A += valorComida;]]></Code>
+IngresosBC += valorComida;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -13188,9 +13289,10 @@ return menorCola;
     			<TimePlot>
 					<Id>1734395468317</Id>
 					<Name><![CDATA[plot]]></Name>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
 					<X>460</X><Y>380</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
+					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
@@ -13412,6 +13514,11 @@ return menorCola;
 		</Resource>
 		<Resource>
 			<Path><![CDATA[cancha.png]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+		<Resource>
+			<Path><![CDATA[C:/Users/frank/Downloads/resultados_cancha.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
